@@ -14,6 +14,7 @@ or binaries you need to integrate to get up and running.
 
 
 ## Resources
+* [Product Overview](https://www.nextrelease.io)
 * [Help Center](https://help.nextrelease.io/en/)
 * [Permissions & Security](https://www.nextrelease.io/permissions-and-security/)
 * [The Team](https://www.nextrelease.io/about-us/)
