@@ -8,10 +8,12 @@ software release notes and helps you publish and gather feedback on them. We
 integrate with your project through GitHub Apps so there is no custom code 
 or binaries you need to integrate to get up and running.
 
+## Getting Started
+* [Setup & Automate Your First Release Note](https://my.nextrelease.io)
+
 ## Example Release Strategies
 * [Single Branch](https://github.com/nextreleaseio/example-single-branch)
 * [Branch Per Environment](https://github.com/nextreleaseio/example-branch-per-environment)
-
 
 ## Resources
 * [Product Overview](https://www.nextrelease.io)
