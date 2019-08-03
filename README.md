@@ -8,7 +8,7 @@ software release notes and helps you publish and gather feedback on them. We
 integrate with your project through GitHub Apps so there is no custom code 
 or binaries you need to integrate to get up and running.
 
-## Getting Started
+## Get Started
 * [Setup & Automate Your First Release Note](https://my.nextrelease.io)
 
 ## Example Release Strategies
@@ -33,3 +33,6 @@ by you once they are generated.
 > - Responsive Styling Fixes [#154](https://github.com/nextreleaseio/frontend/pull/154) ( [donaldwasserman](https://github.com/donaldwasserman) )
 > - Changed filtering to modified date [#152](https://github.com/nextreleaseio/frontend/pull/152) ( [donaldwasserman](https://github.com/donaldwasserman) )
 
+# Other Examples
+* [GitHub Automatic PR Release Note Integration](https://github.com/nextreleaseio/example-branch-per-environment/pull/5)
+* [Automatic Git Tagging & GitHub Release Creation](https://github.com/nextreleaseio/next-release/releases)
