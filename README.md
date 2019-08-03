@@ -1,4 +1,4 @@
-<p align="center"><a href="https://next-release-public-assets.s3.us-east-2.amazonaws.com/NextRelease_Color_Stacked.png" alt="Next Release - Automatic Release Notes in 3-Clicks"></a></p>
+<p align="center"><a href="https://www.nextrelease.io"><img src="https://next-release-public-assets.s3.us-east-2.amazonaws.com/NextRelease_Color_Stacked-100.png" alt="Next Release - Automatic Release Notes in 3-Clicks"></a></p>
 <p align="center">Automated Release Notes in 3-Clicks</p>
 
 
