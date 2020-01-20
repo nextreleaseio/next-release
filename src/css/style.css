@@ -79,8 +79,12 @@
     transition: all 300ms;
 }
 
+.btn:hover {
+    transform: translateY(-1px);
+}
+
 .btn-purple {
-    @apply bg-purple-900 text-white;
+    @apply bg-purple-700 text-white;
 }
 
 .transition {

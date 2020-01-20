@@ -8,17 +8,7 @@ const Footer = ({ className, ...props }) => {
     className
   );
   return (
-    <>
-      <div className={className} {...props}>
-        <div className="flex-initial text-xl font-semibold">Gatsby Serif</div>
-        <div>
-          <ul className="flex flex-col md:flex-row text-sm -mx-3 font-medium">
-            <li className="mx-3"><Link to="/">Home</Link></li>
-            <li className="mx-3"><Link to="/contact">Contact</Link></li>
-            <li className="mx-3">©2019 Gatsby Serif</li>
-          </ul>
-        </div>
-      </div>
+    <div>
 
       <div className="w-full px-8 py-2 text-white text-xs font-light bg-black flex flex-col sm:flex-row justify-between items-start md:items-center">
         <div>
@@ -33,7 +23,7 @@ const Footer = ({ className, ...props }) => {
           </Link>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
