@@ -39,7 +39,7 @@ const Header = ({ className, ...props }) => {
       <div className="flex flex-wrap flex-row items-start md:items-center justify-between px-6 md:px-10 lg:px-24 text-white-100">
         <div className="my-2">
           <Link to="/">
-            <img className="w-3/5" alt="Figurit Homepage" src={logo} />
+            <img className="w-3/5" alt="Next Release Homepage" src={logo} />
           </Link>
         </div>
 
@@ -60,7 +60,7 @@ const Header = ({ className, ...props }) => {
         <div
           className={`${
             isExpanded ? `block` : `hidden`
-          } w-full md:w-auto flex md:flex flex-col md:flex-row justify-center md:justify-end items-stretch md:items-center py-1`}
+          } md:w-1/2 flex md:flex flex-col md:flex-row justify-center md:justify-between items-stretch md:items-center py-1`}
         >
           <HeaderLink to="/product">Features</HeaderLink>
           <HeaderLink to="/pricing">Pricing</HeaderLink>

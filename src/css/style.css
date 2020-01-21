@@ -9,7 +9,8 @@
  *
  * @import "tailwindcss/base";
  */
-@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900|Ultra&display=swap');
+
 @tailwind base;
 
 /**

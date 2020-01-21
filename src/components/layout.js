@@ -7,9 +7,9 @@ import SEO from './seo'
 import "../css/style.css";
 
 const Layout = ({ className, headerClass, bodyClass, children, ...props }) => {
-  bodyClass = bodyClass || "w-full flex-grow";
+  bodyClass = bodyClass || "w-full";
   return (
-    <div className={cx(className, "h-screen flex flex-col")} {...props}>
+    <div className={cx(className, "flex flex-col justify-content-between")} {...props}>
       <SEO/>
       <Helmet>
         <body className="font-sans antialiased" />

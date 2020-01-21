@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Next Release`,
     description: `Automatic Release Notes in 3 Steps`,
-    author: `@windedge`
+    author: `@nextrelease.io`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
