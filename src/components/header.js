@@ -62,7 +62,7 @@ const Header = ({ className, ...props }) => {
             isExpanded ? `block` : `hidden`
           } md:w-1/2 flex md:flex flex-col md:flex-row justify-center md:justify-between items-stretch md:items-center py-1`}
         >
-          <HeaderLink to="/product">Features</HeaderLink>
+          <HeaderLink to="/features">Features</HeaderLink>
           <HeaderLink to="/pricing">Pricing</HeaderLink>
           <div className="flex px-1">
             <a className="w-full md:w-auto py-2 md:px-1 -mb-1 text-white font-bold hover:text-purple-100 border-transparent border-t-4 md:hover:border-orange-800 relative"

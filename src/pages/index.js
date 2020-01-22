@@ -9,13 +9,15 @@ import Bottom from "../components/bottom";
 import StyledButton from "../components/button"
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Row from '../components/row';
+
 
 const Feature = ({feature}) => {
   const {title, path, image, items} = feature.node.frontmatter;
   const src = withPrefix(image);
   return (
-    <div className="w-1/3 mr-4">
-      <div className="flex flex-row items-start">
+    <div className="mx-4 px-4 md:w-1/3 sm:w-full">
+      <div className="flex flex-row items-center">
         <div className="w-4/12">
           <img src={src} className="w-full"/>
         </div>
@@ -70,32 +72,24 @@ function Index({ data }) {
             updates, and fully editable release notes.
           </p>
           <div className="self-center mt-8">
-            <Link to="/product">
-              <StyledButton>Features</StyledButton>
+            <Link to="/automatic-release-notes">
+              <StyledButton>How It Works</StyledButton>
             </Link>
-          </div>
-
-
-          <div className="flex flex-col mt-10 md:mt-16">
-            <p className="mb-2 text-4xl text-gray-800 self-center">
-              Features
-            </p>
-
-            <div className="flex flex-row">
-              {
-                features.map(feature => {
-                  return (
-                    <Feature feature={feature} key={feature.path} />
-                  )
-                })
-              }
-            </div>
-
-
           </div>
         </div>
 
       </div>
+      <Row>
+        <div className="flex flex-row">
+          {
+            features.map(feature => {
+              return (
+                <Feature feature={feature} key={feature.path}/>
+              )
+            })
+          }
+        </div>
+      </Row>
 
     <div className="bg-grey-200 w-100 py-6 pb-12 px-6 md:px-10 lg:px-24">
       <div className="mt-20 font-serif">
