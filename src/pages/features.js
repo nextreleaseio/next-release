@@ -6,13 +6,13 @@ import Row from "../components/row";
 import background from "../images/NR_Help_Mast.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import cx from "classnames";
 
-const Feature = ( { feature } ) => {
-  console.log(feature)
-  const { title, path, image, items } = feature.node.frontmatter;
-  const src = withPrefix(image);
+const Feature = ( { feature, classNames } ) => {
+  classNames = cx(classNames, "w-full sm:w-1/2 md:w-1/3 p-2");
+  const { title, path, items } = feature.node.frontmatter;
   return (
-    <div className="w-full sm:w-1/2 md:w-1/3 p-2">
+    <div className={classNames}>
       <Link
         to={path}
         className="text-2xl text-purple-700 font-bold hover:text-purple-600 hover:underline"
@@ -26,7 +26,7 @@ const Feature = ( { feature } ) => {
           })
         }
       </ul>
-      <div className="text-center mt-2">
+      <div className="mt-4 ml-8">
         <Link to={path} className="font-bold text-purple-500">
           Learn More <FontAwesomeIcon icon={faArrowRight}/>
         </Link>
@@ -52,13 +52,22 @@ const Features = ( { data } ) => {
           and fully editable release notes.
         </p>
       </Row>
-      {features.map(feature => (
-        <Feature
-          feature={feature}
-        >
-          {feature.node.excerpt}
-        </Feature>
-      ))}
+      {features.map((feature, index) => {
+        const direction = (index % 2) ? 'row': 'flex-row-reverse';
+        const rowClass = cx('flex', direction);
+        return (
+          <Row key={feature.node.frontmatter.path}>
+            <div className={rowClass}>
+              <div className="md:w-1/3 sm:w-full px-4">
+                <img src={feature.node.frontmatter.image} class="w-full"/>
+              </div>
+              <Feature classNames="md:w-1/3 sm:w-full px-4" feature={feature}/>
+            </div>
+          </Row>
+        )
+      })
+
+      }
     </Layout>
   );
 };
