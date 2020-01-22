@@ -4,7 +4,7 @@ import SEO from "../components/seo";
 import cx from "classnames";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
-
+import Bottom from '../components/bottom';
 
 
 const features = [
@@ -174,11 +174,11 @@ const Pricing = () => {
           <a href="https://my.nextrelease.io" className="text-teal-600 mt-4">Sign up to get started!</a>
         </div>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center pb-20">
           <PricingTable props={isMonthly}/>
       </div>
 
-
+      <Bottom className="mt-16"/>
     </Layout>
   );
 };
