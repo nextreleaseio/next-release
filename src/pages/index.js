@@ -2,26 +2,31 @@ import React from "react";
 import cx from "classnames";
 import Features from "../components/features";
 import Helmet from "react-helmet";
-import { Link, graphql, withPrefix } from "gatsby";
+import { Link, graphql, withPrefix, withAssetPrefix } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Bottom from "../components/bottom";
 import StyledButton from "../components/button"
-
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Feature = ({feature}) => {
-  console.log(feature.node.frontmatter)
   const {title, path, image, items} = feature.node.frontmatter;
-  const src = withPrefix(path);
+  const src = withPrefix(image);
   return (
-    <div className="w-1/3 mr-4 flex flex-row">
-      <div className="w-2/12">
-        <img src={src} className="w-full"/>
+    <div className="w-1/3 mr-4">
+      <div className="flex flex-row items-start">
+        <div className="w-4/12">
+          <img src={src} className="w-full"/>
+        </div>
+        <div className="w-8/12">
+          <Link to={path} className="text-xl font-bold font-serif text-purple-800">
+            {title}
+          </Link>
+
+        </div>
       </div>
-      <div className="w-10/12">
-        <Link to={path} className="text-xl font-bold font-serif text-purple-800">
-          {title}
-        </Link>
+      <div>
         <ul className="list-disc text-grey-600 pl-8">
           {
             items.map(( feature, index ) => {
@@ -29,7 +34,11 @@ const Feature = ({feature}) => {
             })
           }
         </ul>
-
+        <div className="text-center mt-2">
+          <Link to={path} className="font-bold text-purple-500">
+            Learn More <FontAwesomeIcon icon={faArrowRight} />
+          </Link>
+        </div>
       </div>
     </div>
   );
@@ -50,7 +59,7 @@ function Index({ data }) {
           </a>
         </div>
       </div>
-      <div className="w-100 py-6 pb-12 clearfix px-6 md:px-10 lg:px-24">
+      <div className="w-full py-6 pb-12 clearfix px-6 md:px-10 lg:px-24">
         <div className="w-4/5 md:w-3/4 lg:w-7/12 mt-20 self-start">
           <h3 className="text-3xl md:text-5xl text-purple-700 font-serif leading-tight">
             Your Time is Valuable. Spend less of it managing release notes.
