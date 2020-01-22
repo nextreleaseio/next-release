@@ -1,5 +1,5 @@
 ---
-title: 'Can I register if I don't have a GitHub account?'
+title: "Can I register if I don't have a GitHub account"
 weight: 0
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: 'How do I search for past release notes?'
+title: 'How do I search for past release notes'
 weight: 0
 ---
 
