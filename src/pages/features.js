@@ -53,13 +53,14 @@ const Features = ( { data } ) => {
         </p>
       </Row>
       {features.map((feature, index) => {
-        const direction = (index % 2) ? 'row': 'flex-row-reverse';
+        const direction = (index % 2) ? 'flex-row-reverse': 'row';
         const rowClass = cx('flex', direction);
+        const src = withPrefix(feature.node.frontmatter.image);
         return (
           <Row key={feature.node.frontmatter.path}>
             <div className={rowClass}>
               <div className="md:w-1/3 sm:w-full px-4">
-                <img src={feature.node.frontmatter.image} class="w-full"/>
+                <img src={src} class="w-full"/>
               </div>
               <Feature classNames="md:w-1/3 sm:w-full px-4" feature={feature}/>
             </div>
