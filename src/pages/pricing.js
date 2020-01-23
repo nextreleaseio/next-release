@@ -163,19 +163,27 @@ const PricingTable = ({isMonthly}) => {
 
 
 const Pricing = () => {
-  let [ isMonthly, toggleMonthly ] = useState(false);
+  const [ isMonthly, toggleMonthly ] = useState(false);
+  const btnBase = "py-2 px-4 transition flex-grow";
+  const activeBtn = "bg-purple-100 text-purple-900";
+  const btn = "bg-purple-700 hover:bg-purple-900 text-grey-400";
   return (
     <Layout headerClass="bg-white relative">
       <SEO title="Pricing"/>
       <div className="bg-purple-800 py-16 text-white text-center">
-        <div className="md:w-4/12 m-auto mb-20">
+        <div className="md:w-6/12 m-auto mb-20">
           <h1 className="text-4xl font-bold">Flexible, transparent pricing that adapts to your needs</h1>
           <h2 className="text-purple-100 mt-4 text-base font-bold">Try Next Release for 60 Days for free. No Credit Card Required</h2>
           <a href="https://my.nextrelease.io" className="text-teal-600 mt-4">Sign up to get started!</a>
+          <div className="flex mt-8 w-9/12 mx-auto">
+            <button className={cx(btnBase, "rounded-l", (isMonthly ? activeBtn : btn))} onClick={() => toggleMonthly(true)}>Monthly Billing</button>
+            <button className={cx(btnBase, "rounded-r", (isMonthly ? btn : activeBtn))} onClick={() => toggleMonthly(false)}>Annual Billing</button>
+          </div>
         </div>
       </div>
+
       <div className="flex justify-center pb-20">
-          <PricingTable props={isMonthly}/>
+          <PricingTable isMonthly={isMonthly}/>
       </div>
 
       <Bottom className="mt-16"/>

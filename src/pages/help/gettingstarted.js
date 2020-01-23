@@ -8,15 +8,23 @@ import { graphql, Link } from "gatsby";
 
 const HelpCard = ({url, title, excerpt}) => {
   return (
-    <div className="w-3/12">
+    <div className="sm:w-full md:w-3/12 md:px-4 sm:px-2">
       <Link
       to={url}
-      className="text-2xl text-purple-700 hover:text-purple-600 hover:underline"
+      className="text-2xl px text-purple-700 hover:text-purple-600 hover:underline leading-none"
       >
         {title}
       </Link>
       <p className="mt-4 text-sm font-grey-500">
         {excerpt}
+      </p>
+      <p className="mt-4">
+        <Link
+          to={url}
+          className="transition px-2 font-bold text-purple-600 hover:text-purple-900 rounded bg-purple-200 hover:bg-purple-300"
+        >
+          Read
+        </Link>
       </p>
 
     </div>

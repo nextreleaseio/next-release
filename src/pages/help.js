@@ -64,7 +64,7 @@ const Help = ({data}) => {
               <div className="md:w-1/3 sm:w-1/2 flex flex-col p-8 rounded border border-grey-300 hover:shadow hover:bg-grey-100"></div>
           </div>
           <div className="py-6 pb-12 px-6 md:px-10 lg:px-24 bg-grey-100">
-            <div className="m-auto w-1/2">
+            <div className="m-auto md:w-1/2 sm:w-full">
               <h4 className="font-bold text-center text-grey-700 tracking-wide">Frequently Asked Questions</h4>
               <Faqs nodes={faqs}/>
             </div>

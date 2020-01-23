@@ -97,6 +97,11 @@
     background-image: linear-gradient(rgb(255, 149, 0) 0%, rgb(255, 94, 58) 100%)
 }
 
+.home-page-icon {
+    right: 5%;
+    bottom: -40%;
+}
+
 /**
  * Here you would add any custom utilities you need that don't come out of the
  * box with Tailwind.

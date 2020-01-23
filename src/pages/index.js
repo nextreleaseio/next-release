@@ -10,6 +10,7 @@ import StyledButton from "../components/button"
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Row from '../components/row';
+import logo from "../images/NextRelease_Color_Icon.svg";
 
 
 const Feature = ({feature}) => {
@@ -52,7 +53,7 @@ function Index({ data }) {
   return (
     <Layout headerClass="relative bg-white">
       <SEO title="Home" />
-      <div className="w-full bg-purple-800">
+      <div className="w-full bg-purple-800 relative">
         <div className="px-6 md:px-10 lg:px-24 text-white py-16 sm:w-full md:w-7/12">
           <h1 className="text-5xl font-black font-serif leading-1">Simpler release notes. Finally.</h1>
           <h2 className="text-purple-200 text-2xl leading-none mt-8 font-hairline">Automatic, consistent and effortless notes for every release, for every project.</h2>
@@ -60,6 +61,7 @@ function Index({ data }) {
             Start Free Trial
           </a>
         </div>
+        <img src={logo} className="w-4/12 sm:hidden md:block absolute home-page-icon"/>
       </div>
       <div className="w-full py-6 pb-12 clearfix px-6 md:px-10 lg:px-24">
         <div className="w-4/5 md:w-3/4 lg:w-7/12 mt-20 self-start">
