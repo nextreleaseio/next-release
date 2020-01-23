@@ -1,1 +1,7 @@
 .idea/*
+node_modules/*
+.cache
+.DS_Store
+.AppleDouble
+.LSOverride
+public/
