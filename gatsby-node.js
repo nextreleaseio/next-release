@@ -15,7 +15,6 @@ const PageMaker = async (page, createPage, graphql) => {
             id
             frontmatter {
               path
-              image
             }
           }
         }

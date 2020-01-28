@@ -38,8 +38,14 @@ export const query = graphql`
     service: markdownRemark(id: { eq: $id }) {
       frontmatter {
         path
-        image
         title
+        image {
+            childImageSharp {
+                fluid(maxWidth: 800) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
       }
       html
     }

@@ -83,8 +83,14 @@ export const query = graphql`
                     frontmatter {
                         title
                         path
-                        image
                         items
+                        image {
+                            childImageSharp {
+                                fluid(maxWidth: 800) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
                     }
                     excerpt
                 }
