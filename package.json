@@ -9,9 +9,9 @@
     "@fortawesome/react-fontawesome": "^0.1.8",
     "classnames": "^2.2.6",
     "eslint-plugin-graphql": "^3.1.1",
-    "gatsby": "2.9.11",
+    "gatsby": "^2.9.11",
     "gatsby-image": "^2.2.3",
-    "gatsby-plugin-manifest": "2.2.0",
+    "gatsby-plugin-manifest": "^2.2.0",
     "gatsby-plugin-offline": "^2.2.0",
     "gatsby-plugin-postcss": "^2.0.7",
     "gatsby-plugin-purgecss": "^4.0.0",
@@ -24,19 +24,27 @@
     "graphql": "14.3.1",
     "husky": "^4.0.10",
     "lint-staged": "^10.0.0",
-    "prop-types": "15.7.2",
-    "react": "16.8.6",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
     "react-accessible-accordion": "^3.0.1",
-    "react-dom": "16.8.6",
+    "react-dom": "^16.8.6",
     "react-helmet": "5.2.1",
     "react-responsive-carousel": "^3.1.51"
   },
-  "keywords": [
-    "gatsby",
-    "tailwind",
-    "tailwindcss",
-    "purgecss"
-  ],
+  "devDependencies": {
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.8.0",
+    "eslint-config-react-app": "^5.1.0",
+    "eslint-plugin-flowtype": "^4.6.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.14.2",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "prettier": "^1.19.1",
+    "tailwindcss": "^1.1.1",
+    "tailwindcss-transforms": "^2.1.0"
+  },
+  "keywords": [],
   "license": "MIT",
   "scripts": {
     "analyze:lint": "eslint --ext .jsx --ext .js .",
@@ -50,26 +58,6 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
-  },
-  "devDependencies": {
-    "babel-eslint": "10.0.2",
-    "eslint": "5.16.0",
-    "eslint-config-react-app": "4.0.1",
-    "eslint-plugin-flowtype": "3.11.1",
-    "eslint-plugin-import": "2.18.0",
-    "eslint-plugin-jsx-a11y": "6.2.1",
-    "eslint-plugin-react": "7.14.2",
-    "eslint-plugin-react-hooks": "1.6.1",
-    "prettier": "^1.19.1",
-    "tailwindcss": "1.1.1",
-    "tailwindcss-transforms": "^2.1.0"
-  },
-  "Repository": {
-    "type": "git",
-    "url": "https://github.com/windedge/gatsby-tailwind-serif"
-  },
-  "bugs": {
-    "url": "https://github.com/windedge/gatsby-tailwind-serif/issues"
   },
   "publishConfig": {
     "access": "public"
