@@ -2,7 +2,7 @@
 path: '/features/share-changes'
 title: 'Share Changes Instantly'
 date: 2018-11-18T12:33:46+10:00
-image: 'features/100-desktop-macbook-business-graph.svg'
+image: ../../src/images/features/business-target-1.png
 items:
 - Slack integration communicates every update to your entire team
 - Always know exactly when features hit production

@@ -2,21 +2,28 @@ module.exports = {
   siteMetadata: {
     title: `Next Release`,
     description: `Automatic Release Notes in 3 Steps`,
-    author: `@nextrelease.io`
+    author: `nextrelease.io`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-postcss',
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: `gatsby-transformer-remark`,
       options: {
-        name: `gatsby-tailwind--serif`,
-        short_name: `serif`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#4dc0b5`,
-        display: `minimal-ui`,
-        icon: `static/favicon.png`
-      }
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 590,
+            },
+          },
+        ],
+      },
     },
     {
       resolve: 'gatsby-source-filesystem',
@@ -39,10 +46,12 @@ module.exports = {
         name: 'kb'
       }
     },
-    'gatsby-transformer-remark',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
-    'gatsby-plugin-postcss',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/images`,
+      },
+    },
     {
       resolve: "gatsby-plugin-purgecss",
       options: {
@@ -50,6 +59,18 @@ module.exports = {
         purgeOnly: ["src/css/style.css"]
       }
     },
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Next Release`,
+        short_name: `Next Release`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#4dc0b5`,
+        display: `minimal-ui`,
+        icon: `static/favicon.png`
+      }
+    },
   ]
 };

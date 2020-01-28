@@ -36,7 +36,6 @@ export const query = graphql`
         blog: markdownRemark(id: { eq: $id }) {
             frontmatter {
                 path
-                image
                 title
             }
             html

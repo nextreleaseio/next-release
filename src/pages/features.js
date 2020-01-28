@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, graphql, withPrefix } from "gatsby";
+import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Row from "../components/row";
@@ -7,6 +7,7 @@ import background from "../images/NR_Help_Mast.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import cx from "classnames";
+import Img from "gatsby-image";
 
 const Feature = ( { feature, classNames } ) => {
   classNames = cx(classNames, "w-full sm:w-1/2 md:w-1/3 p-2");
@@ -55,12 +56,13 @@ const Features = ( { data } ) => {
       {features.map((feature, index) => {
         const direction = (index % 2) ? 'flex-row-reverse': 'row';
         const rowClass = cx('flex', direction);
-        const src = withPrefix(feature.node.frontmatter.image);
+        const image = feature.node.frontmatter.image;
         return (
           <Row key={feature.node.frontmatter.path}>
             <div className={rowClass}>
               <div className="md:w-1/3 sm:w-full px-4">
-                <img src={src} class="w-full"/>
+                <Img fluid={image.childImageSharp.fluid}/>
+
               </div>
               <Feature classNames="md:w-1/3 sm:w-full px-4" feature={feature}/>
             </div>
@@ -83,8 +85,14 @@ export const query = graphql`
                     frontmatter {
                         title
                         path
-                        image
                         items
+                        image {
+                            childImageSharp {
+                                fluid(maxWidth: 800) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
                     }
                     excerpt
                 }

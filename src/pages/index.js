@@ -11,16 +11,16 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Row from '../components/row';
 import logo from "../images/NextRelease_Color_Icon.svg";
+import Img from "gatsby-image"
 
 
 const Feature = ({feature}) => {
   const {title, path, image, items} = feature.node.frontmatter;
-  const src = withPrefix(image);
   return (
     <div className="mx-4 px-4 md:w-1/3 sm:w-full">
       <div className="flex flex-row items-center">
         <div className="w-4/12">
-          <img src={src} className="w-full"/>
+          <Img fluid={image.childImageSharp.fluid} />
         </div>
         <div className="w-8/12">
           <Link to={path} className="text-xl font-bold font-serif text-purple-800">
@@ -115,8 +115,14 @@ export const query = graphql`
           frontmatter {
             title
             path
-            image
             items
+            image {
+                childImageSharp {
+                    fluid(maxWidth: 800) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
           }
           excerpt
         }
