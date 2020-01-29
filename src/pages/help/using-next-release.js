@@ -59,9 +59,9 @@ const GettingStarted = ( { data } ) => {
 };
 
 export const query = graphql`
-    query GettingStartedQuery {
+    query UsingNextReleaseQuery {
         allMarkdownRemark(
-            filter: { fileAbsolutePath: { regex: "/content/kb/" }, frontmatter: {section: {eq: "Get Started"}} }
+            filter: { fileAbsolutePath: { regex: "/content/kb/" }, frontmatter: {section: {eq: "Using Next Release"}} }
             sort: { fields: [frontmatter___date], order: DESC }
         ) {
             edges {
