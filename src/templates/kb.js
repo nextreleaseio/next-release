@@ -72,7 +72,7 @@ export const query = graphql`
             html
         }
       all: allMarkdownRemark(
-          filter: { fileAbsolutePath: { regex: "/content/kb/" } }
+          filter: { fileAbsolutePath: { regex: "/content/kb/" }, id: { ne: $id } }
           sort: { fields: [frontmatter___weight], order: DESC }
       ) {
           edges {

@@ -5,6 +5,7 @@ import SEO from "../components/seo";
 import Bottom from "../components/bottom";
 import help_image from "../images/NR_Help_Mast.png";
 import surf from "../images/narwhal_surfing.png";
+import computer from "../images/NarwhalComp.png";
 
 import {
   Accordion,
@@ -56,12 +57,23 @@ const Help = ({data}) => {
               <div className="md:w-1/3 sm:w-1/2 flex flex-col mx-3 p-8 rounded border border-grey-300 hover:shadow hover:bg-grey-100">
                 <img src={surf} className="max-w-full"/>
                 <div className="text-center">
-                  <h4 className="font-bold font-serif">Get Started</h4>
+                  <Link to="help/gettingstarted" className="block w-100">
+                    <h4 className="font-bold font-serif">Get Started</h4>
+                  </Link>
                   <p className="mt-4 text-grey-600">Everything you need to know about Next Release</p>
                   <Link to="help/gettingstarted" className="text-purple-500 mt-8 text-sm px-2 font-bold rounded-full bg-purple-100">view</Link>
                 </div>
               </div>
-              <div className="md:w-1/3 sm:w-1/2 flex flex-col p-8 rounded border border-grey-300 hover:shadow hover:bg-grey-100"></div>
+              <div className="md:w-1/3 sm:w-1/2 flex flex-col p-8 rounded border border-grey-300 hover:shadow hover:bg-grey-100">
+                <img src={computer} className="max-w-full"/>
+                <div className="text-center">
+                  <Link to="help/using-next-release" className="block w-100">
+                    <h4 className="font-bold font-serif">Using Next Release</h4>
+                  </Link>
+                  <p className="mt-4 text-grey-600">How to accomplish your goals with Next Releaase</p>
+                  <Link to="help/using-next-release" className="text-purple-500 mt-8 text-sm px-2 font-bold rounded-full bg-purple-100">view</Link>
+                </div>
+              </div>
           </div>
           <div className="py-6 pb-12 px-6 md:px-10 lg:px-24 bg-grey-100">
             <div className="m-auto md:w-1/2 sm:w-full">
