@@ -73,5 +73,19 @@ module.exports = {
         icon: `static/favicon.png`
       }
     },
+    {
+      resolve: `gatsby-plugin-fullstory`,
+      options: {
+        fs_org: process.env.FULL_STORY_ORG,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-segment-js`,
+      options: {
+        prodKey: process.env.FULL_STORY_PROD,
+        devKey: 'pKMZRNXuqjIgM1iliBUHbyz5sdYY6e2b',
+        trackPage: true,
+      }
+    }
   ]
 };
