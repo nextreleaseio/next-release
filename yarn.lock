@@ -5419,6 +5419,13 @@ gatsby-page-utils@^0.0.37:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
+gatsby-plugin-fullstory@^2.1.20:
+  version "2.1.20"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-fullstory/-/gatsby-plugin-fullstory-2.1.20.tgz#50b64074f4cf897ec2fc7fc0894e3994339f61c7"
+  integrity sha512-tEv5mZKPxd75XB83WN+uZYB14ebFj9wS0bVajGR253Vfv8216MrPrv+f5Vsma4Sqcz8m021EcqeUELH3lxhpNA==
+  dependencies:
+    "@babel/runtime" "^7.7.6"
+
 gatsby-plugin-manifest@2.2.38:
   version "2.2.38"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.2.38.tgz#365d679dc815b301b38eff7893f35c62036f5e2b"
@@ -5478,6 +5485,11 @@ gatsby-plugin-react-helmet@3.1.21:
   integrity sha512-6LZ2LEYTwqD+ZqyCH55mVpk2xEXbQoCTfijP1W4ZCQsKtpWGJP+vyd6b96FWVyEb2k5LsQ1u+jk4R8xXULSX+w==
   dependencies:
     "@babel/runtime" "^7.7.6"
+
+gatsby-plugin-segment-js@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-segment-js/-/gatsby-plugin-segment-js-3.1.0.tgz#df467aec38555a9cf71bacd34352b2dfbaba3687"
+  integrity sha512-oBcIY+riNehfyQXp8PEGVQTz/VPt/+k2aXCh/bNZSR4HhjEAXafcSCReS2xzs/3IJRa3gH0+NOZvRU8peXDb/w==
 
 gatsby-plugin-sharp@^2.4.0:
   version "2.4.0"
