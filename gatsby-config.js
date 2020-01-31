@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Next Release`,
@@ -82,10 +86,16 @@ module.exports = {
     {
       resolve: `gatsby-plugin-segment-js`,
       options: {
-        prodKey: process.env.FULL_STORY_PROD,
-        devKey: 'pKMZRNXuqjIgM1iliBUHbyz5sdYY6e2b',
+        prodKey: process.env.SEGMENT_PROD,
+        devKey: process.env.SEGMENT_DEV,
         trackPage: true,
       }
+    },
+    {
+      resolve: `gatsby-plugin-intercom`,
+      options: {
+        appId: process.env.INTERCOM_APP_ID,
+      },
     }
   ]
 };

@@ -5426,6 +5426,13 @@ gatsby-plugin-fullstory@^2.1.20:
   dependencies:
     "@babel/runtime" "^7.7.6"
 
+gatsby-plugin-intercom@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-intercom/-/gatsby-plugin-intercom-0.1.4.tgz#5942ba9f8588fcb736a2e31bf91618500973b40a"
+  integrity sha1-WUK6n4WI/Lc2ouMb+RYYUAlztAo=
+  dependencies:
+    babel-runtime "^6.26.0"
+
 gatsby-plugin-manifest@2.2.38:
   version "2.2.38"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.2.38.tgz#365d679dc815b301b38eff7893f35c62036f5e2b"
@@ -10281,7 +10288,7 @@ query-string@^5.0.1:
     object-assign "^4.1.0"
     strict-uri-encode "^1.0.0"
 
-query-string@^6.9.0:
+query-string@^6.10.1, query-string@^6.9.0:
   version "6.10.1"
   resolved "https://registry.yarnpkg.com/query-string/-/query-string-6.10.1.tgz#30b3505f6fca741d5ae541964d1b3ae9dc2a0de8"
   integrity sha512-SHTUV6gDlgMXg/AQUuLpTiBtW/etZ9JT6k6RCtCyqADquApLX0Aq5oK/s5UeTUAWBG50IExjIr587GqfXRfM4A==
