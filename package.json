@@ -68,6 +68,11 @@
       "git add"
     ]
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "devDependencies": {
     "babel-eslint": "10.0.3",
     "eslint": "6.8.0",
