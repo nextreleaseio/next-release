@@ -18,7 +18,7 @@ import help_image from "../images/NR_Help_Mast.png";
 const Feature = ({feature}) => {
   const {title, path, image, items} = feature.node.frontmatter;
   return (
-    <div className="mx-4 px-4 md:w-1/3 sm:w-full">
+    <div className="px-4 md:w-1/3 sm:w-full">
       <div className="flex flex-row items-center">
         <div className="w-4/12">
           <Img fluid={image.childImageSharp.fluid} />
@@ -82,7 +82,7 @@ function Index({ data }) {
             Start Free Trial
           </a>
         </div>
-        <img src={logo} className="w-4/12 sm:hidden md:block absolute home-page-icon"/>
+        <img src={logo} className="w-4/12 hidden sm:hidden md:block lg:block xl:block absolute home-page-icon"/>
       </div>
       <div className="w-full py-6 pb-12 clearfix px-6 md:px-10 lg:px-24">
         <div className="w-4/5 md:w-3/4 lg:w-7/12 mt-20 self-start">
@@ -104,7 +104,7 @@ function Index({ data }) {
       </div>
 
       <Row classNames="bg-grey-200">
-        <div className="flex flex-row">
+        <div className="flex flex-row flex-wrap">
           {
             features.map(feature => {
               return (

@@ -9,4 +9,3 @@ items:
 - Seamless integration with existing Github workflows
 ---
 
-Next Release brings effortl

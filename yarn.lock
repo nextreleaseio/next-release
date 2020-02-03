@@ -1206,6 +1206,20 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
   integrity sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==
 
+"@statickit/core@^2.1.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@statickit/core/-/core-2.2.0.tgz#219036acbe765af6f6b537738d8b2ed82e3a89df"
+  integrity sha512-cOuI8T/gCSWUp/wGwBud3j+VlVupSWCOlVsSZ1RA5+1AulLcwzpsUAjuA/eM+2nJfrQooWoRVcK0BD/PL7DdIg==
+  dependencies:
+    "@types/promise-polyfill" "^6.0.3"
+
+"@statickit/react@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@statickit/react/-/react-2.0.1.tgz#12251f7a23209866f3398299bbca51456e26f37f"
+  integrity sha512-xxMnji0MxLEi4VuWk6N38vFsYoN7HueGC2hK6Ormlshy5qFAJ6m4I1evF5xV2LWe2Wxfmdt/+2PjnpyK77JteQ==
+  dependencies:
+    "@statickit/core" "^2.1.0"
+
 "@szmarczak/http-timer@^1.1.2":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@szmarczak/http-timer/-/http-timer-1.1.2.tgz#b1665e2c461a2cd92f4c1bbf50d5454de0d4b421"
@@ -1302,6 +1316,11 @@
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
+
+"@types/promise-polyfill@^6.0.3":
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/@types/promise-polyfill/-/promise-polyfill-6.0.3.tgz#e2f38fcd244a9e0df2cc7528e0711abcbc707b5e"
+  integrity sha512-f/BFgF9a+cgsMseC7rpv9+9TAE3YNjhfYrtwCo/pIeCDDfQtE6PY0b5bao2eIIEpZCBUy8Y5ToXd4ObjPSJuFw==
 
 "@types/prop-types@*":
   version "15.7.3"
@@ -5533,6 +5552,11 @@ gatsby-plugin-sitemap@^2.2.26:
     pify "^3.0.0"
     sitemap "^1.13.0"
 
+gatsby-plugin-statickit@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-statickit/-/gatsby-plugin-statickit-1.1.1.tgz#34ada76657a0c8be49234eaade0c498d38e38c9a"
+  integrity sha512-/T8L8dsvYujO4YmDLK4DpZdveYukMMNffSxq+KRHva62fI7d1Uduezlm61q3C2v7pIYh8B1p6wHYsXtDpDHj1w==
+
 gatsby-react-router-scroll@^2.1.20:
   version "2.1.20"
   resolved "https://registry.yarnpkg.com/gatsby-react-router-scroll/-/gatsby-react-router-scroll-2.1.20.tgz#bd208ae384597a6a9af8f6ef50c9c90f44965d48"
@@ -7700,10 +7724,10 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-lint-staged@^10.0.2:
-  version "10.0.2"
-  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-10.0.2.tgz#cfdd9fa5080b05fc6e29536897da1795bc67c7f9"
-  integrity sha512-ZldhtIfT7bynVa7nmU/1jbK05r9hYQXbIQqZSotqdBCAcGJDEUqaUB7kG3ZCdoe9Qkj6HUM3x2yjCGJRxPUQLA==
+lint-staged@^10.0.7:
+  version "10.0.7"
+  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-10.0.7.tgz#d205f92d9359419a23bc6aa3b6f8546b1998da64"
+  integrity sha512-Byj0F4l7GYUpYYHEqyFH69NiI6ICTg0CeCKbhRorL+ickbzILKUlZLiyCkljZV02wnoh7yH7PmFyYm9PRNwk9g==
   dependencies:
     chalk "^3.0.0"
     commander "^4.0.1"
