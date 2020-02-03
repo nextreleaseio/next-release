@@ -1,4 +1,4 @@
-### 1\. Information we collect
+### 1. Information we collect
 
 #### Log data
 
@@ -12,14 +12,14 @@ Personal information
 
 We may ask for personal information, such as your:
 
-*   Name
-*   Email
-*   Social media profiles
-*   Date of birth
-*   Phone/mobile number
-*   Home/Mailing address
-*   Work address
-*   Payment information
+-   Name
+-   Email
+-   Social media profiles
+-   Date of birth
+-   Phone/mobile number
+-   Home/Mailing address
+-   Work address
+-   Payment information
 
 ### 2\. Legal bases for processing
 
@@ -27,10 +27,10 @@ We will process your personal information lawfully, fairly and in a transparent 
 
 These legal bases depend on the services you use and how you use them, meaning we collect and use your information only where:
 
-*   it’s necessary for the performance of a contract to which you are a party or to take steps at your request before entering into such a contract (for example, when we provide a service you request from us);
-*   it satisfies a legitimate interest (which is not overridden by your data protection interests), such as for research and development, to market and promote our services, and to protect our legal rights and interests;
-*   you give us consent to do so for a specific purpose (for example, you might consent to us sending you our newsletter); or
-*   we need to process your data to comply with a legal obligation.
+-   it’s necessary for the performance of a contract to which you are a party or to take steps at your request before entering into such a contract (for example, when we provide a service you request from us);
+-   it satisfies a legitimate interest (which is not overridden by your data protection interests), such as for research and development, to market and promote our services, and to protect our legal rights and interests;
+-   you give us consent to do so for a specific purpose (for example, you might consent to us sending you our newsletter); or
+-   we need to process your data to comply with a legal obligation.
 
 Where you consent to our use of information about you for a specific purpose, you have the right to change your mind at any time (but this will not affect any processing that has already taken place).
 
@@ -40,23 +40,23 @@ We don’t keep personal information for longer than is necessary. While we reta
 
 We may collect, hold, use and disclose information for the following purposes and personal information will not be further processed in a manner that is incompatible with these purposes:
 
-*   to enable you to customise or personalise your experience of our website;
-*   to enable you to access and use our website, associated applications and associated social media platforms;
-*   to contact and communicate with you;
-*   for internal record keeping and administrative purposes;
-*   for analytics, market research and business development, including to operate and improve our website, associated applications and associated social media platforms;
-*   to run competitions and/or offer additional benefits to you;
-*   for advertising and marketing, including to send you promotional information about our products and services and information about third parties that we consider may be of interest to you;
-*   to comply with our legal obligations and resolve any disputes that we may have; and
-*   to consider your employment application.
+-   to enable you to customise or personalise your experience of our website;
+-   to enable you to access and use our website, associated applications and associated social media platforms;
+-   to contact and communicate with you;
+-   for internal record keeping and administrative purposes;
+-   for analytics, market research and business development, including to operate and improve our website, associated applications and associated social media platforms;
+-   to run competitions and/or offer additional benefits to you;
+-   for advertising and marketing, including to send you promotional information about our products and services and information about third parties that we consider may be of interest to you;
+-   to comply with our legal obligations and resolve any disputes that we may have; and
+-   to consider your employment application.
 
-### 4\. Disclosure of personal information to third parties
+###4. Disclosure of personal information to third parties
 
 We may disclose personal information to:
 
-*   third party service providers for the purpose of enabling them to provide their services, including (without limitation) IT service providers, data storage, hosting and server providers, ad networks, analytics, error loggers, debt collectors, maintenance or problem-solving providers, marketing or advertising providers, professional advisors and payment systems operators;
-*   our employees, contractors and/or related entities; and
-*   courts, tribunals, regulatory authorities and law enforcement officers, as required by law, in connection with any actual or prospective legal proceedings, or in order to establish, exercise or defend our legal rights.
+-   third party service providers for the purpose of enabling them to provide their services, including (without limitation) IT service providers, data storage, hosting and server providers, ad networks, analytics, error loggers, debt collectors, maintenance or problem-solving providers, marketing or advertising providers, professional advisors and payment systems operators;
+-   our employees, contractors and/or related entities; and
+-   courts, tribunals, regulatory authorities and law enforcement officers, as required by law, in connection with any actual or prospective legal proceedings, or in order to establish, exercise or defend our legal rights.
 
 ### 5\. International transfers of personal information
 

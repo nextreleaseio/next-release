@@ -4,17 +4,13 @@ import Row from '../components/row';
 import SEO from '../components/seo';
 import { graphql } from 'gatsby';
 
-const Privacy = ({ data }) => {
-    console.log(data);
+const Cookie = ({ data }) => {
     const content = data.allMarkdownRemark.edges[0].node.html;
     return (
         <Layout>
             <SEO title="Privacy Policy" />
             <Row classNames="text-center bg-grey-200">
-                <h1 className="text-3xl font-bold">Privacy Policy</h1>
-                <h2 className="text-lg">
-                    We actually take your privacy seriously
-                </h2>
+                <h1 className="text-3xl">Cookie Policy</h1>
             </Row>
             <Row>
                 <div
@@ -27,7 +23,7 @@ const Privacy = ({ data }) => {
 };
 
 export const query = graphql`
-    query PrivacyQuery {
+    query CookieQuery {
         allMarkdownRemark(
             filter: { fileAbsolutePath: { regex: "/privacy.md/" } }
         ) {
@@ -40,4 +36,4 @@ export const query = graphql`
     }
 `;
 
-export default Privacy;
+export default Cookie;
