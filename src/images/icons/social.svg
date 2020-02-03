@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink"
+width="48" height="48">
+  <title>Social</title>
+  <desc>A solid styled icon from Orion Icon Library.</desc>
+  <circle data-name="layer2"
+  cx="32" cy="39" r="7" fill="#8d8ea3"></circle>
+  <path data-name="layer2" d="M32 46a12.1 12.1 0 0 0-12 12v2h24v-2a12.1 12.1 0 0 0-12-12z"
+  fill="#8d8ea3"></path>
+  <circle data-name="layer2" cx="52" cy="10" r="6" fill="#8d8ea3"></circle>
+  <path data-name="layer2" d="M52 16c-5.5 0-10 4.5-10 12h20c0-7.5-4.5-12-10-12z"
+  fill="#8d8ea3"></path>
+  <circle data-name="layer2" cx="12" cy="10" r="6" fill="#8d8ea3"></circle>
+  <path data-name="layer2" d="M12 16C6.5 16 2 20.5 2 28h20c0-7.5-4.5-12-10-12z"
+  fill="#8d8ea3"></path>
+  <path data-name="layer1" d="M21.4 43.4a2 2 0 0 0 0-2.8l-8-8a2 2 0 0 0-2.8 2.8l8 8a2 2 0 0 0 2.8 0zm29.2-10.8l-8 8a2 2 0 1 0 2.8 2.8l8-8a2 2 0 0 0-2.8-2.8zM24 16h16a2 2 0 0 0 0-4H24a2 2 0 0 0 0 4z"
+  fill="#253858"></path>
+</svg>

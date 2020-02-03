@@ -1,0 +1,11 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink"
+width="64" height="64">
+  <title>Source Code</title>
+  <desc>A solid styled icon from Orion Icon Library.</desc>
+  <path fill="#7a7a94"
+  d="M2 22v34h60V22zm19.543 22.685a2 2 0 1 1-3.012 2.631l-8.151-9.33 8.153-9.3a2 2 0 1 1 3.008 2.635l-5.847 6.669zm16.314-15.942l-8 20a2 2 0 0 1-3.715-1.486l8-20a2 2 0 0 1 3.715 1.486zm7.685 18.572a2 2 0 1 1-3.012-2.631l5.85-6.694-5.847-6.673a2 2 0 1 1 3.008-2.635l8.153 9.3z"
+  data-name="layer2"></path>
+  <path fill="#192a49" d="M2 8v10h60V8zm6 7a2 2 0 1 1 2-2 2 2 0 0 1-2 2zm6 0a2 2 0 1 1 2-2 2 2 0 0 1-2 2zm6 0a2 2 0 1 1 2-2 2 2 0 0 1-2 2z"
+  data-name="layer1"></path>
+</svg>
