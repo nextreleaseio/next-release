@@ -15,7 +15,7 @@
       "actions": [
         {
           "type": "email",
-          "to": "donald@nextrelease.io"
+          "to": "help@nextrelease.io"
         }
       ],
       "allowExtraFields": false

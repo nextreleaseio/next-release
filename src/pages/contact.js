@@ -9,7 +9,7 @@ const OptInForm = () => {
     const [state, handleSubmit] = useForm('contact');
     if (state.succeeded) {
         return (
-            <div className="sm:w-10/12 md:w-1/2 p-4 rounded bg-white shadow rounded">
+            <div className="sm:w-10/12 md:w-1/2 mx-auto p-4 rounded bg-white shadow rounded">
                 Thank's for the feedback!
             </div>
         );
