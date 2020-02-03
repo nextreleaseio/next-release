@@ -35,7 +35,17 @@ const Footer = () => {
                                 Why Keep Release Notes?
                             </Link>
                         </li>
-                        <li className="mt-4"></li>
+                        <li className="mt-4">
+                            <Link to="kb/what-is-next-release">
+                                What is Next Release?
+                            </Link>
+                        </li>
+                        <li className="mt-4">
+                            <Link to="pricing">Pricing</Link>
+                        </li>
+                        <li className="mt-4">
+                            <Link to="security">Security</Link>
+                        </li>
                     </ul>
                 </div>
                 <div className="w-2/12 mr-8">

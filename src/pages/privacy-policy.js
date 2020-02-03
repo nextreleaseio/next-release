@@ -5,7 +5,6 @@ import SEO from '../components/seo';
 import { graphql } from 'gatsby';
 
 const Privacy = ({ data }) => {
-    console.log(data);
     const content = data.allMarkdownRemark.edges[0].node.html;
     return (
         <Layout>
