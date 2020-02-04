@@ -1,7 +1,6 @@
 import React from 'react';
 import cx from 'classnames';
 import Features from '../components/features';
-import Helmet from 'react-helmet';
 import { Link, graphql, withPrefix, withAssetPrefix } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
