@@ -1,53 +1,84 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { graphql } from "gatsby";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import "../css/markdown-github.css";
-
-const svg = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(226,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%238033aa'/%3E%3Cstop offset='1' stop-color='%231c3ed3'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%2336fff5' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%2336fff5' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%2336fff5' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%2336fff5' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E")`;
+import React from 'react';
+import { graphql, Link } from 'gatsby';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import Row from '../components/row';
+import '../css/markdown-github.css';
+import Bottom from '../components/bottom';
+import help_image from '../images/NR_Help_Mast.png';
+import Img from 'gatsby-image';
 
 export default ({ data }) => {
-  const { service } = data;
-  const title = service.frontmatter.title;
-  return (
-    <Layout headerClass="relative bg-white" bodyClass="px-0 md:px-0 lg:px-0">
-      <SEO title={title} />
-
-      <div
-        className="min-h-screen flex flex-col items-start bg-no-repeat bg-fixed bg-cover"
-        style={{ backgroundImage: svg }}
-      >
-        <div className="mt-56 bg-white w-full pb-16 mb-20 skew-y-5">
-          <div className="container mx-auto px-6 md:px-10 lg:px-24 pt-16 -skew-y-5">
-            <h2 className="text-5xl text-indigo-700">
-              {title}
-            </h2>
-            <div className="markdown-body">
-              <div dangerouslySetInnerHTML={{ __html: service.html }}></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </Layout>
-  );
+    const { service } = data;
+    const { title, subtitle, items, image } = service.frontmatter;
+    return (
+        <Layout
+            headerClass="relative bg-white"
+            bodyClass="px-0 md:px-0 lg:px-0"
+        >
+            <SEO title={title} />
+            <Row
+                className="w-100 bg-purple-800 bg-no-repeat bg-left-top bg-cover py-8"
+                style={{ backgroundImage: `url(${help_image})` }}
+            >
+                <p className="text-small text-center text-teal-400 uppercase">
+                    Next Release
+                </p>
+                <h1 className="text-4xl text-center font-bold text-white">
+                    {title}
+                </h1>
+                <p className="text-small text-center text-grey-500 sm:w-full md:w-1/2 mx-auto">
+                    {subtitle}
+                </p>
+            </Row>
+            <Row classNames="bg-grey-100 flex flex-row">
+                <div className="md:w-1/3 md:px-4 sm:w-full sm:px-2">
+                    <div className="flex">
+                        <div className="flex flex-row items-center">
+                            <div className="w-4/12">
+                                <Img fluid={image.childImageSharp.fluid} />
+                            </div>
+                            <div className="w-8/12">{title}</div>
+                        </div>
+                    </div>
+                    <div>
+                        <ul className="list-disc text-grey-600 pl-8">
+                            {items.map((feature, index) => {
+                                return (
+                                    <li className="mt-4" key={index}>
+                                        {feature}
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    className="md:w-2/3 md:px-4 sm:w-full sm:px-2 markdown-body"
+                    dangerouslySetInnerHTML={{ __html: service.html }}
+                ></div>
+            </Row>
+            <Bottom />
+        </Layout>
+    );
 };
 
 export const query = graphql`
-  query($id: String) {
-    service: markdownRemark(id: { eq: $id }) {
-      frontmatter {
-        path
-        title
-        image {
-            childImageSharp {
-                fluid(maxWidth: 800) {
-                    ...GatsbyImageSharpFluid
+    query($id: String) {
+        service: markdownRemark(id: { eq: $id }) {
+            frontmatter {
+                path
+                title
+                items
+                image {
+                    childImageSharp {
+                        fluid(maxWidth: 800) {
+                            ...GatsbyImageSharpFluid
+                        }
+                    }
                 }
             }
+            html
         }
-      }
-      html
     }
-  }
 `;

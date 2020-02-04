@@ -147,11 +147,11 @@ function Index({ data }) {
                 <h4 className="text-center text-purple-100 text-4xl font-black">
                     Why We Use Next Release
                 </h4>
-                <div className="w-10/12 mx-auto flex mt-4">
+                <div className="w-full mx-auto sm:flex-wrap justify-between flex mt-4">
                     {testimonials.map(item => {
                         return (
                             <Testimonial
-                                className="md:w-1/3 sm:w-full mx-4"
+                                className="md:w-1/4  sm:w-full sm:mt-4 mx-1"
                                 key={item.node.path}
                                 testimonial={item}
                             />

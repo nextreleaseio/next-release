@@ -15,7 +15,10 @@ const Security = ({ data }) => {
                     <h1 className="text-4xl font-bold">
                         We put our customer's data security first.
                     </h1>
-                    <div dangerouslySetInnerHTML={{ __html: content }}></div>
+                    <div
+                        className="markdown-body"
+                        dangerouslySetInnerHTML={{ __html: content }}
+                    ></div>
                 </div>
             </Row>
             <Bottom />
