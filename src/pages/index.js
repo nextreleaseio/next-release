@@ -131,13 +131,18 @@ function Index({ data }) {
             <Row classNames="bg-grey-200">
                 <div className="flex flex-row flex-wrap">
                     {features.map(feature => {
-                        return <Feature feature={feature} key={feature.path} />;
+                        return (
+                            <Feature
+                                feature={feature}
+                                key={feature.node.frontmatter.path}
+                            />
+                        );
                     })}
                 </div>
             </Row>
 
             <Row
-                classNames="bg-purple-800 py-12 bg-no-repeat bg-center bg-cover"
+                classNames="bg-purple-800 bg-no-repeat bg-center bg-cover md:py-12 sm:py-8"
                 style={{ backgroundImage: `url(${help_image})` }}
             >
                 <p className="text-small text-teal-400 uppercase text-center">
@@ -151,7 +156,7 @@ function Index({ data }) {
                         return (
                             <Testimonial
                                 className="md:w-1/4  sm:w-full sm:mt-4 mx-1"
-                                key={item.node.path}
+                                key={item.node.frontmatter.path}
                                 testimonial={item}
                             />
                         );
