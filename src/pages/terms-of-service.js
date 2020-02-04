@@ -14,7 +14,7 @@ const Terms = ({ data }) => {
             </Row>
             <Row>
                 <div
-                    className="w-3/4 mx-auto"
+                    className="w-3/4 mx-auto markdown-body"
                     dangerouslySetInnerHTML={{ __html: content }}
                 ></div>
             </Row>
