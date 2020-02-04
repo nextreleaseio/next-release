@@ -18,7 +18,7 @@ export default ({ data }) => {
         >
             <SEO title={title} />
             <Row
-                className="w-100 bg-purple-800 bg-no-repeat bg-left-top bg-cover py-8"
+                classNames="bg-purple-800 text-center bg-no-repeat bg-center bg-cover md:py-12 sm:py-8"
                 style={{ backgroundImage: `url(${help_image})` }}
             >
                 <p className="text-small text-center text-teal-400 uppercase">
