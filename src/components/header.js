@@ -59,6 +59,7 @@ const Header = ({ className, ...props }) => {
                 >
                     <HeaderLink to="/features">Features</HeaderLink>
                     <HeaderLink to="/pricing">Pricing</HeaderLink>
+                    <HeaderLink to="/contact">Contact</HeaderLink>
                     <div className="flex px-1">
                         <a
                             className="w-full md:w-auto py-2 md:px-1 -mb-1 text-white font-bold hover:text-purple-100 border-transparent border-t-4 md:hover:border-orange-800 relative"
