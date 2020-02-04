@@ -31,7 +31,7 @@ export default ({ data }) => {
                     {subtitle}
                 </p>
             </Row>
-            <Row classNames="bg-grey-100 flex flex-row">
+            <Row classNames="bg-grey-100 flex flex-row flex-wrap">
                 <div className="md:w-1/3 md:px-4 sm:w-full sm:px-2">
                     <div className="flex">
                         <div className="flex flex-row items-center">
@@ -54,7 +54,7 @@ export default ({ data }) => {
                     </div>
                 </div>
                 <div
-                    className="md:w-2/3 md:px-4 sm:w-full sm:px-2 markdown-body"
+                    className="md:w-2/3 md:px-4 sm:w-full sm:px-2 sm:mt-4 markdown-body"
                     dangerouslySetInnerHTML={{ __html: service.html }}
                 ></div>
             </Row>
