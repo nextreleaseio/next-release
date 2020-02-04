@@ -3,15 +3,6 @@ import { Link } from 'gatsby';
 import cx from 'classnames';
 import logo from '../images/NextRelease_TextLogo_White.svg';
 
-const StyledLink = ({ className, ...props }) => {
-    className = cx(className);
-    return (
-        <Link className={className} {...props}>
-            {props.children}
-        </Link>
-    );
-};
-
 const HeaderLink = ({ className, children, ...props }) => {
     className = cx(
         'w-full md:w-auto py-2 md:px-1 -mb-1 text-white font-bold hover:text-purple-100 border-transparent border-t-4 md:hover:border-orange-600 relative',
