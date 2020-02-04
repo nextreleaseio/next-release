@@ -152,7 +152,7 @@ const PricingCard = ({ classNames, isMonthly, plan }) => {
 
 const PricingTable = ({ isMonthly }) => {
     return (
-        <div className="rounded bg-grey-200 flex flex-col md:flex-row md:w-10/12 sm:w-full -m-16">
+        <div className="rounded bg-grey-200 flex flex-col md:flex-row w-10/12 -m-16">
             {plans.map((plan, key) => {
                 return (
                     <PricingCard plan={plan} isMonthly={isMonthly} key={key} />
