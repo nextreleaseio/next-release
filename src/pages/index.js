@@ -12,6 +12,7 @@ import Row from '../components/row';
 import logo from '../images/NextRelease_Color_Icon.svg';
 import Img from 'gatsby-image';
 import help_image from '../images/NR_Help_Mast.png';
+import Loom from '../components/loom';
 
 const Feature = ({ feature }) => {
     const { title, path, image, items } = feature.node.frontmatter;
@@ -107,7 +108,7 @@ function Index({ data }) {
                     className="w-4/12 hidden sm:hidden md:block lg:block xl:block absolute home-page-icon"
                 />
             </div>
-            <div className="w-full py-6 pb-12 clearfix px-6 md:px-10 lg:px-24">
+            <Row>
                 <div className="w-4/5 md:w-3/4 lg:w-7/12 mt-20 self-start">
                     <h3 className="text-3xl md:text-5xl text-purple-700 font-serif leading-tight">
                         Your Time is Valuable. Spend less of it managing release
@@ -126,9 +127,14 @@ function Index({ data }) {
                         </Link>
                     </div>
                 </div>
-            </div>
-
+            </Row>
             <Row classNames="bg-grey-200">
+                <div className="sm:w-full md:w-3/4 mx-auto overflow-hidden rounded shadow-xl">
+                    <Loom id="a45009101d8142d5ac50adb5e6adf4ff" />
+                </div>
+            </Row>
+
+            <Row>
                 <div className="flex flex-row flex-wrap">
                     {features.map(feature => {
                         return (
