@@ -1,0 +1,136 @@
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://github.com/tailwindcss/tailwindcss/blob/master/css/base.css
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/base";
+ */
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900|Ultra&display=swap');
+
+@tailwind base;
+
+/**
+ * This injects any component classes registered by plugins.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/components";
+ */
+@tailwind components;
+
+/**
+ * Here you would add any of your custom component classes; stuff that you'd
+ * want loaded *before* the utilities so that the utilities could still
+ * override them.
+ *
+ * Example:
+ *
+ * .btn { ... }
+ * .form-input { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "components/buttons";
+ * @import "components/forms";
+ */
+
+
+
+.testimonial-quote {
+    display: block;
+    border-width: 3px 0 0 0;
+    border-style: solid;
+    border-color: #eee;
+    padding: 1.5em 0 0.5em;
+    margin: 1.5em 0;
+    position: relative;
+}
+
+.testimonial-quote:before{
+    @apply text-indigo-700;
+    content: '\201C';
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 0em;
+    left: 50%;
+    background: #fff;
+    width: 3rem;
+    height: 2rem;
+    font: 6em/1.08em 'PT Sans', sans-serif;
+    text-align: center;
+}
+
+
+/**
+ * This injects all of Tailwind's utility classes, generated based on your
+ * config file.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/utilities";
+ */
+@tailwind utilities;
+
+.btn {
+    @apply font-bold py-2 px-4 rounded;
+    transition: all 300ms;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn-purple {
+    @apply bg-purple-700 text-white;
+}
+
+.transition {
+    transition: all 300ms;
+}
+
+.btn-orange {
+    @apply text-white;
+    background-image: linear-gradient(rgb(255, 149, 0) 0%, rgb(255, 94, 58) 100%)
+}
+
+.home-page-icon {
+    right: 5%;
+    bottom: -40%;
+}
+
+/**
+ * Here you would add any custom utilities you need that don't come out of the
+ * box with Tailwind.
+ *
+ * Example :
+ *
+ * .bg-pattern-graph-paper { ... }
+ * .skew-45 { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "utilities/background-patterns";
+ * @import "utilities/skew-transforms";
+ */
+
+.-translate-1 {
+  transform: translateY(-1px);
+}
+
+.hover\:-translate-1:hover {
+  transform: translateY(-1px);
+}
+
+.skew-y-5 {
+  -webkit-transform: skewY(5deg);
+  transform: skewY(5deg);
+}
+
+.-skew-y-5 {
+  -webkit-transform: skewY(-5deg);
+  transform: skewY(-5deg);
+}

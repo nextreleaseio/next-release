@@ -1,0 +1,24 @@
+{
+  "forms": {
+    "contact": {
+      "name": "Contact Form",
+      "fields": {
+        "email": {
+          "type": "email",
+          "required": true
+        },
+        "message": {
+          "type": "text",
+          "required": true
+        }
+      },
+      "actions": [
+        {
+          "type": "email",
+          "to": "help@nextrelease.io"
+        }
+      ],
+      "allowExtraFields": false
+    }
+  }
+}

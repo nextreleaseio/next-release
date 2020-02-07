@@ -1,0 +1,17 @@
+on:
+  release:
+    types: [published]
+jobs:
+  generate_changelog:
+    runs-on: ubuntu-latest
+    name: Update Changelog
+    steps:
+      - uses: actions/checkout@v2
+      - name: Create Changelog.md
+        id: changelog
+        uses: nextreleaseio/changelog-generator-action@master
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }} # Required
+          changelog: 'CHANGELOG.md' # optional, default: CHANGELOG.md
+          use_pullrequest: false
+          default_branch: 'master'

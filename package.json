@@ -1,0 +1,106 @@
+{
+  "name": "@windedge/gatsby-tailwind-serif",
+  "description": "Gatsby starter styled with Tailwind",
+  "version": "1.0",
+  "author": "@windedge",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.26",
+    "@fortawesome/free-solid-svg-icons": "^5.12.0",
+    "@fortawesome/react-fontawesome": "^0.1.8",
+    "@reach/router": "^1.2.1",
+    "@statickit/react": "^2.0.1",
+    "classnames": "^2.2.6",
+    "dotenv": "^8.2.0",
+    "eslint-plugin-graphql": "^3.1.1",
+    "gatsby": "2.19.4",
+    "gatsby-image": "^2.2.39",
+    "gatsby-plugin-fullstory": "^2.1.20",
+    "gatsby-plugin-intercom": "^0.1.4",
+    "gatsby-plugin-manifest": "2.2.38",
+    "gatsby-plugin-offline": "^3.0.32",
+    "gatsby-plugin-postcss": "^2.1.19",
+    "gatsby-plugin-purgecss": "^4.0.1",
+    "gatsby-plugin-react-helmet": "3.1.21",
+    "gatsby-plugin-segment-js": "^3.1.0",
+    "gatsby-plugin-sharp": "^2.4.0",
+    "gatsby-plugin-sitemap": "^2.2.26",
+    "gatsby-plugin-statickit": "^1.1.1",
+    "gatsby-remark-images": "^3.1.42",
+    "gatsby-source-filesystem": "^2.1.46",
+    "gatsby-transformer-remark": "^2.6.48",
+    "gatsby-transformer-sharp": "^2.3.13",
+    "graphql": "14.5.8",
+    "husky": "^4.2.1",
+    "lint-staged": "^10.0.7",
+    "prop-types": "15.7.2",
+    "query-string": "^6.10.1",
+    "react": "16.12.0",
+    "react-accessible-accordion": "^3.0.1",
+    "react-dom": "16.12.0",
+    "react-helmet": "5.2.1",
+    "react-responsive-carousel": "^3.1.51",
+    "terser": "4.6.3"
+  },
+  "keywords": [
+    "gatsby",
+    "tailwind",
+    "tailwindcss",
+    "purgecss"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "analyze:lint": "eslint --ext .jsx --ext .js .",
+    "analyze:prettier": "prettier --list-different '**/*.{js,css,md,json}'",
+    "analyze": "npm run analyze:lint && npm run analyze:prettier",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "fix:lint": "eslint --ext .jsx --ext .js . --fix",
+    "fix:prettier": "prettier --write '**/*.{js,css,md,json}'",
+    "fix": "npm run fix:lint && npm run fix:prettier",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.md": [
+      "prettier --parser markdown --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "babel-eslint": "10.0.3",
+    "eslint": "6.8.0",
+    "eslint-config-react-app": "5.1.0",
+    "eslint-plugin-flowtype": "4.6.0",
+    "eslint-plugin-import": "2.20.0",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.18.0",
+    "eslint-plugin-react-hooks": "2.3.0",
+    "prettier": "^1.19.1",
+    "tailwindcss": "1.1.4",
+    "tailwindcss-transforms": "^2.2.0"
+  },
+  "Repository": {
+    "type": "git",
+    "url": "https://github.com/windedge/gatsby-tailwind-serif"
+  },
+  "bugs": {
+    "url": "https://github.com/windedge/gatsby-tailwind-serif/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "resolutions": {
+    "terser": "4.0.0",
+    "terser-webpack-plugin/terser": "4.0.0"
+  }
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink"
+width="48" height="48">
+  <title>User Group</title>
+  <desc>A solid styled icon from Orion Icon Library.</desc>
+  <path data-name="layer2"
+  d="M38.1 51.2c-8-1.1-8-4-8-5.6v-.9a14.6 14.6 0 0 0 4.2-7c2.4 0 3-5.1 3-5.8s-.2-3.6-1.3-3.9c4-14-8-20-18.4-12.8-4.4 0-5.8 6.4-4.2 12.8-1.1 0-1.3 3-1.3 3.8s.6 5.8 3 5.8c.8 2.9 3 5.3 4.9 7v1c0 1.6-.6 4.6-8.7 5.6S2 60 2 60h44s.1-7.7-7.9-8.8z"
+  fill="#8d8ea3"></path>
+  <path data-name="layer1" d="M53.7 44c-8-1.6-7.7-4.8-7.7-6.4V36a56.7 56.7 0 0 0 12.8-1.6c-3.3-3.3-6.4-4.7-6.4-18.5 0-16.3-16-11.2-16-11.2a8.4 8.4 0 0 0-7.3 3.6 13.6 13.6 0 0 1 8.8 5.2c2.7 3.5 3.5 8.3 2.4 13.6a11.6 11.6 0 0 1 1 4.7c0 2-.8 6.9-3.9 8.9a18.6 18.6 0 0 1-3.2 5.4 12.1 12.1 0 0 0 4.3 1.2 12.5 12.5 0 0 1 8.8 4.7H62s0-6.3-8.3-8z"
+  fill="#253858"></path>
+</svg>

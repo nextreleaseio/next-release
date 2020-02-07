@@ -1,0 +1,15 @@
+{
+    "useTabs": false,
+    "bracketSpacing": true,
+    "singleQuote": true,
+    "tabWidth": 4,
+    "overrides": [
+        {
+            "files": "*.md",
+            "options": {
+                "singleQuote": false,
+                "printWidth": 120
+            }
+        }
+    ]
+}
