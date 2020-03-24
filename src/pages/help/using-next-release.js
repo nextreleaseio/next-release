@@ -55,6 +55,7 @@ const GettingStarted = ({ data }) => {
             <Bottom />
         </Layout>
     );
+
 };
 
 export const query = graphql`
@@ -64,7 +65,8 @@ export const query = graphql`
                 fileAbsolutePath: { regex: "/content/kb/" }
                 frontmatter: { section: { eq: "Using Next Release" } }
             }
-            sort: { fields: [frontmatter___date], order: DESC }
+
+            filter: { fileAbsolutePath: { regex: "/content/kb/" }, frontmatter: {section: {eq: "Using Next Release"}} }
         ) {
             edges {
                 node {
@@ -78,5 +80,5 @@ export const query = graphql`
         }
     }
 `;
-
 export default GettingStarted;
+

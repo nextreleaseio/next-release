@@ -97,7 +97,6 @@
     background-image: linear-gradient(rgb(255, 149, 0) 0%, rgb(255, 94, 58) 100%)
 }
 
-
 @media (min-width: 640px) {
     .home-page-icon {
         right: 5%;
