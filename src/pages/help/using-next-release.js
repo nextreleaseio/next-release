@@ -7,7 +7,7 @@ import { graphql, Link } from 'gatsby';
 
 const HelpCard = ({ url, title, excerpt }) => {
     return (
-        <div className="sm:w-full rounded bg-grey-100 sm:py-1 md:py-2 mx-2 md:w-4/12 md:px-4 sm:px-2">
+        <div className="sm:w-full rounded bg-grey-100 sm:py-1 mt-4 md:py-2 mx-2 md:w-3/12 md:px-4 sm:px-2">
             <Link
                 to={url}
                 className="text-2xl px text-purple-700 hover:text-purple-600 hover:underline leading-none"
@@ -39,7 +39,7 @@ const GettingStarted = ({ data }) => {
                     Getting Started With Next Release
                 </h1>
             </div>
-            <div className="flex wrap py-6 pb-12 px-6 md:px-32 lg:px-32 bg-grey-200">
+            <div className="flex flex-wrap justify-center py-6 pb-12 px-6 md:px-32 lg:px-32 bg-grey-200">
                 {data.allMarkdownRemark.edges.map(({ node }) => {
                     return (
                         <HelpCard
@@ -55,7 +55,6 @@ const GettingStarted = ({ data }) => {
             <Bottom />
         </Layout>
     );
-
 };
 
 export const query = graphql`
@@ -65,8 +64,6 @@ export const query = graphql`
                 fileAbsolutePath: { regex: "/content/kb/" }
                 frontmatter: { section: { eq: "Using Next Release" } }
             }
-
-            filter: { fileAbsolutePath: { regex: "/content/kb/" }, frontmatter: {section: {eq: "Using Next Release"}} }
         ) {
             edges {
                 node {
@@ -81,4 +78,3 @@ export const query = graphql`
     }
 `;
 export default GettingStarted;
-
