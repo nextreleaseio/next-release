@@ -1,3 +1,11 @@
+### [Version 0.5.1](https://github.com/nextreleaseio/next-release/releases/tag/0.5.1)  
+ **0.5.1**  
+ ### Fixed Bugs 
+- Fix homepage icon at large screen sizes #42 @donaldwasserman 
+- Added additional marketing content #44 @donaldwasserman 
+### Other 
+- Update CHANGELOG.md #41 @github-actions[bot] 
+  
 ### [Version 0.5.0](https://github.com/nextreleaseio/next-release/releases/tag/0.5.0)  
  **0.5.0**  
  This is the first release of our new Gatsby static site.
