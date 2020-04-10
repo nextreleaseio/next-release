@@ -3,14 +3,15 @@ path: "/performance_notes/metrics"
 title: "Release Metrics For Retrospectives & Analysis"
 subtitle: "Understand how your changes are impacting what you care about"
 date: 2020-04-06T06:33:46+10:00
-image: ../../src/images/features/06-business-team.png
+image: ../../src/images/performance_notes/metrics_analysis.png
 items:
     - Understand how your latest releases impacted the metrics that matter to you
     - Availability and performance prognostics
 ---
 
-## Overview ##
-Every change your team deploys to production is an attempt to move the needle on 
+## Overview
+
+Every change your team deploys to production is an attempt to move the needle on
 a business objective, whether that's increased customer usage, reduced system overhead,
 faster load times, or improved conversion on upsell items. That's why in every Performance
 Release Note we include how those changes impacted your company's top priority key results.
