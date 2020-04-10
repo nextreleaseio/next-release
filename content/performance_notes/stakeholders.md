@@ -10,15 +10,15 @@ items:
     - Showcase measurements of metrics that matter, to those they matter to
 ---
 
-There are a thousand perspectives for every release. How does a frontend change impact the
-team members working on the backend, how does a feature update impact sales pitches and demos,
-how will a change impact customer relations and what should be communicated to who in order to
-see if it has shifted their net promoter score?
+There are a thousand perspectives for every release. How does a frontend change impact those
+working on the backend, how does a new feature impact sales pitches and demos, or how will
+a bug fix affect customer relations? Each stakeholder has different concerns they're focused
+on, which is why we provide you with a one-pager per stakeholder for every release that
+delivers the information that matters to them.
 
-Evangelizing changes to the right stakeholders in
-a way that relates to them and is focused on what matters to them is time consuming but critical. That's why
-we manage customizing a section of your Performance Release Notes for each unique stakeholder
-that your team impacts. This allows for stakeholders to easily zero in on what changes in an upcoming
-release impact them and allow them to quickly engage on the topics that matter to them.
+Evangelizing changes to the right stakeholders in a way that relates to them and focuses
+on what matters to them is time-consuming but critical. Our tailored one-pagers allow
+stakeholders to quickly zero in on what changes in an upcoming release affect them and
+enable them to engage on the topics that matter to them immediately.
 
 [Schedule Your Performance Notes Integration Today](https://calendly.com/nextrelease-devon/performance-release-notes-introductory-meeting)
