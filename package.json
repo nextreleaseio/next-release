@@ -25,7 +25,6 @@
     "gatsby-plugin-sharp": "^2.4.0",
     "gatsby-plugin-sitemap": "^2.2.26",
     "gatsby-plugin-statickit": "^1.1.1",
-    "gatsby-remark-embed-video": "^2.0.1",
     "gatsby-remark-images": "^3.1.42",
     "gatsby-source-filesystem": "^2.1.46",
     "gatsby-transformer-remark": "^2.6.48",
