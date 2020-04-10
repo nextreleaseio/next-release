@@ -58,6 +58,7 @@ const Header = ({ className, ...props }) => {
                     } md:w-1/2 flex md:flex flex-col md:flex-row justify-center md:justify-between items-stretch md:items-center py-1`}
                 >
                     <HeaderLink to="/features">Features</HeaderLink>
+                    <HeaderLink to="/performance_notes">Performance Notes</HeaderLink>
                     <HeaderLink to="/pricing">Pricing</HeaderLink>
                     <HeaderLink to="/contact">Contact</HeaderLink>
                     <div className="flex px-1">
