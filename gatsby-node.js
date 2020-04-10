@@ -22,8 +22,6 @@ const PageMaker = async (page, createPage, graphql) => {
   `);
     results.data.allMarkdownRemark.edges.forEach(function({ node }) {
         const { path, image } = node.frontmatter;
-
-        console.log(path);
         createPage({
             path,
             component: require.resolve(`./src/templates/${page}.js`),
