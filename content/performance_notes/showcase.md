@@ -27,7 +27,7 @@ showcasing what has changed for every release. These videos:
 -   Supplement traceability and proof of testing to comply with industry standards and regulations such as
     [ISO 26262](https://www.iso.org/standard/43464.html)
 
-<img style="max-width:500px;" src="https://next-release-public-assets.s3.us-east-2.amazonaws.com/video_walkthrough_example.gif">
+<img src="https://next-release-public-assets.s3.us-east-2.amazonaws.com/video_walkthrough_example.gif">
 
 ## Integration
 

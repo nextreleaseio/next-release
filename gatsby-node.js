@@ -1,13 +1,12 @@
 exports.createPages = async ({ actions: { createPage }, graphql }) => {
-  const pages = ['blog', 'product', 'kb', 'performance_notes'];
-  pages.forEach(page => {
-    PageMaker(page, createPage, graphql);
-  })
+    const pages = ['blog', 'product', 'kb', 'performance_notes'];
+    pages.forEach(page => {
+        PageMaker(page, createPage, graphql);
+    });
 };
 
-
 const PageMaker = async (page, createPage, graphql) => {
-  const results = await graphql(`
+    const results = await graphql(`
     {
       allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(${page})/"}}) {
         edges {
@@ -21,14 +20,16 @@ const PageMaker = async (page, createPage, graphql) => {
       }
     }
   `);
-  results.data.allMarkdownRemark.edges.forEach(function({node}) {
-    const { path, image } = node.frontmatter;
-    createPage({
-      path,
-      component: require.resolve(`./src/templates/${page}.js`),
-      context: {
-        id: node.id
-      }
+    results.data.allMarkdownRemark.edges.forEach(function({ node }) {
+        const { path, image } = node.frontmatter;
+
+        console.log(path);
+        createPage({
+            path,
+            component: require.resolve(`./src/templates/${page}.js`),
+            context: {
+                id: node.id
+            }
+        });
     });
-  });
 };
