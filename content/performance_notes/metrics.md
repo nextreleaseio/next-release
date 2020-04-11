@@ -23,5 +23,3 @@ those results or setup the tooling necessary to track them. We then incorporate 
 these metrics are trending from release to release so you and your team can have all
 the metrics you care about in a singular easy to access a place that you can share with
 others.
-
-[Schedule Your Performance Notes Integration Today](https://calendly.com/nextrelease-devon/performance-release-notes-introductory-meeting)

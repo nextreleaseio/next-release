@@ -1,8 +1,9 @@
 ---
-path: "/kb/release_strategies.md"
+path: "/blog/release_strategies.md"
 title: "Release Branch Strategies"
-slug: "release-branch-stratgies"
-section: "Releasing"
+subtitle: "Getting Started With DevOps Through Release Workflows"
+author: "devon"
+date: 2020-04-10T12:33:46+10:00
 ---
 
 We help a lot of teams with their development pipelines and have seen everything from mailing

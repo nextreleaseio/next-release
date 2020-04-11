@@ -49,6 +49,8 @@ support and sales.
 
 ## Integration
 
-We can integrate our Performance Release Notes with most toolchains and teams. If your organization is in the early days of your DevOps journey and you do not have tools to connect with, we'll work with you to build out your fist minimal development and delivery pipeline. If you already have a system in place we'll instrument it for you. Last but not least, if you're somewhere in between, we'll help you add in the components that are the best fit for your team's unique requirements.
-
-[Schedule Your Performance Notes Integration Today](https://calendly.com/nextrelease-devon/performance-release-notes-introductory-meeting)
+We can integrate our Performance Release Notes with most toolchains and teams. If your organization is in the
+early days of your DevOps journey and you do not have tools to connect with, we'll work with you to build out
+your fist minimal development and delivery pipeline. If you already have a system in place we'll instrument
+it for you. Last but not least, if you're somewhere in between, we'll help you add in the components that are
+the best fit for your team's unique requirements.
