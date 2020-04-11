@@ -1,0 +1,223 @@
+---
+path: "/blog/getting_started_with_devops.md"
+title: "Getting Started with DevOps"
+subtitle: "The Fundamentals of DevOps"
+author: "devon"
+date: 2020-04-12T4:33:46+10:00
+---
+
+Welcome to the world of developer operations, a huge ecosystem of tools, processes, and ways to enhance every team
+across your organization. Where to get started really depends on you, your team, the product you're working on,
+and the primary objectives of your organization. To chat about how you and your team can improve your developer
+operations journey grab [30 minutes on our calendar](https://calendly.com/nextrelease-devon/developer-operations-optimization-introduction)
+or hit us up on twitter [@nextreleaseio](https://twitter.com/nextreleaseio).
+
+It's easy to get distracted by the shiny tools and toys within the DevOps world and get sucked into the latest
+trend or fab. There's nothing wrong with being cutting edge or adopting new things but where we suggest you start
+is looking at the throughput and stability of your existing operations. To measure these you can use the same
+gauges used by [Google])(https://cloud.google.com/devops) and
+the [DevOps Research and Assessment](https://www.devops-research.com/research.html) organization:
+
+-   For throughput measure your:
+    -   Lead Time for Change: The duration between the time of checking in a change to the time the team
+        releases it into production.
+    -   Deployment Frequency: How often a team deploys code to production.
+-   For stability measure your:
+    -   Mean Time to Restore (MTTR): The time it takes detecting a user-impacting incident to having
+        it resolved.
+    -   Change Failure Rate: The percentage of changes to production that result in degraded service
+
+These four metrics will help you understand where you're at today and where you'll need to focus your efforts
+to improve your operations. Once you have these measurements they'll act as a ballast to help keep you focused
+on solving issues that bring value to your team and avoid adopting tools just for the sake of it.
+
+Depending on where you are at with each of these metrics will determine where you start your journey. The first
+thing to make sure you pick if you haven't already is what version control system you're going to use. We
+recommend [git](https://git-scm.com/) as most the work being done in developer operations revolves around git.
+If you are using an alternative SCM, you'll probably have to roll more of your own solutions to problems that
+have been solved. Regardless of your choice, you'll need an SCM to connect your tools into and provide traceability
+of what changes within your product.
+
+After you have an SCM you'll want to choose which workflow for managing code changes your team follows. There
+are workflows for every type of team, product, and deployment style. We provide an overview on a few of them in
+a previous article on [release strategies]() to help you get started with choosing one that works for your team.
+
+Beyond these fundamentals some other areas you'll want to start looking at are
+
+-   Which continuous integration (CI) or continuous deployment (CD) environment aligns with your teams needs?
+-   Which cloud or IoT platform or combination of them support your needs?
+-   How can you automate your deployments to your various environments?
+-   How can you virtualize all of your development environments, staging environments, and production environments to be exactly the same?
+-   What will you monitor deployed applications with?
+-   How are you securing your development pipeline and the products moving through it?
+-   Where is the culture of your organization causing barriers?
+-   How are you measuring the changes you make to your pipeline to check their impact on your measurements of success?
+
+## Choosing a CI / CD Solution
+
+Like the rest of the DevOps ecosystem there are an endless amount of CI/CD solutions to pick from,
+[CircleCI](https://circleci.com/), [Jenkins](https://jenkins.io/), [TravisCI](https://travis-ci.org/),
+[Azure Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/), [AWS CodeStar](https://aws.amazon.com/codestar/)
+just to state a few.
+
+We personally use CircleCI internally which was originally driven by their early adoption of supporting Docker containers. Your
+selection will be based on a variety of concerns that vary from ours though. Some starting questions we like to ask
+when choosing a CI/CD are:
+
+-   What existing platforms are you using and which CI/CD platforms easily integrate with those?
+-   Do you have unique testing requirements such as MacOS build support, IoT CPU architecture support,
+    or cross phone mobile app support?
+-   How many teams are you rolling this solution out to and should you limit the configuration options to reduce
+    overhead of managing the deployment?
+
+We recommend picking one, trying it out, see what blockers or issues you run into, and then pivot or persevere based on
+what you uncover. DevOps is about learning what works, what doesn't, and using that to iterate
+until you've improved a system enough that it's no longer the area you can make the largest impact for your team.
+
+## Cloud, IoT, and Hosting Platforms
+
+Most people have at least heard about [Amazon Web Services (AWS)](https://aws.amazon.com/), [Microsoft Azure](https://azure.microsoft.com/en-us/),
+and [Google Cloud](https://cloud.google.com/gcp), but there are a plethora of other platforms and niche solution
+providers such as [Particle](https://www.particle.io/), [Convox](https://convox.com/), [Heroku](https://www.heroku.com/),
+[Netlify](https://www.netlify.com/), and [Docker Cloud](https://hub.docker.com/).
+
+The topic we have been tackling the most lately is which platform to use for various IoT deployments such as connected vehicles, smart
+manufacturing gateways with distributed sensors, and fleet management devices. Each vendor seems to have a unique
+way of managing automatic deployments to edge devices, and are still missing some features critical to organizations
+that have compliance concerns with over the air updates. Each of the cloud platform providers has very mature systems
+to enable you to roll automatic updates of web applications, both frontend and backend.
+
+We use Heroku paired with Netlify due to the ease of use and scalability. For solutions that have edge devices involved,
+we usually need to deploy some of the [Apache project platforms](https://projects.apache.org/projects.html) using [Kubernetes](https://kubernetes.io/)
+and will lean towards using AWS, Azure, Google Cloud, or some combination.
+
+Some getting started questions are:
+
+-   Which platform will allow my team to get our project in front of customers the fastest and have the lowest amount of maintenance?
+-   Does the platform and my virtualization tech allow my team to rapidly switch to a different platform?
+-   What plugins and add-ons does your team need for your application to work (Databases, caches, edge devices, third party integrations)?
+-   How easily are those plugins and add-ons integrated and managed on a given platform? Are there any performance concerns?
+    For example you won't want to host a database or a cache in one platform and have your application running in another.
+-   Does the platform provider's data policies align with your own?
+-   What type of security features does the platform provide, if any?
+
+## Virtualizing Environments
+
+Traditionally you'd need to setup a complicated virtual machine to abstract your development environment and achieve
+any semblance of consistency between development, staging, and production environments. Over the last decade there's
+been a renaissance and there are now multiple ways to ensure developers are developing in a replica environment
+of the actual deployments. We recommend starting with [Docker](https://www.docker.com/) and its configuration management
+system called [Docker Compose](https://docs.docker.com/compose/). If this is overkill for your project then take a look
+at some of the community packages within the language you're using, for example Python supports [venv](https://docs.python.org/3/library/venv.html).
+This won't help you with some of the infrastructure challenges but might be the right choice for your team based
+on where you're deploying to and what you're deploying there. Others use tools such as [Puppet](https://puppet.com/),
+[Ansible](https://www.ansible.com/), and [Chef](https://www.chef.io/home/). While
+these tools provide some interesting features we've found them to be overkill for most projects, but there might be
+a use case where you'll need them. Here some of the questions to think about are:
+
+-   Where do we ship our software?
+-   What does our software run on when we're developing locally, deploying to staging, and operating in production?
+-   What overhead, if any, is maintaining the virtualized environments going to add?
+-   What issues are being caused due to inconsistencies in local envs, staging envs, and production environments?
+
+## Application Performance Monitoring
+
+Developer operations continues into managing your product deployments. You'll want some form of an
+application performance monitoring (APM) package embedded in your application to enable reduction in identifying and
+resolving issues that make it out to production. There is an APM for most everything, [Sentry](https://sentry.io/welcome/),
+[New Relic](https://newrelic.com/), and [Dynatrace](https://www.dynatrace.com/) are some of the leaders in the
+application monitoring space. New Relic, Dynatrace, and others also provide infrastructure
+monitoring if you manage a lot of your own architecture. Then there are more generalized monitoring tools that can be
+transformed into APMs such as [Elastic](https://www.elastic.co/), [AWS Cloudwatch](https://aws.amazon.com/cloudwatch/),
+[Splunk](https://www.splunk.com/), [Nagios](https://www.nagios.org/), and [DataDog](https://www.datadoghq.com/).
+
+We use Sentry to monitor our frontend and backend applications for unhandled exceptions and error logs. Paired with
+[Timber](https://timber.io/) for more general logging, we're able to identify issues impacting our customers within seconds,
+replicate them, and resolve them as fast as we can figure out the solution. Couple of things to think about when
+selecting your APMs are:
+
+-   Do you manage your own infrastructure? If so what parts of it are creating the most issues and need monitoring first?
+-   How large and complex is your deployment? If there are a lot of moving parts you might need a tool with complex
+    query capabilities and more granularity.
+
+## Securing Your Pipeline & Products
+
+DevSecOps in the emerging word being used to relay the needed merger between security and developer operations, both
+to protect the products the pipelines are building but also to protect the pipelines themselves from threats. As your
+development pipeline matures you'll be sharing data between systems, relying on various tools to achieve the features
+your team needs, and will probably be running solutions on one or more platform. This makes your pipeline as ripe a
+target as your product itself and incidents can cause massive problems if not planned for. This is one space within
+DevOps that still hasn't reached full maturity. There are some great tools out there for incident planning such as
+[OpsGenie](https://www.atlassian.com/software/opsgenie) and other tools for static code analysis like
+[WhiteSource](https://www.whitesourcesoftware.com/) and
+[BlackDuck](https://www.synopsys.com/software-integrity/security-testing/software-composition-analysis.html).
+
+We recommend you start off by doing a [high level risk assessment](https://www.ready.gov/risk-assessment) where you document as many vulnerabilities about
+your toolchain and product you can think of. Starting with who has access to what code, how that code is being scanned
+for vulnerabilities, and what is the plan for when something unexpected happens. After completing the risk assessment, prioritize the risks
+based on the potential business harm each could cause, then begin trying to alleviate the top priority risk. After you
+tackle the first couple top threats, do another risk assessment and re-evaluate your priorities. We recommend
+conducting one every quarter or two as priorities and potential impacts change as the pipeline evolves with the product.
+
+-   What is your incident response plan?
+-   Is your incident response plan orchestrated in a tool that will get used or is it a patchwork of
+    documents that might cause problems when an incident occurs?
+-   What are the top security risks associated with our pipeline and products?
+-   How are we protecting our data and our customers?
+
+## Continuing Your Journey
+
+We're super excited that more people are utilizing DevOps to improve their team's performance. If you have questions
+or would like some help with your team's operations we're happy to jump on a call or chat about it. You can [schedule some
+initial time](https://calendly.com/nextrelease-devon/developer-operations-optimization-introduction), [email us](https://www.nextrelease.io/contact),
+DM us on [twitter](https://twitter.com/nextreleaseio), or hit us up on live chat here on the site. One of the more
+challenging parts to overcome with DevOps is existing cultural norms within an organization. As your team evolves you might
+start to run into some of them. We'll cover techniques for overcoming these challenges in future posts but here are
+some of the common traits you might need to eventually start moving to the right in a way that aligns with the unique
+challenges of your industry.
+
+<table>
+<tr>
+  <td>Pathological (Power-Oriented)</td>
+  <td>Bureaucratic (Rule-Oriented)</td>
+  <td>Generative (Performance-Oriented)</td>
+</tr>
+<tr>
+  <td>Low cooperation</td>
+  <td>Modest cooperation</td>
+  <td>High cooperation</td>
+</tr>
+<tr>
+  <td>Messengers "shot"</td>
+  <td>Messengers neglected</td>
+  <td>Messengers trained</td>
+</tr>
+<tr>
+  <td>Responsibilities shirked</td>
+  <td>Narrow responsibilities</td>
+  <td>Risks are shared</td>
+</tr>
+<tr>
+  <td>Bridging discouraged (siloed departments are advocated and enforced)</td>
+  <td>Bridging tolerated (working between departments is tolerated)</td>
+  <td>Bridging encouraged (cross functional teams are the objective)</td>
+</tr>
+<tr>
+  <td>Failure leads to scapegoating</td>
+  <td>Failure leads to justice</td>
+  <td>Failure leads to inquiry</td>
+</tr>
+<tr>
+  <td>Novelty crushed</td>
+  <td>Novelty leads to problems</td>
+  <td>Novelty implemented</td>
+</tr>
+</table>
+
+This table comes from a study done by Professor R Westrum from the Department of Sociology at Easter Michigan University called
+[A Typology of Organizational Cultures](https://qualitysafety.bmj.com/content/13/suppl_2/ii22.short) and has been
+confirmed by subsequent studies done within other top performing companies such as Google to show what types of teams
+perform best. Those having more traits associated with the last column outperform those with more traits from the
+first column.
+
+Keep on measuring, learning, and iterating so you can always have a new problem to wake up and solve!
