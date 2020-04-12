@@ -20,5 +20,3 @@ Evangelizing changes to the right stakeholders in a way that relates to them and
 on what matters to them is time-consuming but critical. Our tailored one-pagers allow
 stakeholders to quickly zero in on what changes in an upcoming release affect them and
 enable them to engage on the topics that matter to them immediately.
-
-[Schedule Your Performance Notes Integration Today](https://calendly.com/nextrelease-devon/performance-release-notes-introductory-meeting)

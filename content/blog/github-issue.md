@@ -3,7 +3,7 @@ path: "/blog/building-github-issues"
 title: "Integrating Github Issues"
 subtitle: "Include Github issues in your release notes"
 author: "donald"
-date: 2020-03-10T12:33:46+10:00
+date: 2020-03-10T14:20:46+10:00
 ---
 
 Do you organize your work in Github issues? Do those issues better reflect what work your team ships and want
