@@ -58,6 +58,14 @@ export default ({ data }) => {
                     dangerouslySetInnerHTML={{ __html: service.html }}
                 ></div>
             </Row>
+            <Row classNames="text-center md:py-12 sm:py-8">
+                <a
+                    className="btn btn-purple hover:bg-orange-600"
+                    href="https://calendly.com/nextrelease-devon/performance-release-notes-introductory-meeting"
+                >
+                    Schedule Your Performance Notes Integration Today
+                </a>
+            </Row>
             <Bottom />
         </Layout>
     );

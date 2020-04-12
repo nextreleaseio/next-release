@@ -47,5 +47,3 @@ feedback on what did and didn't work, and publish a finalized video once they ar
 release it. This process has the added benefit of having a third party testing out the feature
 as if they were a sales executive or customer success representative and providing faster
 feedback to those working on the changes.
-
-[Schedule Your Performance Notes Integration Today](https://calendly.com/nextrelease-devon/performance-release-notes-introductory-meeting)
