@@ -60,7 +60,7 @@ const Testimonial = ({ testimonial, className }) => {
     );
     return (
         <div className={className}>
-            <p
+            <div
                 className="italic py-2 font-serif text-grey-800"
                 dangerouslySetInnerHTML={{ __html: testimonial.node.html }}
             />
@@ -81,7 +81,7 @@ const Testimonial = ({ testimonial, className }) => {
     );
 };
 
-function Index({ data }) {
+const Index = ({ data }) => {
     const features = data.features.edges;
     const testimonials = data.testimonials.edges;
     return (
@@ -104,6 +104,7 @@ function Index({ data }) {
                     </a>
                 </div>
                 <img
+                    alt={'Next Release Logo'}
                     src={logo}
                     className="w-4/12 hidden sm:hidden md:block lg:block xl:block absolute home-page-icon"
                 />
@@ -182,7 +183,7 @@ function Index({ data }) {
             <Bottom />
         </Layout>
     );
-}
+};
 
 export const query = graphql`
     query {
