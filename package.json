@@ -58,12 +58,10 @@
   },
   "lint-staged": {
     "*.js": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ],
     "*.md": [
-      "prettier --parser markdown --write",
-      "git add"
+      "prettier --parser markdown --write"
     ]
   },
   "husky": {
