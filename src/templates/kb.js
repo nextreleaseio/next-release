@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { graphql, Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -66,7 +65,7 @@ export default ({ data }) => {
                                     dangerouslySetInnerHTML={{
                                         __html: kb.html
                                     }}
-                                ></div>
+                                />
                             </div>
                         </div>
                     </div>
