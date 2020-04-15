@@ -63,7 +63,7 @@ const Testimonial = ({ testimonial, className }) => {
             <p
                 className="italic py-2 font-serif text-grey-800"
                 dangerouslySetInnerHTML={{ __html: testimonial.node.html }}
-            ></p>
+            />
             <div className="mt-4 flex items-center">
                 <div className="w-1/4 rounded-full border-2 border-white overflow-hidden">
                     <Img fluid={image.childImageSharp.fluid} />
@@ -157,14 +157,15 @@ function Index({ data }) {
                 <h4 className="text-center text-purple-100 text-4xl font-black">
                     Why We Use Next Release
                 </h4>
-                <div className="w-full mx-auto sm:flex-wrap justify-between flex mt-4">
+                <div className="flex flex-wrap w-full mt-4">
                     {testimonials.map(item => {
                         return (
-                            <Testimonial
-                                className="md:w-1/4  sm:w-full sm:mt-4 mx-1"
+                            <div
                                 key={item.node.frontmatter.path}
-                                testimonial={item}
-                            />
+                                className="flex h-full w-full md:w-1/3 mb-4 md:mb-0 md:p-4"
+                            >
+                                <Testimonial testimonial={item} />
+                            </div>
                         );
                     })}
                 </div>

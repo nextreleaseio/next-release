@@ -1,8 +1,10 @@
 {
-  "name": "@windedge/gatsby-tailwind-serif",
-  "description": "Gatsby starter styled with Tailwind",
+  "name": "next-relase",
+  "description": "Next Release",
   "version": "1.0",
-  "author": "@windedge",
+  "author": "@nextrelase",
+  "keywords": [],
+  "license": "No License",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.26",
     "@fortawesome/free-solid-svg-icons": "^5.12.0",
@@ -41,13 +43,6 @@
     "react-responsive-carousel": "^3.1.51",
     "terser": "4.6.3"
   },
-  "keywords": [
-    "gatsby",
-    "tailwind",
-    "tailwindcss",
-    "purgecss"
-  ],
-  "license": "MIT",
   "scripts": {
     "analyze:lint": "eslint --ext .jsx --ext .js .",
     "analyze:prettier": "prettier --list-different '**/*.{js,css,md,json}'",
@@ -86,15 +81,15 @@
     "eslint-plugin-react": "7.18.0",
     "eslint-plugin-react-hooks": "2.3.0",
     "prettier": "^1.19.1",
-    "tailwindcss": "1.1.4",
+    "tailwindcss": "1.2.0",
     "tailwindcss-transforms": "^2.2.0"
   },
   "Repository": {
     "type": "git",
-    "url": "https://github.com/windedge/gatsby-tailwind-serif"
+    "url": "https://github.com/nextreleaseio/next-release"
   },
   "bugs": {
-    "url": "https://github.com/windedge/gatsby-tailwind-serif/issues"
+    "url": "https://github.com/nextreleaseio/next-release/issues"
   },
   "publishConfig": {
     "access": "public"
