@@ -8,7 +8,7 @@ date: 2020-04-13T16:33:46+10:00
 
 Welcome to the world of developer operations, a massive ecosystem of tools, processes,
 and ways to enhance every team across your organization. The best way we know how to define
-DevOps is as the supply chain management of software with a culture of experimentation, learning, and iteration,
+DevOps is as the supply chain management for software with a culture of experimentation, learning, and iteration,
 prioritizing the areas of the system where the most significant impact for the team and business can be made.
 
 As with traditional supply chains, which transform raw materials into final products, a software pipeline
@@ -69,7 +69,7 @@ Beyond these fundamentals some other areas you'll want to start looking at are:
 -   Is the culture of your organization causing barriers?
 -   How do you measure the changes you make to your pipeline to check their impact on your measurements of success?
 
-## Choosing a CI / CD Solution
+## Building, Testing, & Releasing: Choosing a CI / CD Solution
 
 Like the rest of the DevOps ecosystem, there are an endless amount of CI/CD solutions to pick from,
 [CircleCI](https://circleci.com/), [Jenkins](https://jenkins.io/), [TravisCI](https://travis-ci.org/),
@@ -91,7 +91,7 @@ persevere based on what you uncover. DevOps is about learning what works, what d
 and using that to iterate until you've improved a system enough that it's no longer the
 area you can make the most significant impact for your team.
 
-## Cloud, IoT, and Hosting Platforms
+## Deploying: Cloud, IoT, and Hosting Platforms
 
 Most people have at least heard about [Amazon Web Services (AWS)](https://aws.amazon.com/), [Microsoft Azure](https://azure.microsoft.com/en-us/),
 and [Google Cloud](https://cloud.google.com/gcp). Still, there are a plethora of other platforms and niche solution
@@ -121,7 +121,7 @@ Some getting started questions are:
 -   Does the platform provider's data policies align with ours?
 -   What type of security features does the platform provide, if any?
 
-## Virtualizing Environments
+## Operating: Virtualizing Environments
 
 Traditionally you'd need to set up a complicated virtual machine to abstract your development environment and achieve
 any semblance of consistency between development, staging, and production environments. Over the last decade, there's
@@ -140,7 +140,7 @@ a use case where you'll need them. Here some of the questions to think about are
 -   What overhead, if any, is maintaining the virtualized environments going to add?
 -   What issues are being caused due to inconsistencies in local envs, staging envs, and production environments?
 
-## Application Performance Monitoring
+## Monitoring Application Performance
 
 Developer operations continue into managing your product deployments. You'll want some form of an
 application performance monitoring (APM) package embedded in your application to enable a reduction in identifying and
