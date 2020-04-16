@@ -56,7 +56,7 @@ export default ({ data }) => {
                 <div
                     className="md:w-2/3 md:px-4 sm:w-full sm:px-2 sm:mt-4 markdown-body"
                     dangerouslySetInnerHTML={{ __html: service.html }}
-                ></div>
+                />
             </Row>
             <Row classNames="text-center md:py-12 sm:py-8">
                 <a

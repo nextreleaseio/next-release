@@ -6,3 +6,5 @@ node_modules/*
 .LSOverride
 public/
 .env
+# Local Netlify folder
+.netlify

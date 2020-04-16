@@ -1,3 +1,9 @@
+### [Version 0.6.0](https://github.com/nextreleaseio/next-release/releases/tag/0.6.0)  
+ **0.6.0**  
+ ### Implemented Enhancements 
+- Performance Notes Service Offering #55 @donaldwasserman 
+- Release Branch Strategies Blog Post #57 @bleib1dj 
+  
 ### [Version 0.5.1](https://github.com/nextreleaseio/next-release/releases/tag/0.5.1)  
  **0.5.1**  
  ### Fixed Bugs 

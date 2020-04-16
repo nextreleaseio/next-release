@@ -14,16 +14,16 @@ const Footer = () => {
                     />
                     <ul className="text-grey-700">
                         <li className="mt-4">
-                            <Link to="blog">Blog</Link>
+                            <Link to="/blog">Blog</Link>
                         </li>
                         <li className="mt-4">
-                            <Link to="privacy-policy">Privacy Policy</Link>
+                            <Link to="/privacy-policy">Privacy Policy</Link>
                         </li>
                         <li className="mt-4">
-                            <Link to="terms-of-service">Terms of Service</Link>
+                            <Link to="/terms-of-service">Terms of Service</Link>
                         </li>
                         <li className="mt-4">
-                            <Link to="cookie-policy">Cookie Policy</Link>
+                            <Link to="/cookie-policy">Cookie Policy</Link>
                         </li>
                     </ul>
                 </div>
@@ -31,20 +31,20 @@ const Footer = () => {
                     <p className="font-bold text-lg">Product</p>
                     <ul className="text-grey-700">
                         <li className="mt-4">
-                            <Link to="why-keep-release-notes">
+                            <Link to="/why-keep-release-notes">
                                 Why Keep Release Notes?
                             </Link>
                         </li>
                         <li className="mt-4">
-                            <Link to="kb/what-is-next-release">
+                            <Link to="/kb/what-is-next-release">
                                 What is Next Release?
                             </Link>
                         </li>
                         <li className="mt-4">
-                            <Link to="pricing">Pricing</Link>
+                            <Link to="/pricing">Pricing</Link>
                         </li>
                         <li className="mt-4">
-                            <Link to="security">Security</Link>
+                            <Link to="/security">Security</Link>
                         </li>
                     </ul>
                 </div>
@@ -52,15 +52,15 @@ const Footer = () => {
                     <p className="font-bold text-lg">Support</p>
                     <ul className="text-grey-700">
                         <li className="mt-4">
-                            <Link to="help">Help Center</Link>
+                            <Link to="/help">Help Center</Link>
                         </li>
                         <li className="mt-4">
-                            <Link to="kb/setup-next-release">
+                            <Link to="/kb/setup-next-release">
                                 Setup Next Release
                             </Link>
                         </li>
                         <li className="mt-4">
-                            <Link to="kb/how-next-release-categorizes-your-pull-requests/">
+                            <Link to="/kb/how-next-release-categorizes-your-pull-requests/">
                                 How Next Release Categorizes Your Pull Requests
                             </Link>
                         </li>
