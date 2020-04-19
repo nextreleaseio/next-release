@@ -3,6 +3,7 @@ path: "/blog/2020-03-product-update"
 title: "March 2020 Product Update"
 subtitle: "New features to integrate Github issues, ignored labels and more"
 author: "donald"
+profilePic: "https://next-release-public-assets.s3.us-east-2.amazonaws.com/donald_profile_pic.jpeg"
 date: 2020-03-26T12:33:46+10:00
 ---
 

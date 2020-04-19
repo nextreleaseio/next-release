@@ -9,7 +9,7 @@ import Bottom from '../components/bottom';
 
 export default ({ data }) => {
     const { blog } = data;
-    const { title, subtitle, author, date } = blog.frontmatter;
+    const { title, subtitle, author, profilePic, date } = blog.frontmatter;
     const { html, timeToRead } = blog;
 
     const heading = subtitle ? subtitle : 'Next Release';
@@ -59,6 +59,7 @@ export const query = graphql`
                 title
                 subtitle
                 author
+                profilePic
                 date(formatString: "MMM D, YYYY")
             }
             html

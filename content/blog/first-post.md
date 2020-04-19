@@ -3,6 +3,7 @@ path: "/blog/new-site"
 title: "Building New Brochure Site"
 subtitle: "Why we replatformed to Gatsby"
 author: "donald"
+profilePic: "https://next-release-public-assets.s3.us-east-2.amazonaws.com/donald_profile_pic.jpeg"
 date: 2020-02-04T12:33:46+10:00
 ---
 

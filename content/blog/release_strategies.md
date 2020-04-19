@@ -3,6 +3,7 @@ path: "/blog/release_strategies.md"
 title: "Release Branch Strategies"
 subtitle: "Getting Started With DevOps Through Release Workflows"
 author: "devon"
+profilePic: "https://next-release-public-assets.s3.us-east-2.amazonaws.com/devon_profile_pic.png"
 date: 2020-04-10T12:33:46+10:00
 ---
 

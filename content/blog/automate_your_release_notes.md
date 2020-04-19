@@ -3,6 +3,7 @@ path: "/blog/automate_your_release_notes.md"
 title: "Automate Your Release Notes"
 subtitle: "All You Need To Know About Automating Release Notes"
 author: "devon"
+profilePic: "https://next-release-public-assets.s3.us-east-2.amazonaws.com/devon_profile_pic.png"
 date: 2020-04-11T12:33:46+10:00
 ---
 
