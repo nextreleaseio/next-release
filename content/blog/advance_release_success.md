@@ -3,6 +3,7 @@ path: "/blog/advance_release_success.md"
 title: "Why Include Advance Release Notices?"
 subtitle: "Inform stakeholders of upcoming software changes"
 author: "devon"
+profilePic: "https://next-release-public-assets.s3.us-east-2.amazonaws.com/devon_profile_pic.png"
 date: 2020-04-20T22:33:46+10:00
 ---
 

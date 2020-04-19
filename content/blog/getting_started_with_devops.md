@@ -3,6 +3,7 @@ path: "/blog/getting_started_with_devops.md"
 title: "Getting Started with DevOps"
 subtitle: "The Fundamentals of DevOps"
 author: "devon"
+profilePic: "https://next-release-public-assets.s3.us-east-2.amazonaws.com/devon_profile_pic.png"
 date: 2020-04-13T16:33:46+10:00
 ---
 

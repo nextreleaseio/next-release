@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const BlogIndex = ({ data }) => {
     const all = data.allMarkdownRemark.edges;
+
     return (
         <Layout>
             <SEO title="Blog" />
@@ -33,6 +34,19 @@ const BlogIndex = ({ data }) => {
                     <h2 className="font-bold text-3xl">Latest Posts</h2>
                     <div className="w-full">
                         {all.map(post => {
+                            console.log(post.node.frontmatter.author);
+                            console.log(post.node.frontmatter.profilePic);
+                            var profileStyle = {
+                                width: '35px',
+                                height: '35px',
+                                backgroundImage:
+                                    'url(' +
+                                    post.node.frontmatter.profilePic +
+                                    ')',
+                                borderRadius: '50%',
+                                backgroundSize: 'cover',
+                                margin: 'auto'
+                            };
                             return (
                                 <div
                                     key={post.node.frontmatter.path}
@@ -51,6 +65,7 @@ const BlogIndex = ({ data }) => {
                                             </p>
                                         </div>
                                         <span className="text-grey-600 font-bold">
+                                            <img style={profileStyle} />
                                             {post.node.frontmatter.author}
                                         </span>
                                     </Link>
@@ -87,6 +102,7 @@ export const query = graphql`
                         title
                         path
                         author
+                        profilePic
                         date(formatString: "MMM D, YYYY")
                     }
                     excerpt
