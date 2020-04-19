@@ -34,9 +34,7 @@ const BlogIndex = ({ data }) => {
                     <h2 className="font-bold text-3xl">Latest Posts</h2>
                     <div className="w-full">
                         {all.map(post => {
-                            console.log(post.node.frontmatter.author);
-                            console.log(post.node.frontmatter.profilePic);
-                            var profileStyle = {
+                            let profileStyle = {
                                 width: '35px',
                                 height: '35px',
                                 backgroundImage:
