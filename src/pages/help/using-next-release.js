@@ -9,7 +9,7 @@ import HelpCard from '../../components/help-card';
 
 const GettingStarted = ({ data }) => {
     return (
-        <Layout headerclassName="bg-white relative">
+        <Layout headerClass="bg-white relative">
             <SEO title="Help" />
 
             <Row
