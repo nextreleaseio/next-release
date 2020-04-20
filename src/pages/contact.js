@@ -72,7 +72,9 @@ const Contact = () => {
                 <p className="text-small text-teal-400 uppercase">
                     Questions or Comments
                 </p>
-                <h1 className="text-4xl font-bold text-white">Contact Us</h1>
+                <h1 className="text-4xl font-bold text-white">
+                    Want To Talk Release Notes?
+                </h1>
                 <p className="text-small text-grey-500 sm:w-full md:w-1/2 mx-auto">
                     A great set of release notes in the hands of both your team
                     and customers will help your release cycles run more
