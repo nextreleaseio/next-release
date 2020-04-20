@@ -4,6 +4,8 @@ import SEO from '../components/seo';
 import { useForm } from '@statickit/react';
 import Row from '../components/row';
 import background from '../images/NR_Help_Mast.png';
+import { faEnvelopeOpenText } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const OptInForm = () => {
     const [state, handleSubmit] = useForm('contact');
@@ -15,9 +17,16 @@ const OptInForm = () => {
         );
     }
     return (
-        <div className="sm:w-10/12 md:w-1/2 p-8 mx-auto rounded bg-white shadow rounded">
+        <div className="sm:w-10/12 md:w-1/2 px-8 py-4 mx-auto rounded bg-white shadow rounded">
             <form onSubmit={handleSubmit}>
-                <div className="w-full">
+                <div className="w-full text-green-500">
+                    <FontAwesomeIcon
+                        icon={faEnvelopeOpenText}
+                        className="mr-2"
+                    />
+                    <span>We usually respond in a few hours!</span>
+                </div>
+                <div className="w-full mt-4">
                     <label htmlFor="email" className="font-bold">
                         Email
                     </label>
