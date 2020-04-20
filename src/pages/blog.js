@@ -32,7 +32,7 @@ const BlogIndex = ({ data }) => {
             <Row classNames="flex sm:flex-wrap">
                 <div className="sm:w-full mx-auto md:w-2/3 sm:px-2 md:px-4">
                     <h2 className="font-bold text-3xl">Latest Posts</h2>
-                    <div className="w-full">
+                    <div className="w-full mt-6 grid gap-16 border-t-2 border-gray-100 pt-10 lg:grid-cols-2 lg:col-gap-5 lg:row-gap-12">
                         {all.map(post => {
                             let profileStyle = {
                                 width: '35px',
@@ -46,37 +46,41 @@ const BlogIndex = ({ data }) => {
                                 margin: 'auto'
                             };
                             return (
-                                <div
-                                    key={post.node.frontmatter.path}
-                                    className="w-3/4 mt-4"
-                                >
-                                    <Link
-                                        to={post.node.frontmatter.path}
-                                        className="flex justify-between items-end flex-wrap"
-                                    >
-                                        <div>
-                                            <h3 className="font-bold text-2xl">
-                                                {post.node.frontmatter.title}
-                                            </h3>
-                                            <p className="mt-2 uppercase text-purple-800">
-                                                {post.node.frontmatter.date}
-                                            </p>
-                                        </div>
-                                        <span className="text-grey-600 font-bold">
-                                            <img style={profileStyle} />
-                                            {post.node.frontmatter.author}
-                                        </span>
-                                    </Link>
-                                    <p className="text-grey-600 font-serif mt-4">
-                                        <em>{post.node.excerpt}</em>
+                                <div key={post.node.frontmatter.path}>
+                                    <p className="text-sm leading-5 text-grey-600">
+                                        <time
+                                            dateTime={
+                                                post.node.frontmatter.date
+                                            }
+                                        >
+                                            {post.node.frontmatter.date}
+                                        </time>
                                     </p>
                                     <Link
                                         to={post.node.frontmatter.path}
-                                        className="bg-purple-100 text-purple-700 mt-2 inline-block text-sm rounded px-2 py-1"
+                                        className="block"
                                     >
-                                        Read{' '}
-                                        <FontAwesomeIcon icon={faArrowRight} />
+                                        <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">
+                                            {post.node.frontmatter.title}
+                                        </h3>
+                                        <div className="flex mt-3 ">
+                                            <span className="text-grey-400 font-weight-bold mr-4">
+                                                <img style={profileStyle} />
+                                                {post.node.frontmatter.author}
+                                            </span>
+                                            <p className="text-base leading-6 text-gray-500">
+                                                {post.node.excerpt}
+                                            </p>
+                                        </div>
                                     </Link>
+                                    <div className="mt-3">
+                                        <Link
+                                            to={post.node.frontmatter.path}
+                                            className="text-base leading-6 font-semibold text-indigo-600 hover:text-indigo-500 transition ease-in-out duration-150"
+                                        >
+                                            Read
+                                        </Link>
+                                    </div>
                                 </div>
                             );
                         })}
