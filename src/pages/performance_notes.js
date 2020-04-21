@@ -53,7 +53,7 @@ const Performance_Notes = ({ data }) => {
                     Performance Notes
                 </p>
                 <h1 className="text-4xl font-bold text-white">
-                    Tools For High-Performing Terams
+                    Tools For High-Performing Teams
                 </h1>
                 <p className="text-small text-grey-500 sm:w-full md:w-1/2 mx-auto">
                     You need to understand how changes are impacting your
