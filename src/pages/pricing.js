@@ -113,9 +113,9 @@ const Content = () => {
                                                 viewBox="0 0 24 24"
                                             >
                                                 <path
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    stroke-width="2"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    strokeWidth="2"
                                                     d="M5 13l4 4L19 7"
                                                 />
                                             </svg>
@@ -133,9 +133,9 @@ const Content = () => {
                                                 viewBox="0 0 24 24"
                                             >
                                                 <path
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    stroke-width="2"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    strokeWidth="2"
                                                     d="M5 13l4 4L19 7"
                                                 />
                                             </svg>
@@ -153,9 +153,9 @@ const Content = () => {
                                                 viewBox="0 0 24 24"
                                             >
                                                 <path
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    stroke-width="2"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    strokeWidth="2"
                                                     d="M5 13l4 4L19 7"
                                                 />
                                             </svg>
@@ -173,9 +173,9 @@ const Content = () => {
                                                 viewBox="0 0 24 24"
                                             >
                                                 <path
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    stroke-width="2"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    strokeWidth="2"
                                                     d="M5 13l4 4L19 7"
                                                 />
                                             </svg>
@@ -224,9 +224,9 @@ const Content = () => {
                                                 viewBox="0 0 24 24"
                                             >
                                                 <path
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    stroke-width="2"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    strokeWidth="2"
                                                     d="M5 13l4 4L19 7"
                                                 />
                                             </svg>
@@ -244,9 +244,9 @@ const Content = () => {
                                                 viewBox="0 0 24 24"
                                             >
                                                 <path
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    stroke-width="2"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    strokeWidth="2"
                                                     d="M5 13l4 4L19 7"
                                                 />
                                             </svg>
@@ -264,9 +264,9 @@ const Content = () => {
                                                 viewBox="0 0 24 24"
                                             >
                                                 <path
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    stroke-width="2"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    strokeWidth="2"
                                                     d="M5 13l4 4L19 7"
                                                 />
                                             </svg>
@@ -284,9 +284,9 @@ const Content = () => {
                                                 viewBox="0 0 24 24"
                                             >
                                                 <path
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    stroke-width="2"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    strokeWidth="2"
                                                     d="M5 13l4 4L19 7"
                                                 />
                                             </svg>
@@ -314,7 +314,7 @@ const Content = () => {
                     <div className="rounded-lg bg-gray-100 px-6 py-8 sm:p-10 lg:flex lg:items-center">
                         <div className="flex-1">
                             <div>
-                                <span className="inline-flex px-4 py-1 rounded-full text-sm leading-5 font-semibold tracking-wide uppercase bg-white text-gray-800">
+                                <span className="inline-flex px-4 py-1 rounded-full text-sm leading-5 font-semibold tracking-wide uppercase bg-indigo-100 text-indigo-600">
                                     Enterprise
                                 </span>
                             </div>
@@ -352,16 +352,10 @@ const Pricing = () => {
                 <h1 className="text-4xl font-bold text-white">
                     The right price for you, whoever you are
                 </h1>
-                <h2 className="text-purple-100 mt-4 text-base font-bold">
+                <h2 className="text-purple-200 mt-4 font-bold">
                     Try Next Release for 60 Days for free. No Credit Card
                     Required
                 </h2>
-                <a
-                    href="https://my.nextrelease.io"
-                    className="text-teal-600 mt-4 inline-block uppercase"
-                >
-                    Sign up to get started!
-                </a>
             </Row>
             <Row classNames="bg-grey-300">
                 <Content />

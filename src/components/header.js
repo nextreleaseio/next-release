@@ -38,6 +38,28 @@ const Header = ({ className, ...props }) => {
                     </Link>
                 </div>
 
+                <div
+                    className={`${
+                        isExpanded ? `block` : `hidden`
+                    } md:w-3/4 flex md:flex flex-col md:flex-row justify-center md:justify-between items-stretch md:items-baseline py-1`}
+                >
+                    <HeaderLink to="/features/automatic">Releases</HeaderLink>
+                    <HeaderLink to="/features/share-changes">
+                        Reports
+                    </HeaderLink>
+                    <HeaderLink to="/performance_notes">Performance</HeaderLink>
+                    <HeaderLink to="/pricing">Pricing</HeaderLink>
+                    <HeaderLink to="/blog">Blog</HeaderLink>
+                    <HeaderLink to="/contact">Contact</HeaderLink>
+                    <div className="flex px-1">
+                        <a
+                            className="w-full md:w-auto py-1 px-4 hover:bg-orange-700 transition mb-1 bg-orange-600 text-white font-bold rounded border-transparent relative"
+                            href="https://my.nextrelease.io"
+                        >
+                            Sign Up
+                        </a>
+                    </div>
+                </div>
                 <button
                     className="block relative md:hidden border border-white my-2 px-3 py-2"
                     onClick={() => toggleExpansion(!isExpanded)}
@@ -51,33 +73,6 @@ const Header = ({ className, ...props }) => {
                         <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
                     </svg>
                 </button>
-
-                <div
-                    className={`${
-                        isExpanded ? `block` : `hidden`
-                    } md:w-1/2 flex md:flex flex-col md:flex-row justify-center md:justify-between items-stretch md:items-center py-1`}
-                >
-                    <HeaderLink to="/features">Features</HeaderLink>
-                    <HeaderLink to="/performance_notes">Performance Notes</HeaderLink>
-                    <HeaderLink to="/pricing">Pricing</HeaderLink>
-                    <HeaderLink to="/contact">Contact</HeaderLink>
-                    <div className="flex px-1">
-                        <a
-                            className="w-full md:w-auto py-2 md:px-1 -mb-1 text-white font-bold hover:text-purple-100 border-transparent border-t-4 md:hover:border-orange-800 relative"
-                            href="https://my.nextrelease.io"
-                        >
-                            Login
-                        </a>
-                    </div>
-                    <div className="flex px-1">
-                        <a
-                            className="w-full md:w-auto py-2 px-4 hover:bg-orange-700 transition mb-1 bg-orange-600 text-white font-bold rounded border-transparent relative"
-                            href="https://my.nextrelease.io"
-                        >
-                            Sign Up
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
     );
