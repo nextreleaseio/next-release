@@ -52,6 +52,11 @@ export default ({ data }) => {
                             })}
                         </ul>
                     </div>
+                    <div className="flex justify-center mt-8">
+                        <Link to="/features" className="btn btn-purple">
+                            All Features
+                        </Link>
+                    </div>
                 </div>
                 <div
                     className="md:w-2/3 md:px-4 sm:w-full sm:px-2 sm:mt-4 markdown-body"

@@ -53,15 +53,22 @@ const Performance_Notes = ({ data }) => {
                     Performance Notes
                 </p>
                 <h1 className="text-4xl font-bold text-white">
-                    For Teams Who Need Elite Operations
+                    Tools For High-Performing Terams
                 </h1>
                 <p className="text-small text-grey-500 sm:w-full md:w-1/2 mx-auto">
                     You need to understand how changes are impacting your
-                    product’s, team’s, and organization’s performance. We
-                    integrate with your existing toolchains to bring you release
-                    notes that visually show what has changed and what the
-                    impact of those changes are.
+                    product, team, and organization’s performance. Integrate
+                    with your existing tools to get release notes visually
+                    showing key changes and highlighting outcomes.
                 </p>
+            </Row>
+            <Row classNames="text-center md:py-12 sm:py-8">
+                <a
+                    className="btn btn-orange"
+                    href="https://calendly.com/nextrelease-devon/performance-release-notes-introductory-meeting"
+                >
+                    Schedule Your Performance Notes Integration Today
+                </a>
             </Row>
             {solutions.map((solution, index) => {
                 const direction = index % 2 ? 'flex-row-reverse' : 'row';
@@ -81,14 +88,6 @@ const Performance_Notes = ({ data }) => {
                     </Row>
                 );
             })}
-            <Row classNames="text-center md:py-12 sm:py-8">
-                <a
-                    className="btn btn-purple hover:bg-orange-600"
-                    href="https://calendly.com/nextrelease-devon/performance-release-notes-introductory-meeting"
-                >
-                    Schedule Your Performance Notes Integration Today
-                </a>
-            </Row>
         </Layout>
     );
 };
