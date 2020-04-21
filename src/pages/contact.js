@@ -64,7 +64,7 @@ const OptInForm = () => {
 const Contact = () => {
     return (
         <Layout>
-            <SEO title="Contact" />
+            <SEO title="Contact" description="Contact Us" />
             <Row
                 classNames="bg-purple-800 text-center bg-no-repeat bg-center bg-cover md:py-12 sm:py-8"
                 style={{ backgroundImage: `url(${background})` }}
