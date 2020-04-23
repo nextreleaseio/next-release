@@ -20,6 +20,7 @@ module.exports = {
             options: {
                 gfm: true,
                 plugins: [
+                    `gatsby-remark-prismjs`,
                     {
                         resolve: `gatsby-remark-images`,
                         options: {
