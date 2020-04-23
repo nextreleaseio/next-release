@@ -4,6 +4,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import '../css/markdown-github.css';
 import help_image from '../images/NR_Help_Mast.png';
+import nr_logo from '../images/icons/NextRelease_Color_Stacked.png';
 import Row from '../components/row';
 import Bottom from '../components/bottom';
 import AuthorDetails from '../components/author';
@@ -12,14 +13,15 @@ export default ({ data }) => {
     const { blog } = data;
     const { title, subtitle, author, date } = blog.frontmatter;
     const { html, timeToRead } = blog;
-
+    const image = blog.frontmatter.image || nr_logo;
+    console.log(image);
     const heading = subtitle ? subtitle : 'Next Release';
     return (
         <Layout
             headerClass="relative bg-white"
             bodyClass="px-0 md:px-0 lg:px-0"
         >
-            <SEO title={title} />
+            <SEO title={title} description={subtitle} image={image} />
             <Row
                 classNames="bg-purple-800 text-center bg-no-repeat bg-center bg-cover md:py-12 sm:py-8"
                 style={{ backgroundImage: `url(${help_image})` }}
