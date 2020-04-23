@@ -6,10 +6,11 @@ import '../css/markdown-github.css';
 import help_image from '../images/NR_Help_Mast.png';
 import Row from '../components/row';
 import Bottom from '../components/bottom';
+import AuthorDetails from '../components/author';
 
 export default ({ data }) => {
     const { blog } = data;
-    const { title, subtitle, author, profilePic, date } = blog.frontmatter;
+    const { title, subtitle, author, date } = blog.frontmatter;
     const { html, timeToRead } = blog;
 
     const heading = subtitle ? subtitle : 'Next Release';
@@ -34,16 +35,18 @@ export default ({ data }) => {
                 </p>
             </Row>
             <Row>
-                <div className="md:w-2/3 sm:w-full mx-auto">
-                    <div className="w-full">
-                        <p className="font-bold text-lg text-grey-600">
-                            {date}
-                        </p>
+                <div className="md:w-3/4 flex md:flex-row sm:flex-col justify-content-between sm:w-full mx-auto">
+                    <div className="md:w-1/4 sm:w-full mt-4">
+                        <AuthorDetails name={author} />
                     </div>
-                    <div
-                        className="w-full markdown-body mt-4"
-                        dangerouslySetInnerHTML={{ __html: html }}
-                    />
+
+                    <div className="md:w-3/4 md:px-8 sm:w-full mt-4">
+                        <p className="font-bold text-grey-600">{date}</p>
+                        <div
+                            className="markdown-body mt-2"
+                            dangerouslySetInnerHTML={{ __html: html }}
+                        />
+                    </div>
                 </div>
             </Row>
             <Bottom />
