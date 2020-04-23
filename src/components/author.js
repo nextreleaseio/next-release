@@ -28,10 +28,10 @@ const AuthorDetails = ({ name }) => {
         <div className="flex sm:flex-row md:flex-col">
             <img
                 src={picture}
-                className="rounded-full md:mx-auto sm:mr-2 md:w-1/2 sm:w-1/12"
+                className="rounded-full md:mx-auto mr-2 md:w-1/2 w-1/12"
             />
             <h5 className="text-grey-600 md:text-center mt-2">{fullName}</h5>
-            <div className="flex justify-center mt-2 sm:mx-2">
+            <div className="flex justify-center mt-2 mx-2">
                 <a
                     href={githubUrl}
                     className="text-grey-500 hover:text-grey-600"
