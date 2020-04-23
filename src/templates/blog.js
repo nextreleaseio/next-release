@@ -37,7 +37,7 @@ export default ({ data }) => {
                 </p>
             </Row>
             <Row>
-                <div className="md:w-3/4 flex md:flex-row sm:flex-col justify-content-between sm:w-full mx-auto">
+                <div className="md:w-3/4 flex md:flex-row flex-col justify-content-between xs:w-full  mx-auto">
                     <div className="md:w-1/4 sm:w-full mt-4">
                         <AuthorDetails name={author} />
                     </div>
