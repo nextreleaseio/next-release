@@ -25,7 +25,7 @@ const AuthorDetails = ({ name }) => {
     const twitterUrl = `https://twitter.com/${twitter}`;
     const mailTo = `mailto:${email}?`;
     return (
-        <div className="flex sm:flex-row items-start md:flex-col">
+        <div className="flex sm:flex-row items-start md:items-center md:flex-col">
             <img
                 src={picture}
                 className="rounded-full h-auto md:mx-auto mr-2 md:w-1/2 w-1/12"
