@@ -4,21 +4,24 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import '../css/markdown-github.css';
 import help_image from '../images/NR_Help_Mast.png';
+import nr_logo from '../images/icons/NextRelease_Color_Stacked.png';
 import Row from '../components/row';
 import Bottom from '../components/bottom';
+import AuthorDetails from '../components/author';
 
 export default ({ data }) => {
     const { blog } = data;
-    const { title, subtitle, author, profilePic, date } = blog.frontmatter;
+    const { title, subtitle, author, date } = blog.frontmatter;
     const { html, timeToRead } = blog;
-
+    const image = blog.frontmatter.image || nr_logo;
+    console.log(image);
     const heading = subtitle ? subtitle : 'Next Release';
     return (
         <Layout
             headerClass="relative bg-white"
             bodyClass="px-0 md:px-0 lg:px-0"
         >
-            <SEO title={title} />
+            <SEO title={title} description={subtitle} image={image} />
             <Row
                 classNames="bg-purple-800 text-center bg-no-repeat bg-center bg-cover md:py-12 sm:py-8"
                 style={{ backgroundImage: `url(${help_image})` }}
@@ -34,16 +37,18 @@ export default ({ data }) => {
                 </p>
             </Row>
             <Row>
-                <div className="md:w-2/3 sm:w-full mx-auto">
-                    <div className="w-full">
-                        <p className="font-bold text-lg text-grey-600">
-                            {date}
-                        </p>
+                <div className="md:w-3/4 flex md:flex-row flex-col justify-content-between xs:w-full  mx-auto">
+                    <div className="md:w-1/4 sm:w-full mt-4">
+                        <AuthorDetails name={author} />
                     </div>
-                    <div
-                        className="w-full markdown-body mt-4"
-                        dangerouslySetInnerHTML={{ __html: html }}
-                    />
+
+                    <div className="md:w-3/4 md:px-8 sm:w-full mt-4">
+                        <p className="font-bold text-grey-600">{date}</p>
+                        <div
+                            className="markdown-body mt-2"
+                            dangerouslySetInnerHTML={{ __html: html }}
+                        />
+                    </div>
                 </div>
             </Row>
             <Bottom />
