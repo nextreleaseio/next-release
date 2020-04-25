@@ -4,7 +4,7 @@ title: "What is Release Orchestration"
 subtitle: "Implementing & Optimizing Release Orchestration"
 author: "devon"
 profilePic: "https://next-release-public-assets.s3.us-east-2.amazonaws.com/devon_profile_pic.png"
-image: "https://next-release-public-assets.s3.us-east-2.amazonaws.com/release_orchestration.png"
+image: ../../src/images/blog/release_orchestration.png
 date: 2020-04-16T22:33:46+10:00
 ---
 

@@ -4,7 +4,7 @@ title: "Integrating Github Issues"
 subtitle: "Include Github issues in your release notes"
 author: "donald"
 profilePic: "https://next-release-public-assets.s3.us-east-2.amazonaws.com/donald_profile_pic.jpeg"
-image: "https://next-release-public-assets.s3.us-east-2.amazonaws.com/include-github-issues.png"
+image: ../../src/images/screenshots/include-github-issues.png
 date: 2020-03-10T14:20:46+10:00
 ---
 

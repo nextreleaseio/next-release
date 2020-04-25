@@ -4,7 +4,7 @@ title: "Why Include Advance Release Notices?"
 subtitle: "Inform stakeholders of upcoming software changes"
 author: "devon"
 profilePic: "https://next-release-public-assets.s3.us-east-2.amazonaws.com/devon_profile_pic.png"
-image: "https://next-release-public-assets.s3.us-east-2.amazonaws.com/advance_shipping_notice.png"
+image: ../../src/images/blog/advance_shipping_notice.png
 date: 2020-04-20T22:33:46+10:00
 ---
 

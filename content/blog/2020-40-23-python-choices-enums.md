@@ -5,7 +5,7 @@ subtitle: "Making choices fields better with very little effort"
 author: "donald"
 profilePic: "https://next-release-public-assets.s3.us-east-2.amazonaws.com/donald_profile_pic.jpeg"
 date: 2020-04-23T22:33:46+10:00
-image: "https://next-release-public-assets.s3.us-east-2.amazonaws.com/using-enums.png"
+image: ../../src/images/blog/using-enums.png
 ---
 
 ### Adding Autocomplete For Choice Fields Without Really Trying
