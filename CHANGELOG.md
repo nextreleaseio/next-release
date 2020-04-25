@@ -1,3 +1,8 @@
+### [Version 0.9.0](https://github.com/nextreleaseio/next-release/releases/tag/0.9.0)  
+ **0.9.0**  
+ ### Implemented Enhancements 
+- Release Orchestration Article #67 @bleib1dj 
+  
 ### [Version 0.6.0](https://github.com/nextreleaseio/next-release/releases/tag/0.6.0)  
  **0.6.0**  
  ### Implemented Enhancements 

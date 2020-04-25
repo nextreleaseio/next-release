@@ -4,6 +4,7 @@ title: "Release Branch Strategies"
 subtitle: "Getting Started With DevOps Through Release Workflows"
 author: "devon"
 profilePic: "https://next-release-public-assets.s3.us-east-2.amazonaws.com/devon_profile_pic.png"
+image: ../../src/images/blog/release_strategies/workflow_gitflow.png
 date: 2020-04-10T12:33:46+10:00
 ---
 
@@ -20,7 +21,7 @@ recommend before diving into the strategies:
 
 ## Single Branch
 
-<img src="https://next-release-public-assets.s3.us-east-2.amazonaws.com/workflow_single+branch.png">
+![Single Branch Workflow](../../src/images/blog/release_strategies/workflow_single_branch.png)
 
 <table>
 <tr>
@@ -66,7 +67,7 @@ it out to their end-users.
 
 ## Staging & Deployment Branch Strategy
 
-<img src="https://next-release-public-assets.s3.us-east-2.amazonaws.com/workflow_staging+and+production.png">
+![Staging & Production Branch Workflow](../../src/images/blog/release_strategies/workflow_staging_and_production.png)
 
 <table>
 <tr>
@@ -97,7 +98,7 @@ features prior to deploying them to production.
 
 ## Multi-Branch GitFlow Branch Strategy
 
-<img src="https://next-release-public-assets.s3.us-east-2.amazonaws.com/workflow_gitflow.png">
+![GitFlow Workflow](../../src/images/blog/release_strategies/GitFlowHotfixBranch.png)
 
 <table>
 <tr>

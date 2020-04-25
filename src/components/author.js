@@ -12,7 +12,7 @@ const authors = {
     },
     devon: {
         github: 'bleib1dj',
-        twitter: 'bleib1dj',
+        twitter: 'devonbleibtrey',
         picture: devonPic,
         fullName: 'Devon Bleibtrey',
         email: 'devon@nextrelease.io'
