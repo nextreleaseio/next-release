@@ -4,6 +4,7 @@ title: "Creating Automatic Custom Reports"
 subtitle: "Generate custom reports with zero effort"
 author: "donald"
 profilePic: "https://next-release-public-assets.s3.us-east-2.amazonaws.com/donald_profile_pic.jpeg"
+image: "https://next-release-public-assets.s3.us-east-2.amazonaws.com/reports_showcase.png"
 date: 2020-04-22T22:33:46+10:00
 ---
 
