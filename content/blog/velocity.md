@@ -20,8 +20,8 @@ testing with users to see if it moves the needle on reaching our company objecti
 more of them may or may not get us to that future quicker. Some might even take us in the
 opposite direction, increasing technical debt and ongoing overhead. There are plenty of
 frameworks out there to help set up achievable objectives; I’d recommend Andrew Grove’s
-Objectives and Key Results (OKR) as evangelized by John Doerr in Measure What Matters and
-used by Google, LinkedIn, and Intel.
+Objectives and Key Results (OKR) as evangelized by John Doerr in [Measure What Matters](https://www.google.com/books/edition/Measure_What_Matters/u2NDDwAAQBAJ?hl=en&gbpv=0) and
+used by [Google, LinkedIn, and Intel](https://medium.com/okrs/a-crash-course-okr-googles-secret-sauce-fd562080ba94).
 
 The TLDR on objective frameworks is to set aspirational goals, define how you measure
 their success, figure out what your current reality is, break down the steps to get from
@@ -31,7 +31,8 @@ you build out experiments that track what impact your actions have on moving the
 These experiments can be adding a feature, creating an enhancement, writing a blog post,
 providing updated training material, or anything the team is doing to try and achieve
 their key results. A great way to architect these experiments and measure them can be
-found in the LEAN Startup by Eric Ries, who defines an experimentation framework.
+found in the [LEAN Startup](http://theleanstartup.com/principles) by Eric Ries, who
+defines an experimentation framework.
 
 At the meta-level, our goal is not to measure success by the number of experiments we
 can do but instead how effective our experiments are at helping us move the needle
