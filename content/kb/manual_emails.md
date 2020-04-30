@@ -8,6 +8,8 @@ section: "Using Next Release"
 Did you know that you can send custom emails about your releases with almost
 no effort?
 
+<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/fe277969549b430a9c200bf31e8df959" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 From your release detail page, click "Send Email" on the right-hand navigation.
 
 ![Release Detail Page](../../src/images/screenshots/release-detail-2020-04-30.png)

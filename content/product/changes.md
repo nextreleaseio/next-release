@@ -26,7 +26,7 @@ custom report templates to share releases across teams and projects.
 
 ### Custom Reports
 
-<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/14b4a452474c4243b8a98ab5e31a550c" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/fb838822f53a4a20907073908fb819c1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 Next Release automates your ability to share your application's changes with your team. Setup recurring weekly,
 biweekly, or monthly reports send your totally customized release notes to your key stakeholders.
