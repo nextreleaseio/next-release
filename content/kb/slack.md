@@ -1,8 +1,8 @@
 ---
-path: '/kb/slack-integration'
-title: 'Connect Next Release to Slack'
-slug: 'slack'
-section: 'Using Next Release'
+path: "/kb/slack-integration"
+title: "Connect Next Release to Slack"
+slug: "slack"
+section: "Using Next Release"
 ---
 
 What's the point of having great release notes if you can't share them with your colleagues?
