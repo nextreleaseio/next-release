@@ -1,5 +1,5 @@
 ---
-path: "/blog/advance_release_success.md"
+path: "/blog/advance_release_success"
 title: "Why Include Advance Release Notices?"
 subtitle: "Inform stakeholders of upcoming software changes"
 author: "devon"
