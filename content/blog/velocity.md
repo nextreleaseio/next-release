@@ -1,5 +1,5 @@
 ---
-path: "/blog/velocity.md"
+path: "/blog/velocity"
 title: "You're Measuring Velocity Wrong"
 subtitle: "Help Your Team Avoid Busy Work & Burnout"
 author: "devon"
@@ -39,7 +39,7 @@ can do but instead how effective our experiments are at helping us move the need
 towards each of our company objectives. This effectiveness can come in how quickly we
 learn what reality is and whether we should pivot or persevere in our actions.
 
-As developers, it is easy to fall into a pattern where we believe the next feature will
+As humans, it is easy to fall into a pattern where we believe the next feature will
 increase our user base or solve a problem we’re having. This anti-pattern, unfortunately,
 can turn into busy work that isn’t helping the team accomplish its goals. Having
 alignment on what our overarching objectives are, and being able to measure where we are,

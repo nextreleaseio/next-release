@@ -1,5 +1,5 @@
 ---
-path: "/blog/release_strategies.md"
+path: "/blog/release_strategies"
 title: "Release Branch Strategies"
 subtitle: "Getting Started With DevOps Through Release Workflows"
 author: "devon"
