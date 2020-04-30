@@ -8,6 +8,8 @@ section: "Get Started"
 If you're tired of sending status updates and writing the same weekly, post-sprint or
 monthly release emails by hand, Next Release Reports have what you need.
 
+<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/fb838822f53a4a20907073908fb819c1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 From the `Reports` tab, you can create your first automated report. You have several
 options of how to make our report templates fit your needs.
 
