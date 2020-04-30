@@ -1,5 +1,5 @@
 ---
-path: "/blog/getting_started_with_devops.md"
+path: "/blog/getting_started_with_devops"
 title: "Getting Started with DevOps"
 subtitle: "The Fundamentals of DevOps"
 author: "devon"

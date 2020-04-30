@@ -1,5 +1,5 @@
 ---
-path: "/blog/release_orchestration.md"
+path: "/blog/release_orchestration"
 title: "What is Release Orchestration"
 subtitle: "Implementing & Optimizing Release Orchestration"
 author: "devon"

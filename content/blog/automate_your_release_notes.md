@@ -1,5 +1,5 @@
 ---
-path: "/blog/automate_your_release_notes.md"
+path: "/blog/automate_your_release_notes"
 title: "Automate Your Release Notes"
 subtitle: "All You Need To Know About Automating Release Notes"
 author: "devon"
