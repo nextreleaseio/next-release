@@ -10,9 +10,9 @@ date: 2020-04-26T12:33:46+10:00
 
 Velocity - The measure of how quickly your team can build features, bugs, enhancements, or
 complete story points. Why is this how teams measure success? Popular tools have
-popularized this method, but it isn’t how we should be figuring out the performance
-of our teams. Instead, we should be gauging the velocity of something else. The
-velocity of our team reaching company objectives.
+evangelized it as the quintessential method, but it isn’t how we should be figuring
+out the performance of our teams. Instead, we should be gauging the velocity of something else.
+The velocity of our team reaching company objectives.
 
 Company objectives are not features, user stories, or job stories. They are where we want
 to be in the future and how we measure being there. A new feature is an idea that is worth
@@ -39,7 +39,7 @@ can do but instead how effective our experiments are at helping us move the need
 towards each of our company objectives. This effectiveness can come in how quickly we
 learn what reality is and whether we should pivot or persevere in our actions.
 
-As humans, it is easy to fall into a pattern where we believe the next feature will
+It is easy to fall into a pattern where we believe the next feature will
 increase our user base or solve a problem we’re having. This anti-pattern, unfortunately,
 can turn into busy work that isn’t helping the team accomplish its goals. Having
 alignment on what our overarching objectives are, and being able to measure where we are,
