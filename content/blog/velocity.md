@@ -29,8 +29,8 @@ that current reality to your goals, and then get started. To figure out how to m
 progress on your key results, the measurements of successfully reaching your objective,
 you build out experiments that track what impact your actions have on moving the needle.
 These experiments can be adding a feature, creating an enhancement, writing a blog post,
-providing updated training material, or anything the team is doing to try and achieve
-their key results. A great way to architect these experiments and measure them can be
+providing updated training material, or anything the team is doing to try to achieve
+their key results. A great way to design these experiments and measure them can be
 found in the [LEAN Startup](http://theleanstartup.com/principles) by Eric Ries, who
 defines an experimentation framework.
 
