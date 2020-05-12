@@ -1,3 +1,8 @@
+### [Version 0.11.3](https://github.com/nextreleaseio/next-release/releases/tag/0.11.3)  
+ **0.11.3**  
+ ### Fixed Bugs 
+- Fixed broken social media images & links #92 @bleib1dj 
+  
 ### [Version 0.9.0](https://github.com/nextreleaseio/next-release/releases/tag/0.9.0)  
  **0.9.0**  
  ### Implemented Enhancements 
