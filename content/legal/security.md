@@ -47,7 +47,7 @@ We protect your login from brute force attacks with rate limiting. Login informa
 
 We also allow you to use two-factor authentication, or 2FA, through GitHub login as an additional
 security measure when accessing your Next Release account. Enabling 2FA adds security to your account
-by requiring both your password as well as access to a security code on your phone to access your account.
+by requiring both your password and access to a security code on your phone to access your account.
 
 ###Credit card safety
 
