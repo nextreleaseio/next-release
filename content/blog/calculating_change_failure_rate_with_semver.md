@@ -1,6 +1,6 @@
 ---
 path: "/blog/calculating_change_failure_rate"
-title: "Calculating Change Failure Rate""
+title: "Calculating Change Failure Rate"
 subtitle: "Measuring How New Tools & Processes Affect Issues Making it to Production"
 author: "devon"
 profilePic: "https://next-release-public-assets.s3.us-east-2.amazonaws.com/devon_profile_pic.png"
