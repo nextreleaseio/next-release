@@ -14,7 +14,7 @@ The Next Release backend is written with Django Rest Framework, and since we sta
 python 3.6, we've been gradually adding type annotations and dataclasses for some of our key data structures.
 
 Enums are something I've wanted from the Django ecosystem: the added developer experience of autocomplete and ability
-to change labels without changing the underlying data an important improvement.
+to change labels without changing the underlying data is an important improvement.
 
 For Django fields that include `Choices`, this is particularly evident. When you don't use a field or specific
 choice often. It's a pain to look-up the model definition to see what all the choices are.
