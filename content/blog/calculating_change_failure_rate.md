@@ -167,4 +167,4 @@ what happens pre-deployment, helping to eliminate mistakes and build more
 maintainable code. However, it does not help you measure how quickly you can
 identify a bug made it into production or how quickly you can resolve it
 once you identify it. To measure this, you'll want to calculate your [mean
-time to recovery and duration to incident identification]().
+time to recovery and duration to incident identification](https://www.nextrelease.io/blog/calculating_mean_time_to_recovery).
