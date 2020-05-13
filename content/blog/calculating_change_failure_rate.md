@@ -19,6 +19,8 @@ of this cycle to solve new and complicated challenges we encounter. To
 figure out how these new tools or processes are impacting us, we need to
 track our change failure rate.
 
+## Categorize Changes
+
 To determine your change failure rate, you'll need some approach to track
 how many of your changes result in patches or issues. You could use a
 ticket manager, but in my experience, unless you have a pretty sophisticated
@@ -80,6 +82,8 @@ but for initial training, I've found it easiest to break things into these
 categories and then work with developers to refine as your team needs,
 rather than over-optimizing at the outset.
 
+## Create a Hotfix Category
+
 Once you know what types of changes your team is making, and which ones
 are merging into production, you'll need the number of issues that occur
 during that release. You can get fancy and utilize your application performance
@@ -99,6 +103,8 @@ our change failure rate. That's why you might want to add a "hotfix" label
 that team members add whenever they are working on a fix for a bug that made
 it into production.
 
+## Calculating Change Failure Rate
+
 Once you have the labels in place, and the team using them, doing the
 calculation becomes possible. To do the equation across the entire history
 of your project in Python, you'll do:
@@ -113,9 +119,52 @@ Doing so allows you to monitor how inserting a new tool or process into your
 team's development cycle is helping, hurting, or not making a difference in
 the rate of issues that are making it into production.
 
+## Leaderboard Standings
+
+Knowing where others stand can help you understand where your team is
+at and where you might want to aim next. Google and the DevOps Research &
+Assessment organization put out a study each year based on data collected
+from thousands of professionals worldwide. In it teams fall into various
+tiers depending on their performance. Below is the breakdown for change
+failure rate.
+
+<table>
+<tr>
+  <td style="font-weight: bold;">Tier</td>
+  <td style="font-weight: bold;">Change Failure Rate</td>
+  <td>% of Teams in Tier</td>
+</tr>
+<tr>
+  <td>Elite</td>
+  <td>0-15%</td>
+  <td>20%</td>
+</tr>
+<tr>
+  <td>High</td>
+  <td>0-15%</td>
+  <td>23%</td>
+</tr>
+<tr>
+  <td>Medium</td>
+  <td>0-15%</td>
+  <td>44%</td>
+</tr>
+<tr>
+  <td>Low</td>
+  <td>46-60%</td>
+  <td>12%</td>
+</tr>
+</table>
+
+For the complete study and methods utilized check out
+[Google's State of DevOps 2019](https://services.google.com/fh/files/misc/state-of-devops-2019.pdf).
+Also the percentages equal 99% due to rounding.
+
+## Conclusion
+
 Understanding the change failure rate of your system helps you to optimize
 what happens pre-deployment, helping to eliminate mistakes and build more
 maintainable code. However, it does not help you measure how quickly you can
 identify a bug made it into production or how quickly you can resolve it
-once you identify it. To measure this, you'll want to calculate your mean
-time to recovery and duration to incident identification.
+once you identify it. To measure this, you'll want to calculate your [mean
+time to recovery and duration to incident identification](https://www.nextrelease.io/blog/calculating_mean_time_to_recovery).
