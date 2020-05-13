@@ -105,7 +105,7 @@ or looking through release notes to see which versions affected the
 impacted system, you'll need to figure out what time the release that
 caused the issue merged into production.
 
-## Calculating
+## Calculating Mean Time To Recovery
 
 Once you have these three measurements, we can calculate
 your MTTR and one of the key contributors to it,
@@ -150,8 +150,11 @@ you can improve the benchmarks based on your specific needs.
 If you're wondering how your team stacks up against others when it comes
 to recovering from issues, according to the State of DevOps 2019,
 20% of teams are elite performers, 23% are high performers, 44% are
-medium performers, and 12% are low performers. These percentages
-are based on their performance in all [4 key metrics]() of DevOps performance.
+medium performers, and 12% are low performers (less than 100% due to rounding).
+These percentages are based on their performance in all
+[4 key metrics](https://www.nextrelease.io/blog/getting_started_with_devops)
+of DevOps performance.
+
 Regarding ability to recover from an incident here's how other teams are
 staking up:
 
