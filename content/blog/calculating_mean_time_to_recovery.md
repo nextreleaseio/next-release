@@ -145,6 +145,43 @@ These are naive approaches to taking a baseline but should give you
 a figure to start working with. Once you have incidents tracked,
 you can improve the benchmarks based on your specific needs.
 
+## Leaderboard Standings
+
+If you're wondering how your team stacks up against others when it comes
+to recovering from issues, according to the State of DevOps 2019,
+20% of teams are elite performers, 23% are high performers, 44% are
+medium performers, and 12% are low performers. These percentages
+are based on their performance in all [4 key metrics]() of DevOps performance.
+Regarding ability to recover from an incident here's how other teams are
+staking up:
+
+<table>
+<tr>
+  <td style="font-weight: bold;">Tier</td>
+  <td style="font-weight: bold;">Time to restore service</td>
+</tr>
+<tr>
+  <td>Elite</td>
+  <td>Less than one hour</td>
+</tr>
+<tr>
+  <td>High</td>
+  <td>Less than one day</td>
+</tr>
+<tr>
+  <td>Medium</td>
+  <td>Less than one day</td>
+</tr>
+<tr>
+  <td>Low</td>
+  <td>Between one week and one month</td>
+</tr>
+</table>
+
+If you'd like the complete breakdown or the methods of the study,
+check it out in
+[Google's State of DevOps 2019](https://services.google.com/fh/files/misc/state-of-devops-2019.pdf).
+
 ## Conclusion
 
 Now that you can take a baseline of your mean time to recovery and mean
