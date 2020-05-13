@@ -1,3 +1,8 @@
+### [Version 0.14.0](https://github.com/nextreleaseio/next-release/releases/tag/0.14.0)  
+ **0.14.0**  
+ ### Implemented Enhancements 
+- Calculating Change Failure Rate Blog Post #105 @bleib1dj
+  
 ### [Version 0.11.3](https://github.com/nextreleaseio/next-release/releases/tag/0.11.3)  
  **0.11.3**  
  ### Fixed Bugs 
