@@ -126,6 +126,7 @@ class Incident(models.Model):
 def mean_time_to_recovery():
     downtime = timedelta(0)
     all_incidents = Incident.objects.all()
+
     for incident in :
         downtime += incident.time_of_recovery - incident.time_of_release_zero
 
@@ -134,6 +135,7 @@ def mean_time_to_recovery():
 def mean_time_to_identification():
     downtime = timedelta(0)
     all_incidents = Incident.objects.all()
+
     for incident in :
         response_time += incident.time_of_recovery - incident.time_of_identification
 
