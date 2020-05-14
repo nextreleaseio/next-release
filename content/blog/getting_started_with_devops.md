@@ -25,6 +25,8 @@ objectives of your organization. To chat about how you and your team can
 improve your developer operations journey, grab [30 minutes on our calendar](https://calendly.com/nextrelease-devon/developer-operations-optimization-introduction)
 or hit us up on twitter [@nextreleaseio](https://twitter.com/nextreleaseio).
 
+## 4 Key Metrics
+
 It's easy to get distracted by the shiny tools and toys within the DevOps world and get sucked into the latest
 trend or fad. There's nothing wrong with being cutting edge or adopting new things, but where we suggest you start
 is looking at the throughput and stability of your existing operations. To measure these, you can use the same
@@ -32,13 +34,13 @@ gauges used by [Google](https://cloud.google.com/devops) and
 the [DevOps Research and Assessment](https://www.devops-research.com/research.html) organization:
 
 -   For throughput measure your:
-    -   <span style="font-weight: bold;">Lead Time for Change</span>: The duration between the time of checking in a change to the time the team
+    -   **[Lead Time for Change](https://www.nextrelease.io/blog/measuring_lead_time_for_change)**: The duration between the time of checking in a change to the time the team
         releases it into production.
-    -   <span style="font-weight: bold;">Deployment Frequency</span>: How often a team deploys code to production.
+    -   **[Deployment Frequency](https://www.nextrelease.io/blog/measuring_deployment_frequency)**: How often a team deploys code to production.
 -   For stability measure your:
-    -   <span style="font-weight: bold;">Mean Time to Restore (MTTR)</span>: The time it takes detecting a user-impacting incident to having
+    -   **[Mean Time to Restore (MTTR)](https://www.nextrelease.io/blog/calculating_mean_time_to_recovery)**: The time it takes detecting a user-impacting incident to having
         it resolved.
-    -   <span style="font-weight: bold;">Change Failure Rate</span>: The percentage of changes to production that result in degraded service
+    -   **[Change Failure Rate](https://www.nextrelease.io/blog/calculating_change_failure_rate)**: The percentage of changes to production that result in degraded service
 
 These four metrics will help you understand where you're at today and where you'll need to focus your efforts
 to improve your operations. Once you have these measurements, they'll act as a ballast to help keep you focused
