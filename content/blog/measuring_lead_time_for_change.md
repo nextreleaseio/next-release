@@ -5,7 +5,7 @@ subtitle: "How Quickly Can You Get an Experiment Running"
 author: "devon"
 profilePic: "https://next-release-public-assets.s3.us-east-2.amazonaws.com/devon_profile_pic.png"
 image: ../../src/images/blog/devops_team.png
-date: 2020-05-16T12:33:46+10:00
+date: 2020-05-13T12:33:46+10:00
 ---
 
 Measuring lead time for change is one of the more difficult
