@@ -25,7 +25,7 @@ On a mac, it's an easy command + oauth redirect to setup:
  brew install github/gh/gh
 ```
 
-At Next Release, we're all zsh users, so here are a few helpful aliases we use to add labels even easier:
+At Next Release, we're all zsh users, so here are a few helpful aliases we use to make adding labels even easier:
 
 ```
 alias submit-patch='gh pr create --label bug'
