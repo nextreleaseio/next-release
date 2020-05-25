@@ -63,10 +63,10 @@ and reusable code. Everyone is at a different level each time they open a pull r
 Dealing with varying skill levels means that when doing a pull request review you’ll want to:
 
 -   Have an understanding of what the contributor skill level is, including topics they
-    are solid on vs. ones they can still improve
+    are solid on vs. ones they can still improve.
 -   Understand what topics you can teach with the submitted pull request and what to leave
     for future submissions.
--   Record which patterns they show knowledge in and utilize it to orient future reviews
+-   Record which patterns they show knowledge in and utilize it to orient future reviews.
 
 Also, be realistic, a lot of people say every commit must be a single atomic, coherent
 change. Atomic changes is a best practice; it’s not something to fall on your sword over.
@@ -85,7 +85,7 @@ learn. Here are a few examples to get started with:
         anti-patterns](https://docs.quantifiedcode.com/python-anti-patterns/django/index.html).
 -   Some degree of testing for new enhancements/breaking changes and regression tests for bugs.
     -   [Unit Test Design Patterns](https://www.codeproject.com/Articles/5772/Advanced-Unit-Test-Part-V-Unit-Test-Patterns)
-    -   Avoid using code coverage as your only measuring stick
+    -   Avoid using code coverage as your only measuring stick:
         -   [Test Coverage != Quality Target](https://martinfowler.com/bliki/TestCoverage.html)
         -   [How to Misuse Code Coverage](http://www.exampler.com/testing-com/writings/coverage.pdf)
         -   [How Much Test Coverage Do You Need?](http://www.developertesting.com/archives/month200705/20070504-000425.html)
@@ -110,14 +110,20 @@ learn. Here are a few examples to get started with:
         increase readability and can help in reducing redundant code when used instead of
         hardcoded values.
 -   Size of functions / classes (mega classes / dumping ground)
-    -   A good rule of thumb is if a function is over 25 lines, step back and think if the contributor can decompose it into a more modular structure.
-    -   Having large functions makes it hard to understand at a glance what it does; it makes it difficult to maintain and tends to reduce the reusability of the function.
+    -   A good rule of thumb is if a function is over 25 lines, step back and think if the
+        contributor can decompose it into a more modular structure.
+    -   Having large functions makes it hard to understand at a glance what it does; it makes it
+        difficult to maintain and tends to reduce the reusability of the function.
 
 #### Pull Request Inspection
 
--   Amount of changes in a PR (features, bug fixes, breaking changes, etc.); Pull requests do not need to be explicitly atomic but should try to be when possible.
-    -   Including multiple changes in a single PR makes it hard to understand the impact of the release, root cause bugs created by it, validate backward compatibility, enable others to review it, share with the team what has changed, and let customers know what to expect.
-    -   Pre-1.0 releases often warrant letting this lesson wait until more stable releases. Setting up foundational scaffolding for a project, retooling to enable reaching business objectives, and complete pivots are common in these stages. While this churn is happening, it may make sense to limit the scrutiny of atomic changes with fully baked out test cases depending on your product.
+-   Amount of changes in a PR (features, bug fixes, breaking changes, etc.); Pull requests do not
+    need to be explicitly atomic but should try to be when possible. - Including multiple changes in a single PR makes it hard to understand the impact of the
+    release, root cause bugs created by it, validate backward compatibility, enable others to review
+    it, share with the team what has changed, and let customers know what to expect. - Pre-1.0 releases often warrant letting this lesson wait until more stable releases. Setting
+    up foundational scaffolding for a project, retooling to enable reaching business objectives,
+    and complete pivots are common in these stages. While this churn is happening, it may make sense
+    to limit the scrutiny of atomic changes with fully baked out test cases depending on your product.
 -   Pull request titles & commits are on point and describe what changed, aka they’re not fluff.
 -   Pull request outlines
     -   Why the pull request was submitted
