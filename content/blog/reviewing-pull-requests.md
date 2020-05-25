@@ -30,7 +30,7 @@ and were made popular by GitHub. They allow thousands of developers to contribut
 code to a single repository simultaneously. Once you have one opened, others can
 review the changes for a variety of criteria.
 
-### Why Review it?
+### Why Review Pull Requests?
 
 We review code to help coach teammates on community best practices, software design
 patterns, security, and possible language implementation optimizations. Reviews are
@@ -56,7 +56,7 @@ Here are a few examples that you can start using to automate these bikeshedding 
 -   [Rufo](https://github.com/ruby-formatter/rufo) - Ruby Opinionated Code Formatter
 -   [Rustfmt](https://github.com/rust-lang/rustfmt) - Format Rust Code According to Style Guidelines
 
-### What to focus on
+### What To Focus On In Pull Request Reviews
 
 Helping teammates develop solid habits, developing secure, maintainable, readable,
 and reusable code. Everyone is at a different level each time they open a pull request.
