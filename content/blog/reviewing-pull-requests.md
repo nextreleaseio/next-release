@@ -81,8 +81,7 @@ learn. Here are a few examples to get started with:
 
 -   [Software Design Patterns](https://en.wikipedia.org/wiki/Software_design_pattern) / [Anti-patterns](https://en.wikipedia.org/wiki/Anti-pattern)
     -   [Composition over Inheritance](https://medium.com/humans-create-software/composition-over-inheritance-cb6f88070205)
-    -   Community driven design patterns / anti-patterns. Taking, for example, [Django
-        anti-patterns](https://docs.quantifiedcode.com/python-anti-patterns/django/index.html).
+    -   Community driven design patterns / anti-patterns. Taking, for example, [Django anti-patterns](https://docs.quantifiedcode.com/python-anti-patterns/django/index.html).
 -   Some degree of testing for new enhancements/breaking changes and regression tests for bugs.
     -   [Unit Test Design Patterns](https://www.codeproject.com/Articles/5772/Advanced-Unit-Test-Part-V-Unit-Test-Patterns)
     -   Avoid using code coverage as your only measuring stick:
@@ -93,8 +92,7 @@ learn. Here are a few examples to get started with:
     -   [OWASP Patterns for Security](https://owasp.org/www-pdf-archive/Vanhilst_owasp_140319.pdf)
     -   [OWASP Vulnerability Catalog](https://owasp.org/www-community/vulnerabilities/)
         -   Since it’s a full-time job keeping up with vulnerabilities, I would recommend
-            also integrating a static code analyzer that checks for vulnerabilities. [OWASP
-            has a solid list of tools](https://owasp.org/www-community/Source_Code_Analysis_Tools),
+            also integrating a static code analyzer that checks for vulnerabilities. [OWASP has a solid list of tools](https://owasp.org/www-community/Source_Code_Analysis_Tools),
             and many of its core sponsors provide commercial
             solutions. It can be difficult for these tools to pick up on every vulnerability,
             so keep an eye out during your reviews.
@@ -118,12 +116,14 @@ learn. Here are a few examples to get started with:
 #### Pull Request Inspection
 
 -   Amount of changes in a PR (features, bug fixes, breaking changes, etc.); Pull requests do not
-    need to be explicitly atomic but should try to be when possible. - Including multiple changes in a single PR makes it hard to understand the impact of the
-    release, root cause bugs created by it, validate backward compatibility, enable others to review
-    it, share with the team what has changed, and let customers know what to expect. - Pre-1.0 releases often warrant letting this lesson wait until more stable releases. Setting
-    up foundational scaffolding for a project, retooling to enable reaching business objectives,
-    and complete pivots are common in these stages. While this churn is happening, it may make sense
-    to limit the scrutiny of atomic changes with fully baked out test cases depending on your product.
+    need to be explicitly atomic but should try to be when possible.
+    -   Including multiple changes in a single PR makes it hard to understand the impact of the
+        release, root cause bugs created by it, validate backward compatibility, enable others to review
+        it, share with the team what has changed, and let customers know what to expect.
+    -   Pre-1.0 releases often warrant letting this lesson wait until more stable releases. Setting
+        up foundational scaffolding for a project, retooling to enable reaching business objectives,
+        and complete pivots are common in these stages. While this churn is happening, it may make sense
+        to limit the scrutiny of atomic changes with fully baked out test cases depending on your product.
 -   Pull request titles & commits are on point and describe what changed, aka they’re not fluff.
 -   Pull request outlines
     -   Why the pull request was submitted
