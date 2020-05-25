@@ -16,7 +16,7 @@ in front of customers as quickly as you can create new functionality.
 
 ## Measuring Deployment Frequency
 
-Deployment frequency is what it sounds like the number of releases you've
+Deployment frequency is what it sounds like, the number of releases you've
 deployed over a given time frame. According to Google's
 [2019 State of DevOps Report](https://services.google.com/fh/files/misc/state-of-devops-2019.pdf)
 teams have the following deployment rates:
