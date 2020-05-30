@@ -58,7 +58,7 @@ Regardless of your choice, you'll need an SCM to:
 
 After you have an SCM, you'll want to choose which workflow for managing code changes your team follows.
 There are workflows for every type of team, product, and deployment style. We provide an overview
-of a few of them in a previous article on [release strategies](https://www.nextrelease.io/blog/release_strategies.md)
+of a few of them in a previous article on [release strategies](https://www.nextrelease.io/blog/release_strategies)
 to help you get started with choosing one that works for your team.
 
 Beyond these fundamentals some other areas you'll want to start looking at are:
