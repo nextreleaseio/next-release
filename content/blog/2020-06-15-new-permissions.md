@@ -4,7 +4,7 @@ title: "Updating Our Github Permissions"
 subtitle: "We updated our Github permissions "
 author: "donald"
 profilePic: "https://next-release-public-assets.s3.us-east-2.amazonaws.com/donald_profile_pic.jpeg"
-image: ../../src/images/screenshots/include-github-issues.png
+image: ../../src/images/blog/security.png
 date: 2020-05-16T12:33:46+10:00
 ---
 
