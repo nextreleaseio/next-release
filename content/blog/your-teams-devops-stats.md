@@ -22,7 +22,7 @@ doing, navigate to your organization settings, and click on the "Metrics"
 tab. This will take you to a dashboard providing an overview of how your
 entire organization is performing.
 
-<video controls>
+<video style="width: 100%;" controls>
   <source src="https://next-release-public-assets.s3.us-east-2.amazonaws.com/organization-metrics-overview.mp4" type="video/mp4">
   <source src="https://next-release-public-assets.s3.us-east-2.amazonaws.com/organization-metrics-overview.webm" type="video/webm">
   Your browser does not support the video tag.
