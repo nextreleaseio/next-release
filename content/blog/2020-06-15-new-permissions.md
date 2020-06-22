@@ -5,7 +5,7 @@ subtitle: "We updated our Github permissions "
 author: "donald"
 profilePic: "https://next-release-public-assets.s3.us-east-2.amazonaws.com/donald_profile_pic.jpeg"
 image: ../../src/images/blog/security.png
-date: 2020-05-16T12:33:46+10:00
+date: 2020-06-16T12:33:46+10:00
 ---
 
 If you have our app installed in one of your Github organizations, you received a notification that Next Release has

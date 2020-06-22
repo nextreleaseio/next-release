@@ -1,5 +1,5 @@
 ---
-path: "/blog/your-teams-devops-performance-stats"
+path: "/blog/project-performance-stats"
 title: "Digging Into Your Organization’s DevOps Performance"
 subtitle: "Project Level Metrics"
 author: "devon"
