@@ -1,7 +1,7 @@
 ---
 path: "/blog/your-teams-devops-performance-stats"
 title: "Django REST Framework Sponsorship"
-subtitle: "Optimize RESTful API Development"
+subtitle: "Reduce DevOps Overhead on RESTful API Development"
 author: "devon"
 profilePic: "https://next-release-public-assets.s3.us-east-2.amazonaws.com/devon_profile_pic.png"
 image: ../../src/images/blog/devops_team.png
