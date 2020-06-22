@@ -1,5 +1,5 @@
 ---
-path: "/blog/your-teams-devops-performance-stats"
+path: "/blog/django-rest-framework-sponsorship"
 title: "Django REST Framework Sponsorship"
 subtitle: "Reduce DevOps Overhead on RESTful API Development"
 author: "devon"
