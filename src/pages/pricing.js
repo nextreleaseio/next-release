@@ -314,6 +314,37 @@ const Content = () => {
                     <div className="rounded-lg bg-gray-100 px-6 py-8 sm:p-10 lg:flex lg:items-center">
                         <div className="flex-1">
                             <div>
+                                <span className="inline-flex px-4 py-1 rounded-full text-sm leading-5 font-semibold tracking-wide uppercase bg-green-100 text-green-600">
+                                    Free For Open Source
+                                </span>
+                            </div>
+                            <div className="mt-4 text-lg leading-7 text-gray-500">
+                                We're committed to supporting open-source
+                                projects through our own open-source
+                                contributions and making Next Release free for
+                                any public repository on Github. Next Release
+                                works great by automatically tagging and
+                                publishing releases, with automatic changelog
+                                support.
+                            </div>
+                        </div>
+                        <div className="mt-6 rounded-md shadow lg:mt-0 lg:ml-10 lg:flex-shrink-0">
+                            <a
+                                href="https://my.nextrelease.io/"
+                                className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-gray-900 bg-white hover:text-gray-700 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+                            >
+                                Sign Up Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="mt-4 relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 lg:mt-5">
+                <div className="max-w-md mx-auto lg:max-w-5xl">
+                    <div className="rounded-lg bg-gray-100 px-6 py-8 sm:p-10 lg:flex lg:items-center">
+                        <div className="flex-1">
+                            <div>
                                 <span className="inline-flex px-4 py-1 rounded-full text-sm leading-5 font-semibold tracking-wide uppercase bg-indigo-100 text-indigo-600">
                                     Enterprise
                                 </span>
