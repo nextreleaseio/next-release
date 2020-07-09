@@ -14,8 +14,10 @@ threats, and changes have the same impact on our projects. When they are
 updated, we need to quickly understand the impact to our project and what
 changes are required. That way, we can integrate changes that fix bugs,
 resolve security issues, and add new functionality. Identifying the changes
-that impact your project is why it's essential to gauge the maturity of
-packages before integrating them and ensuring they have release notes,
+that impact your project and the fact that [75% of all vulnerabilities reside
+in indirect dependencies](https://www.zdnet.com/article/more-than-75-of-all-vulnerabilities-reside-in-indirect-dependencies/)
+is why it's essential to gauge the maturity of
+packages before integrating them by ensuring they have release notes,
 versioning, and maintainable code.
 
 Managing dependencies has become more accessible in recent years with
