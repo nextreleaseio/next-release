@@ -137,7 +137,14 @@ const Footer = () => {
                                             Blog
                                         </Link>
                                     </li>
-
+                                    <li className="mt-4">
+                                        <Link
+                                            to="/about-us"
+                                            className="text-base leading-6 text-grey-600 hover:text-gray-900"
+                                        >
+                                            About Us
+                                        </Link>
+                                    </li>
                                     <li className="mt-4">
                                         <Link
                                             to="/security"
@@ -186,6 +193,14 @@ const Footer = () => {
                                             Privacy Policy
                                         </Link>
                                     </li>
+                                    <li className="mt-4">
+                                        <Link
+                                            to="/access-permissions"
+                                            className="text-base leading-6 text-grey-600 hover:text-gray-900"
+                                        >
+                                            Access Permissions
+                                        </Link>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -194,7 +209,7 @@ const Footer = () => {
                 <div className="mt-12 border-t border-gray-200 pt-8">
                     <p className="text-base leading-6 text-grey-500 xl:text-center">
                         &copy; 2020 Next Release, LLC. All rights reserved. Made
-                        with &#10084; in Michigan.
+                        with &#10084; &nbsp; in Michigan.
                     </p>
                 </div>
             </div>

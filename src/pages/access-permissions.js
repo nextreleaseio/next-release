@@ -4,17 +4,21 @@ import Row from '../components/row';
 import SEO from '../components/seo';
 import { graphql } from 'gatsby';
 
-const Cookie = ({ data }) => {
+const AccessPermissions = ({ data }) => {
     const content = data.allMarkdownRemark.edges[0].node.html;
     return (
         <Layout>
-            <SEO title="Cookie Policy" />
+            <SEO title="Access Permissions" />
             <Row classNames="text-center bg-grey-200">
-                <h1 className="text-3xl">Cookie Policy</h1>
+                <h1 className="text-3xl font-bold">Access Permissions</h1>
+                <h2 className="text-lg">
+                    We treat each customer’s project as if it contains the most
+                    sensitive of our own data.
+                </h2>
             </Row>
             <Row>
                 <div
-                    className="w-3/4 mx-auto"
+                    className="w-3/4 mx-auto markdown-body"
                     dangerouslySetInnerHTML={{ __html: content }}
                 ></div>
             </Row>
@@ -23,9 +27,9 @@ const Cookie = ({ data }) => {
 };
 
 export const query = graphql`
-    query CookieQuery {
+    query AccessPermissionsQuery {
         allMarkdownRemark(
-            filter: { fileAbsolutePath: { regex: "/privacy.md/" } }
+            filter: { fileAbsolutePath: { regex: "/access-permissions.md/" } }
         ) {
             edges {
                 node {
@@ -36,4 +40,4 @@ export const query = graphql`
     }
 `;
 
-export default Cookie;
+export default AccessPermissions;
