@@ -5,7 +5,7 @@ subtitle: "Overview of Threats Within Two Paradigms"
 author: "devon"
 profilePic: "https://next-release-public-assets.s3.us-east-2.amazonaws.com/devon_profile_pic.png"
 image: ../../src/images/blog/devops_team.png
-date: 2020-07-24T16:33:46+10:00
+date: 2020-07-26T16:33:46+10:00
 ---
 
 Cyber threats are at an all-time high, and malicious actors continue to
