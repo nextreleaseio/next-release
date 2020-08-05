@@ -1,3 +1,7 @@
+### Release 0.25.0 
+### Implemented Enhancements 
+- Permissions and About Us updates [#159](https://nextreleaseio/next-release/issues/#159) ([@bleib1dj](https://github.com/@bleib1dj))
+ 
 ### Release 0.24.0 
 ### Implemented Enhancements 
 - Adding dependency blog post [#152](https://nextreleaseio/next-release/issues/#152) ([@bleib1dj](https://github.com/@bleib1dj))
