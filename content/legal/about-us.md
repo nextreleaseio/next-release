@@ -2,7 +2,7 @@
 
 Our team is focused on making product teams more effective
 through developer operations. We help teams break down communication
-barriers and improve alignment. We’re a Michigan based startup serving
+barriers and improve alignment. We’re a Michigan based company serving
 software developers around the world.
 
 ## Our Mission
@@ -57,7 +57,11 @@ more success to the mission.
     </div>
     <div class="w-4"> </div>
     <div class="w-full">    
-        TBD
+        Enthusiastic about bridging the knowledge gap between engineering and other teams, Donald has lead 
+        teams across different disciplines for product organizations of all sizes, in highly regulated 
+        (health care, financial, and legal) environments. He has built products and teams that are driven 
+        by uncovering what the real challenges are for customers and delivering testable and user-centered 
+        solutions that unlock real value for all the stakeholders.
     </div>
 </div>
 
@@ -90,8 +94,7 @@ knows what’s really going to be launched.
 
 ### Our Daily Values
 
-We’re looking for people who align
-with our principal framework.
+We’re looking for people who align with our principal framework.
 
 #### Team, Teammates, Self - The Narwhal Family
 
@@ -99,7 +102,7 @@ We put the success and wellbeing of the company above the individual. We put the
 success and wellbeing of our colleagues above our own. We are coaches and students.
 We succeed as a team and fail as a team.
 
-#### The 10x Rule
+#### 10x Thinking & Measuring What Matters
 
 The best work is done when we all align behind a set of objectives that enable
 us to set personal objectives that force growth. We recognize that greatness
