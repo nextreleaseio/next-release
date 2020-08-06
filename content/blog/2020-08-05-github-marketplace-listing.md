@@ -8,8 +8,6 @@ image: ../../src/images/blog/devops_team.png
 date: 2020-08-05T16:33:46+10:00
 ---
 
-## GitHub Marketplace Listing
-
 We’re on GitHub Marketplace! If you’re looking to manage your subscription
 through the GitHub marketplace, you can now
 [find us through it](https://github.com/marketplace/nextrelease-io) :D. We’re
