@@ -1,3 +1,9 @@
+### Release 0.26.0 
+### Implemented Enhancements 
+- GitHub Market Listing Post [#162](https://nextreleaseio/next-release/issues/#162) ([@bleib1dj](https://github.com/@bleib1dj))
+### Content 
+- Update CHANGELOG.md for 0.25.0 [#161](https://nextreleaseio/next-release/issues/#161) ([@nextreleaseio[bot]](https://github.com/@nextreleaseio[bot]))
+ 
 ### Release 0.25.0 
 ### Implemented Enhancements 
 - Permissions and About Us updates [#159](https://nextreleaseio/next-release/issues/#159) ([@bleib1dj](https://github.com/@bleib1dj))
