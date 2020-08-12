@@ -98,7 +98,8 @@ your data and pipeline from abuse.
 Though there are many advantages to decentralized developer operations,
 it is in its infancy, and there are not as many teams providing solutions
 within the ecosystem yet. We're working on changing that, and if you're
-interested in being an alpha partner, [hit us up](https://www.nextrelease.io/contact) and let us know what your
+interested in being an alpha partner,
+[hit us up](https://www.nextrelease.io/contact) and let us know what your
 tech stack looks like.
 
 ## Hybrid Approach & Trust in a Trustless Environment
