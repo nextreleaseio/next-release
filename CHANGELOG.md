@@ -1,3 +1,7 @@
+#### [Release 0.29.0](https://nextreleaseio/next-release/releases/tag/0.29.0) 
+### Implemented Enhancements 
+- Minor mod to test new public notifications [#169](https://nextreleaseio/next-release/issues/#169) ([@bleib1dj](https://github.com/@bleib1dj))
+ 
 ### Release 0.26.0 
 ### Implemented Enhancements 
 - GitHub Market Listing Post [#162](https://nextreleaseio/next-release/issues/#162) ([@bleib1dj](https://github.com/@bleib1dj))
