@@ -1,3 +1,9 @@
+#### [Release 0.30.0](https://nextreleaseio/next-release/releases/tag/0.30.0) 
+### Implemented Enhancements 
+- Twitter Changelog Integration Announcement [#172](https://nextreleaseio/next-release/issues/#172) ([@bleib1dj](https://github.com/@bleib1dj))
+### Content 
+- Update CHANGELOG.md for 0.29.0 [#171](https://nextreleaseio/next-release/issues/#171) ([@nextreleaseio[bot]](https://github.com/@nextreleaseio[bot]))
+ 
 #### [Release 0.29.0](https://nextreleaseio/next-release/releases/tag/0.29.0) 
 ### Implemented Enhancements 
 - Minor mod to test new public notifications [#169](https://nextreleaseio/next-release/issues/#169) ([@bleib1dj](https://github.com/@bleib1dj))
