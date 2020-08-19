@@ -101,8 +101,8 @@ const Index = ({ data }) => {
                         </span>
                     </h1>
                     <h2 className="text-purple-100 text-2xl leading-none mt-8 font-hairline">
-                        Automatic, consistent and effortless notes for every
-                        release, for every project.
+                        Release notes and changelogs, status checks, reports,
+                        and analytics for every team.
                     </h2>
                     <a
                         href="https://my.nextrelease.io"
@@ -137,15 +137,17 @@ const Index = ({ data }) => {
                                     </div>
                                     <div className="ml-4">
                                         <h5 className="text-lg leading-6 font-medium text-gray-900">
-                                            Changelogs and Releases
+                                            Release Notes and Changelogs
                                         </h5>
                                         <p className="mt-2 text-base leading-6 text-gray-500">
-                                            Generate release notes and
-                                            changelogs directly from Github pull
-                                            requests, with deep GitHub
-                                            integration for releases, requiring
-                                            no additional code or tooling, or
-                                            effort from developers.
+                                            Generate automatic and consistent
+                                            release notes and changelogs
+                                            automatically with zero code, zero
+                                            config, and zero effort. Next
+                                            Release uses pull requests to
+                                            organize and create your release
+                                            notes with deep git and GitHub
+                                            integration.
                                         </p>
                                     </div>
                                 </div>
@@ -163,7 +165,7 @@ const Index = ({ data }) => {
                                     </div>
                                     <div className="ml-4">
                                         <h5 className="text-lg leading-6 font-medium text-gray-900">
-                                            Custom Validation and Rules
+                                            Automatic Status Checks
                                         </h5>
                                         <p className="mt-2 text-base leading-6 text-gray-500">
                                             Next Release's powers your team with
