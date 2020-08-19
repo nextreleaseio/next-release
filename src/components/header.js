@@ -43,11 +43,7 @@ const Header = ({ className, ...props }) => {
                         isExpanded ? `block` : `hidden`
                     } md:w-3/4 flex md:flex flex-col md:flex-row justify-center md:justify-between items-stretch md:items-baseline py-1`}
                 >
-                    <HeaderLink to="/features/automatic">Releases</HeaderLink>
-                    <HeaderLink to="/features/share-changes">
-                        Reports
-                    </HeaderLink>
-                    <HeaderLink to="/performance_notes">Performance</HeaderLink>
+                    <HeaderLink to="/features">Features</HeaderLink>
                     <HeaderLink to="/pricing">Pricing</HeaderLink>
                     <HeaderLink to="/blog">Blog</HeaderLink>
                     <HeaderLink to="/contact">Contact</HeaderLink>

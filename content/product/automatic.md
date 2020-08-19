@@ -1,7 +1,7 @@
 ---
 path: "/features/automatic"
 title: "Automatic Release Notes"
-subtitle: "Big impact, zero effort"
+subtitle: "Consistent release notes for every change, every pull request"
 date: 2018-11-18T12:33:46+10:00
 image: ../../src/images/features/business-target-1.png
 items:

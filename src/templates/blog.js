@@ -43,9 +43,9 @@ export default ({ data }) => {
                     </div>
 
                     <div className="md:w-3/4 md:px-8 sm:w-full mt-4">
-                        <p className="font-bold text-grey-600">{date}</p>
+                        <p className="font-bold text-purple-300">{date}</p>
                         <div
-                            className="markdown-body mt-2"
+                            className="text-grey-600 prose mt-2"
                             dangerouslySetInnerHTML={{ __html: html }}
                         />
                     </div>

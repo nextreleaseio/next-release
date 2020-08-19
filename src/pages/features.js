@@ -26,7 +26,8 @@ const features = [
         title: 'Pull Request Dependencies',
         description:
             'Need to wait on that backend PR? Next Release helps you create custom status checks for each pull request.',
-        icon: faCheckDouble
+        icon: faCheckDouble,
+        url: '/features/pull-request-dependencies'
     },
     {
         title: 'Team Performance',
@@ -62,8 +63,7 @@ const Feature = ({ feature }) => {
                         to={feature.url}
                         className="mt-2 text-sm text-purple-400 font-bold tracking-wide lowercase bg-purple-100 rounded-lg px-2"
                     >
-                        {' '}
-                        More{' '}
+                        More
                     </Link>
                 </p>
             </div>
