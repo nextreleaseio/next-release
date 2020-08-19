@@ -22,7 +22,7 @@ import Loom from '../components/loom';
 const Feature = ({ feature }) => {
     const { title, path, image, items } = feature.node.frontmatter;
     return (
-        <div className="px-4 md:w-1/3 sm:w-full flex flex-col justify-between">
+        <div className="px-4 flex flex-col justify-between">
             <div>
                 <div className="flex flex-row items-center">
                     <div className="w-4/12">
@@ -214,7 +214,10 @@ const Index = ({ data }) => {
             </Row>
 
             <Row>
-                <div className="flex flex-row flex-wrap">
+                <h4 className="text-4xl font-thin uppercase text-purple-600 text-center">
+                    Features
+                </h4>
+                <div className="mx-auto sm:w-full md:w-10/12 lg:w-1/2 grid grid-cols-1 md:grid-cols-2">
                     {features.map(feature => {
                         return (
                             <Feature
