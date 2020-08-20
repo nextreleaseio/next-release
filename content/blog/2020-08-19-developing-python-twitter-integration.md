@@ -63,9 +63,9 @@ class Organization():
        )
        fetch_response = oauth.fetch_request_token(request_token_url)
 
-           self.twitter_temp_oauth_token = fetch_response.get('oauth_token')
-           self.twitter_temp_oauth_token_secret = fetch_response.get('oauth_token_secret')
-           self.save()
+       self.twitter_temp_oauth_token = fetch_response.get('oauth_token')
+       self.twitter_temp_oauth_token_secret = fetch_response.get('oauth_token_secret')
+       self.save()
 
        return oauth.authorization_url(authorize_url)
 
@@ -74,7 +74,7 @@ class Organization():
        oauth = OAuth1Session(settings.TWITTER_API_KEY,
                     client_secret=settings.TWITTER_API_SECRET_KEY,
                     resource_owner_key=oauth_token,
-        resource_owner_secret=self.twitter_temp_oauth_token_secret,
+                    resource_owner_secret=self.twitter_temp_oauth_token_secret,
                     verifier=oauth_verifier,
                     signature_type='auth_header')
        oauth_tokens = oauth.fetch_access_token(access_token_url)
@@ -163,7 +163,7 @@ def twitter_callback(self, oauth_token, oauth_verifier):
    oauth = OAuth1Session(settings.TWITTER_API_KEY,
                 client_secret=settings.TWITTER_API_SECRET_KEY,
                 resource_owner_key=oauth_token,
-   resource_owner_secret=self.twitter_temp_oauth_token_secret,
+                resource_owner_secret=self.twitter_temp_oauth_token_secret,
                 verifier=oauth_verifier,
                 signature_type='auth_header')
    oauth_tokens = oauth.fetch_access_token(access_token_url)
