@@ -1,5 +1,5 @@
 ---
-path: "/blog/changelogs-on-twitter"
+path: "/blog/developing-a-python-twitter-integration"
 title: "Developing A Python Twitter Integration"
 subtitle: "Using OAuth 1.0 to Tweet Changelog Updates Automatically for Users"
 author: "devon"
