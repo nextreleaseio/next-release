@@ -9,7 +9,9 @@ date: 2020-08-17T16:33:46+10:00
 ---
 
 Twitter has become one of the leading platforms for teams to publish
-their release notes to. This is driven by the vibrant developer community
+their release notes to. In the last 15 days over 700 organizations posted more than
+800 changelogs to the platform receiving over 9,700 likes and 15,500 retweets.
+This is driven by the vibrant developer community
 that lives on Twitter as well as the format of tweets aligning well with
 quick iterative updates on software solutions. These two aspects create a
 great forum to gather input from contributors and enable supporters to
