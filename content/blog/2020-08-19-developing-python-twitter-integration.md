@@ -57,8 +57,7 @@ class Organization():
            settings.TWITTER_API_KEY,
            client_secret=settings.TWITTER_API_SECRET_KEY,
            signature_type='auth_header',
-           callback_uri=app_callback_url
-       )
+           callback_uri=app_callback_url)
        fetch_response = oauth.fetch_request_token(request_token_url)
 
        self.twitter_temp_oauth_token = fetch_response.get('oauth_token')
@@ -69,12 +68,13 @@ class Organization():
 
     def twitter_callback(self, oauth_token, oauth_verifier):
        access_token_url = 'https://api.twitter.com/oauth/access_token'
-       oauth = OAuth1Session(settings.TWITTER_API_KEY,
-                    client_secret=settings.TWITTER_API_SECRET_KEY,
-                    resource_owner_key=oauth_token,
-                    resource_owner_secret=self.twitter_temp_oauth_token_secret,
-                    verifier=oauth_verifier,
-                    signature_type='auth_header')
+       oauth = OAuth1Session(
+           settings.TWITTER_API_KEY,
+           client_secret=settings.TWITTER_API_SECRET_KEY,
+           resource_owner_key=oauth_token,
+           resource_owner_secret=self.twitter_temp_oauth_token_secret,
+           verifier=oauth_verifier,
+           signature_type='auth_header')
        oauth_tokens = oauth.fetch_access_token(access_token_url)
 
        self.twitter_oauth_token = oauth_tokens.get('oauth_token')
@@ -87,11 +87,12 @@ class Organization():
 
     def twitter_tweet(self, content):
        tweet_url = 'https://api.twitter.com/1.1/statuses/update.json'
-       oauth = OAuth1Session(settings.TWITTER_API_KEY,
-                             client_secret=settings.TWITTER_API_SECRET_KEY,
-                             resource_owner_key=self.twitter_oauth_token,
-                             resource_owner_secret=self.twitter_oauth_token_secret,
-                             signature_type='auth_header')
+       oauth = OAuth1Session(
+           settings.TWITTER_API_KEY,
+           client_secret=settings.TWITTER_API_SECRET_KEY,
+           resource_owner_key=self.twitter_oauth_token,
+           resource_owner_secret=self.twitter_oauth_token_secret,
+           signature_type='auth_header')
        return oauth.post(tweet_url, data={'status': content})
 ```
 
@@ -115,8 +116,7 @@ def twitter_authorize(self):
        settings.TWITTER_API_KEY,
        client_secret=settings.TWITTER_API_SECRET_KEY,
        signature_type='auth_header',
-       callback_uri=app_callback_url
-   )
+       callback_uri=app_callback_url)
    ...
 ```
 
@@ -160,12 +160,13 @@ which are the two parameters we pass to our `twitter_callback` method.
 ```python
 def twitter_callback(self, oauth_token, oauth_verifier):
    access_token_url = 'https://api.twitter.com/oauth/access_token'
-   oauth = OAuth1Session(settings.TWITTER_API_KEY,
-                client_secret=settings.TWITTER_API_SECRET_KEY,
-                resource_owner_key=oauth_token,
-                resource_owner_secret=self.twitter_temp_oauth_token_secret,
-                verifier=oauth_verifier,
-                signature_type='auth_header')
+   oauth = OAuth1Session(
+       settings.TWITTER_API_KEY,
+       client_secret=settings.TWITTER_API_SECRET_KEY,
+       resource_owner_key=oauth_token,
+       resource_owner_secret=self.twitter_temp_oauth_token_secret,
+       verifier=oauth_verifier,
+       signature_type='auth_header')
    oauth_tokens = oauth.fetch_access_token(access_token_url)
    ...
 ```
@@ -197,11 +198,12 @@ user has granted the necessary permissions to your application.
 ```python
 def twitter_tweet(self, content):
    tweet_url = 'https://api.twitter.com/1.1/statuses/update.json'
-   oauth = OAuth1Session(settings.TWITTER_API_KEY,
-                         client_secret=settings.TWITTER_API_SECRET_KEY,
-                         resource_owner_key=self.twitter_oauth_token,
-                         resource_owner_secret=self.twitter_oauth_token_secret,
-                         signature_type='auth_header')
+   oauth = OAuth1Session(
+       settings.TWITTER_API_KEY,
+       client_secret=settings.TWITTER_API_SECRET_KEY,
+       resource_owner_key=self.twitter_oauth_token,
+       resource_owner_secret=self.twitter_oauth_token_secret,
+       signature_type='auth_header')
    return oauth.post(tweet_url, data={'status': content})
 ```
 
