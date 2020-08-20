@@ -1,3 +1,7 @@
+#### [Release 0.33.0](https://nextreleaseio/next-release/releases/tag/0.33.0) 
+### Implemented Enhancements 
+- Content, style and navigation updates [#177](https://nextreleaseio/next-release/issues/#177) ([@donaldwasserman](https://github.com/@donaldwasserman))
+ 
 #### [Release 0.30.0](https://nextreleaseio/next-release/releases/tag/0.30.0) 
 ### Implemented Enhancements 
 - Twitter Changelog Integration Announcement [#172](https://nextreleaseio/next-release/issues/#172) ([@bleib1dj](https://github.com/@bleib1dj))
