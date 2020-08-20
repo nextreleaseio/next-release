@@ -8,30 +8,28 @@ image: ../../src/images/blog/devops_team.png
 date: 2020-08-19T16:33:46+10:00
 ---
 
-We recently released automatic posting of changelogs to twitter to help
+We recently released automatic posting of changelogs to Twitter to help
 customers engage with their communities and get feedback on product updates.
 Outside of release notes there are plenty of other reasons to integrate your
-application with twitter and with the twitter team announcing
+application with Twitter and with the Twitter team announcing
 [their new developer portal and API](https://blog.twitter.com/developer/en_us/topics/tools/2020/introducing_new_twitter_api.html)
-and the [potential of subscription services](https://www.theverge.com/2020/7/8/21317266/twitter-subscription-platform-codename-gryphon-job-listing) we wanted to share how we
-did our integration to help others rapidly setup an integration of their own.
+and the [potential of subscription services](https://www.theverge.com/2020/7/8/21317266/twitter-subscription-platform-codename-gryphon-job-listing),
+we wanted to share how we did our integration to help others
+configure an integration of their own.
 
 ## Package Selection
 
-There are a handful of OAuth python packages out there that can be used to abstract
-away a lot of the complexity of three-legged OAuth. Unfortunately not all of them are
-maintained and many of the first search results seemed to point to abandoned projects.
-The OAuth package that appears to have the largest community around it and continues to
-be maintained is [OAuthLib](https://github.com/oauthlib/oauthlib). Instead of using the package
-directly the [Requests OAuthlib](https://github.com/requests/requests-oauthlib)
+A handful of OAuth python packages out there can be used to abstract away a lot of the complexity of three-legged OAuth. Unfortunately, not all of them are maintained, and many of the first search results seemed to point to abandoned projects. The OAuth package that appears to have the largest community around it and continues to be maintained is
+[OAuthLib](https://github.com/oauthlib/oauthlib). Instead of directly using the package, the
+[Requests OAuthlib](https://github.com/requests/requests-oauthlib)
 package provides a few niceties that further reduce your effort.
 
-For interfacing with Twitter it’s easy enough to use their REST API directly using the
-[Requests](https://requests.readthedocs.io/en/master/) package but we’d recommend using
-[Tweepy](https://github.com/tweepy/tweepy), which has an active community, is well
-tested, and provides a nice pythonic interface to Twitter. Tweepy actually comes with
-[Requests OAuthlib](https://github.com/requests/requests-oauthlib) installed so if you’d like to use their wrapper around the package to
-manage OAuth that can save a few lines of code too.
+For interfacing with Twitter, it’s easy to use their REST API directly using the
+[Requests](https://requests.readthedocs.io/en/master/) package. Still, we’d recommend using
+[Tweepy](https://github.com/tweepy/tweepy), which has an active community, is well tested, and provides a friendly
+pythonic interface to Twitter. Tweepy comes with
+[Requests OAuthlib](https://github.com/requests/requests-oauthlib) installed, so if you’d
+like to use their wrapper around the package to manage OAuth, that can save a few lines of code too.
 
 Using Requests OAuthlib with Tweepy in Django connecting up to Twitter looks something
 like the following:
@@ -97,16 +95,16 @@ class Organization():
        return oauth.post(tweet_url, data={'status': content})
 ```
 
-This is a naive approach that has potential for optimization but will get your
+The example above is a naive approach with potential for optimization but will get your
 application hooked up and able to read and write to your customer’s twitter
 account.
 
 ## Authentication
 
-In the code snippet above there’s a bit going on so let’s step through some
-pieces of it to better understand what it is we’re doing. The first step we take
-is asking Twitter to provide us with a authorization url. To do this we send Twitter
-our application credentials which you can get through the Twitter API portal.
+In the code snippet above, there’s a bit going on, so let’s step through
+some parts to understand better what we’re doing. The first step we take is asking
+Twitter to provide us with an authorization URL. To do this, we send Twitter our
+application credentials, which you can get through the Twitter API portal.
 
 ```python
 def twitter_authorize(self):
@@ -122,9 +120,9 @@ def twitter_authorize(self):
    ...
 ```
 
-Twitter verifies which app we’d like to prompt a user to grant access to and sends
-us back a set of temporary request tokens that can be utilized to generate an
-authorization url.
+Twitter verifies which app we’d like to prompt a user to grant access to
+and sends us back a set of temporary request tokens that we can then use
+to generate an authorization URL.
 
 ```python
     ...
@@ -136,26 +134,28 @@ authorization url.
     ...
 ```
 
-We need to save these temporary values somewhere so that we can use them to
-correlate the non-temporary tokens that are generated by twitter upon a user
-granting authorization to our application. You could save them in memory, a cache,
-or like we are doing above, in a database.
+We need to save these temporary values somewhere so that we can use them to correlate
+the non-temporary tokens generated by Twitter upon a user granting authorization to
+our application. You could save them in memory, a cache, or like we are doing above,
+in a database.
 
 ```python
    return oauth.authorization_url(authorize_url)
 ```
 
-With these temporary tokens we can now generate an authorization url which we can use to
-redirect a user to Twitter with to ask them for permission to access their account.
+With these temporary tokens, we can now generate an authorization URL that
+we can use to redirect users to Twitter, where they'll be asked for permission
+to access their account.
 
-In our application we return the authorization url to our frontend application which uses
-it as a hyperlink that customers can click to authorize access to Twitter.
+In our application, we return the authorization URL to our frontend application,
+which uses it as a hyperlink that customers can click to authorize access to
+Twitter.
 
-Once a user clicks the link and grants permission to your application, Twitter will use
-a callback url that you’ve predefined in the Twitter API Portal to navigate the user
-back to your site along with approved credentials in the query params of the url. The
-query params include “oauth_token” and “oauth_verifier” which are the two parameters we
-pass to our twitter_callback method.
+Once a user clicks the link and grants permission to your application, Twitter
+will use a callback URL that you've predefined in the Twitter API Portal to
+navigate the user back to your site along with approved credentials in the query
+params of the URL. The query params include `oauth_token` and `oauth_verifier`
+which are the two parameters we pass to our `twitter_callback` method.
 
 ```python
 def twitter_callback(self, oauth_token, oauth_verifier):
@@ -170,11 +170,11 @@ def twitter_callback(self, oauth_token, oauth_verifier):
    ...
 ```
 
-We use these values to fetch the non-temporary access tokens that can be used to interface
-with Twitter on behalf of our users.
+We use these values to fetch the non-temporary access tokens that can
+be used to interface with Twitter on behalf of our users.
 
-After we receive these values we can delete the temporary request tokens and store off
-the access tokens for future use.
+After we receive these values, we can delete the temporary request tokens
+and store off the access tokens for future use.
 
 ```python
    ...
@@ -188,11 +188,11 @@ the access tokens for future use.
    ...
 ```
 
-Now that we have access tokens we can start interfacing with the Twitter API and
-tweeting for our users. We have to provide both our application keys and the individual
-user’s access keys to access the API so that Twitter knows which application is making
-the request for which user and whether or not that user has granted the necessary
-permissions to your application.
+Now that we have access tokens, we can start interfacing with the Twitter
+API and tweeting for our users. We have to provide both our application keys
+and the individual user's access keys to access the API so that Twitter knows
+which application is making the request for which user and whether or not that
+user has granted the necessary permissions to your application.
 
 ```python
 def twitter_tweet(self, content):
@@ -205,16 +205,17 @@ def twitter_tweet(self, content):
    return oauth.post(tweet_url, data={'status': content})
 ```
 
-To learn more about three-legged OAuth and additional security elements such as signature
-types and hashing algorithms checkout some of Twitter’s docs:
+To learn more about three-legged OAuth and additional security elements such
+as signature types and hashing algorithms, check out some of Twitter's docs:
 
 -   [Encryption](https://developer.twitter.com/en/docs/authentication/oauth-1-0a/creating-a-signature)
 -   [Authorizing a Request](https://developer.twitter.com/en/docs/authentication/oauth-1-0a/authorizing-a-request)
 -   [OAuth 1.0a](https://developer.twitter.com/en/docs/authentication/oauth-1-0a)
 -   [Three-legged OAuth](https://developer.twitter.com/en/docs/authentication/oauth-1-0a/obtaining-user-access-tokens)
 
-Getting Started Walkthroughs
-There are a lot of awesome resources to help you get started with your twitter integration.
+## Getting Started Walkthroughs
+
+There are a lot of awesome resources to help you get started with your Twitter integration.
 Most of our implementation was formed through the assistance of the following guides:
 
 -   [twauth-web](https://github.com/twitterdev/twauth-web/blob/master/twauth-web.py)
@@ -224,11 +225,13 @@ Most of our implementation was formed through the assistance of the following gu
 -   [Python Requests OAuthlib OAuth1 Session Docs](https://github.com/requests/requests-oauthlib/blob/c80b2b6d9f518c3cbcc424237a6075de5dcdb2fe/requests_oauthlib/oauth1_session.py)
 
 The easiest walkthrough to follow was
-[twauth-web](https://github.com/twitterdev/twauth-web/blob/master/twauth-web.py)
-but it uses an outdated python OAuth package. So after using it to get started we transitioned to requests-oauthlib
-which works similarly but with the more maintained [OAuthlib package](https://github.com/oauthlib/oauthlib). There’s actually a
-solid authentication walk through for twitter within the requests-oauthlib repository
+[twauth-web](https://github.com/twitterdev/twauth-web/blob/master/twauth-web.py),
+but it uses an outdated python OAuth package. So after using it to get started,
+we transitioned to requests-oauthlib, which works similarly but with the more maintained
+[OAuthlib package](https://github.com/oauthlib/oauthlib).
+There’s a solid authentication walkthrough for Twitter within the requests-oauthlib repository,
 but it isn’t easy to find in the read the docs page. You’ll want to check out the [docstring
 for the OAuth1Session class](https://github.com/requests/requests-oauthlib/blob/c80b2b6d9f518c3cbcc424237a6075de5dcdb2fe/requests_oauthlib/oauth1_session.py#L52-L104).
 
-If you run into any trouble or have any questions feel free to [hit us up](https://www.nextrelease.io/contact) :).
+If you run into any trouble or have any questions feel free to
+[hit us up](https://www.nextrelease.io/contact) :).
