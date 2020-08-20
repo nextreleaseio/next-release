@@ -6,7 +6,12 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Bottom from '../components/bottom';
 import StyledButton from '../components/button';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import {
+    faArrowRight,
+    faChartLine,
+    faCheckCircle
+} from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Row from '../components/row';
 import logo from '../images/NextRelease_Color_Icon.svg';
@@ -17,7 +22,7 @@ import Loom from '../components/loom';
 const Feature = ({ feature }) => {
     const { title, path, image, items } = feature.node.frontmatter;
     return (
-        <div className="px-4 md:w-1/3 sm:w-full flex flex-col justify-between">
+        <div className="px-4 flex flex-col justify-between">
             <div>
                 <div className="flex flex-row items-center">
                     <div className="w-4/12">
@@ -89,12 +94,15 @@ const Index = ({ data }) => {
             <SEO title="Home" />
             <div className="w-full bg-purple-800 relative">
                 <div className="px-6 md:px-10 lg:px-24 text-white py-12 sm:w-full md:w-7/12">
-                    <h1 className="text-5xl font-black font-serif leading-none">
-                        Simpler release notes. Finally.
+                    <h1 className="text-5xl leading-9 font-bold tracking-tight text-white sm:text-4xl sm:leading-10">
+                        Simpler release notes.{' '}
+                        <span className="font-black tracking-wide ml-2">
+                            Finally.
+                        </span>
                     </h1>
-                    <h2 className="text-purple-200 text-2xl leading-none mt-8 font-hairline">
-                        Automatic, consistent and effortless notes for every
-                        release, for every project.
+                    <h2 className="text-purple-100 text-2xl leading-none mt-8 font-hairline">
+                        Release notes and changelogs, status checks, reports,
+                        and analytics for every team.
                     </h2>
                     <a
                         href="https://my.nextrelease.io"
@@ -110,22 +118,92 @@ const Index = ({ data }) => {
                 />
             </div>
             <Row>
-                <div className="w-4/5 md:w-3/4 lg:w-7/12 mt-20 self-start">
-                    <h3 className="text-3xl md:text-5xl text-purple-700 font-serif leading-tight">
-                        Your Time is Valuable. Spend less of it managing release
-                        notes.
-                    </h3>
-                    <p className="text-grey-600 font-sans mt-4">
-                        Introducing a no-code, no-config solution aimed at
-                        providing release notes for every repository across your
-                        organization. Share product updates with zero developer
-                        effort, featuring automatic versioning, Slack updates,
-                        and fully editable release notes.
-                    </p>
-                    <div className="self-center mt-8">
-                        <Link to="/automatic-release-notes">
-                            <StyledButton>How It Works</StyledButton>
-                        </Link>
+                <div className="w-4/5 md:w-3/4 lg:w-7/12 mt-5 self-start">
+                    <div className="max-w-screen-xl mx-auto py-12 px-0 sm:px-6 md:py-16 lg:px-8 lg:py-20">
+                        <h2 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+                            Automatic and Effortless
+                            <br />
+                        </h2>
+                        <ul className="mt-10">
+                            <li>
+                                <div className="flex">
+                                    <div className="flex-shrink-0">
+                                        <div className="flex items-center justify-center h-12 w-12 rounded bg-purple-600 text-white">
+                                            <FontAwesomeIcon
+                                                icon={faGithub}
+                                                size="2x"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="ml-4">
+                                        <h5 className="text-lg leading-6 font-medium text-gray-900">
+                                            Release Notes and Changelogs
+                                        </h5>
+                                        <p className="mt-2 text-base leading-6 text-gray-500">
+                                            Generate automatic and consistent
+                                            release notes and changelogs
+                                            automatically with zero code, zero
+                                            config, and zero effort. Next
+                                            Release uses pull requests to
+                                            organize and create your release
+                                            notes with deep git and GitHub
+                                            integration.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li className="mt-10">
+                                <div className="flex">
+                                    <div className="flex-shrink-0">
+                                        <div className="flex items-center justify-center h-12 w-12 rounded bg-purple-600 text-white">
+                                            <FontAwesomeIcon
+                                                icon={faCheckCircle}
+                                                size="2x"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="ml-4">
+                                        <h5 className="text-lg leading-6 font-medium text-gray-900">
+                                            Automatic Status Checks
+                                        </h5>
+                                        <p className="mt-2 text-base leading-6 text-gray-500">
+                                            Next Release's powers your team with
+                                            custom check runs to create custom
+                                            checks ensuring code doesn't get
+                                            merged in until all your
+                                            dependencies are ready.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li className="mt-10">
+                                <div className="flex">
+                                    <div className="flex-shrink-0">
+                                        <div className="flex rounded items-center justify-center h-12 w-12 rounded bg-purple-600 text-white">
+                                            <FontAwesomeIcon
+                                                icon={faChartLine}
+                                                size="2x"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="ml-4">
+                                        <h5 className="text-lg leading-6 font-medium text-gray-900">
+                                            Reports & Analytics
+                                        </h5>
+                                        <p className="mt-2 text-base leading-6 text-gray-500">
+                                            Your Next Release dashboard will
+                                            give you project level data guiding
+                                            you to understand how quickly
+                                            releases are shipping and other
+                                            critical insights about your team's
+                                            performance.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </Row>
@@ -136,7 +214,10 @@ const Index = ({ data }) => {
             </Row>
 
             <Row>
-                <div className="flex flex-row flex-wrap">
+                <h4 className="text-4xl font-thin uppercase text-purple-600 text-center">
+                    Features
+                </h4>
+                <div className="mx-auto sm:w-full md:w-10/12 lg:w-1/2 grid grid-cols-1 md:grid-cols-2">
                     {features.map(feature => {
                         return (
                             <Feature
