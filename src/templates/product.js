@@ -27,41 +27,88 @@ export default ({ data }) => {
                 <h1 className="text-4xl text-center font-bold text-white">
                     {title}
                 </h1>
-                <p className="text-small text-center text-grey-500 sm:w-full md:w-1/2 mx-auto">
-                    {subtitle}
-                </p>
             </Row>
-            <Row classNames="bg-grey-100 flex flex-row flex-wrap">
-                <div className="md:w-1/3 md:px-4 sm:w-full sm:px-2">
-                    <div className="flex">
-                        <div className="flex flex-row items-center">
-                            <div className="w-4/12">
-                                <Img fluid={image.childImageSharp.fluid} />
+            <Row classNames="bg-white flex flex-row flex-wrap">
+                <div className="overflow-hidden">
+                    <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+                        <div className="hidden lg:block bg-gray-50 absolute top-0 bottom-0 left-3/4 w-screen"></div>
+                        <div className="mx-auto text-base max-w-prose lg:max-w-none">
+                            <p className="text-base leading-6 text-purple-600 font-semibold tracking-wide uppercase">
+                                How It Works
+                            </p>
+                            <h2 className="mt-2 mb-8 w-3/4 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+                                {subtitle}
+                            </h2>
+                        </div>
+                        <div className="lg:grid lg:grid-cols-2 lg:gap-16">
+                            <div className="relative mb-8 lg:mb-0 lg:row-start-1 lg:col-start-2">
+                                <svg
+                                    className="hidden lg:block absolute top-0 right-0 -mt-20 -mr-20"
+                                    width="404"
+                                    height="384"
+                                    fill="none"
+                                    viewBox="0 0 404 384"
+                                >
+                                    <defs>
+                                        <pattern
+                                            id="de316486-4a29-4312-bdfc-fbce2132a2c1"
+                                            x="0"
+                                            y="0"
+                                            width="20"
+                                            height="20"
+                                            patternUnits="userSpaceOnUse"
+                                        >
+                                            <rect
+                                                x="0"
+                                                y="0"
+                                                width="4"
+                                                height="4"
+                                                className="text-gray-200"
+                                                fill="currentColor"
+                                            />
+                                        </pattern>
+                                    </defs>
+                                    <rect
+                                        width="404"
+                                        height="384"
+                                        fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)"
+                                    />
+                                </svg>
+                                <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
+                                    <figure className="md:hidden lg:block">
+                                        <div className="relative pb-7/12 lg:pb-0 bg-white">
+                                            <Img
+                                                fluid={
+                                                    image.childImageSharp.fluid
+                                                }
+                                                className="rounded-lg shadow-lg object-cover object-center absolute inset-0 w-full h-full lg:static lg:h-auto"
+                                            />
+                                        </div>
+                                        <figcaption className="flex mt-3 text-sm text-black font-bold">
+                                            <ul className="list-disc ml-8 text-grey-600 pl-8 lg:w-3/4">
+                                                {items.map((feature, index) => {
+                                                    return (
+                                                        <li key={index}>
+                                                            {feature}
+                                                        </li>
+                                                    );
+                                                })}
+                                            </ul>
+                                        </figcaption>
+                                    </figure>
+                                </div>
                             </div>
-                            <div className="w-8/12">{title}</div>
+                            <div>
+                                <div
+                                    className="prose text-gray-600 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1"
+                                    dangerouslySetInnerHTML={{
+                                        __html: service.html
+                                    }}
+                                ></div>
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <ul className="list-disc text-grey-600 pl-8">
-                            {items.map((feature, index) => {
-                                return (
-                                    <li className="mt-4" key={index}>
-                                        {feature}
-                                    </li>
-                                );
-                            })}
-                        </ul>
-                    </div>
-                    <div className="flex justify-center mt-8">
-                        <Link to="/features" className="btn btn-purple">
-                            All Features
-                        </Link>
-                    </div>
                 </div>
-                <div
-                    className="md:w-2/3 md:px-4 sm:w-full sm:px-2 sm:mt-4 markdown-body"
-                    dangerouslySetInnerHTML={{ __html: service.html }}
-                />
             </Row>
             <Bottom />
         </Layout>
@@ -74,6 +121,7 @@ export const query = graphql`
             frontmatter {
                 path
                 title
+                subtitle
                 items
                 image {
                     childImageSharp {
