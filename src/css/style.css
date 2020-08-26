@@ -112,6 +112,10 @@
     }
 }
 
+.prose code {
+    @apply text-red-400;
+}
+
 /**
  * Here you would add any custom utilities you need that don't come out of the
  * box with Tailwind.
