@@ -9,7 +9,8 @@ import {
     faBookOpen,
     faCheckDouble,
     faTachometerAlt,
-    faFileCode
+    faFileCode,
+    faUserFriends
 } from '@fortawesome/free-solid-svg-icons';
 import cx from 'classnames';
 import Img from 'gatsby-image';
@@ -42,6 +43,14 @@ const features = [
             'Keep your team updated with custom slack, email, or webhook notifications with your release notes.',
         url: '/features/share-changes',
         icon: faBookOpen
+    },
+    {
+        title: 'Community Engagement',
+        description:
+            'Keep your customer community updated on changes that impact them. Automatically publish release notes to ' +
+            'your social network accounts like Twitter using our notification integrations.',
+        url: '/features/community-engagement',
+        icon: faUserFriends
     }
 ];
 
