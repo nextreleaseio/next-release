@@ -1,3 +1,7 @@
+#### [Release 0.35.1](https://nextreleaseio/next-release/releases/tag/0.35.1) 
+### Fixed Bugs 
+- Adding back in why keep release notes article to fix broken links [#188](https://nextreleaseio/next-release/issues/#188) ([@bleib1dj](https://github.com/@bleib1dj))
+ 
 #### [Release 0.33.0](https://nextreleaseio/next-release/releases/tag/0.33.0) 
 ### Implemented Enhancements 
 - Content, style and navigation updates [#177](https://nextreleaseio/next-release/issues/#177) ([@donaldwasserman](https://github.com/@donaldwasserman))
