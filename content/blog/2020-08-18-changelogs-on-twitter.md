@@ -11,9 +11,9 @@ date: 2020-08-17T16:33:46+10:00
 Twitter has become one of the leading platforms for teams to share
 their release notes on. In the last 15 days, over 700 organizations posted more than
 800 changelogs to the platform receiving over 9,700 likes and 15,500 retweets.
-This is driven by the vibrant developer community
+This has been and continues to be driven by the vibrant developer community
 that lives on Twitter, as well as the format of tweets aligning well with
-quick iterative updates on software solutions. These two aspects create a great forum
+quick, iterative updates on software solutions. These two aspects create a great forum
 for gathering input from contributors and enabling supporters to share updates
 with friends and colleagues.
 
@@ -40,7 +40,7 @@ to help your team make better decisions going forward.
 
 This is why teams like Reactjs and Ethereum use Twitter to encourage
 early adoption of alpha and beta releases so that more bugs and security
-vulnerabilities can be found before production deployment; helping reduce
+vulnerabilities can be found before production deployment. This helps to reduce
 change failure rates, time to resolution, and cost to fix.
 
 ![Reactjs Change Candidate Request for Feedback](../../src/images/blog/twitter_integration/tweet_feedback_request.png)
