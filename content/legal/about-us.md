@@ -37,7 +37,7 @@ more success to the mission.
 
 <div class="flex">
     <div class="w-1/4">
-        <img style="border-radius: 50%;" alt="Devon Bleibtrey" src="https://next-release-public-assets.s3.us-east-2.amazonaws.com/devon_profile_pic.png">
+        <img style="border-radius: 50%; padding-right: 25px;" alt="Devon Bleibtrey" src="https://next-release-public-assets.s3.us-east-2.amazonaws.com/devon_profile_pic.png">
     </div>
     <div class="w-4"> </div>
     <div class="w-full">    
@@ -53,7 +53,7 @@ more success to the mission.
 
 <div class="flex">
     <div class="w-1/4">
-        <img style="border-radius: 50%;" alt="Donald Wasserman" src="https://next-release-public-assets.s3.us-east-2.amazonaws.com/donald_profile_pic.jpeg">
+        <img style="border-radius: 50%; padding-right: 25px;" alt="Donald Wasserman" src="https://next-release-public-assets.s3.us-east-2.amazonaws.com/donald_profile_pic.jpeg">
     </div>
     <div class="w-4"> </div>
     <div class="w-full">    
@@ -69,7 +69,7 @@ more success to the mission.
 
 <div class="flex">
     <div class="w-1/4">
-        <img style="border-radius: 50%;" alt="Matt Wisner" src="https://next-release-public-assets.s3.us-east-2.amazonaws.com/matt_profile.jpeg">
+        <img style="border-radius: 50%; padding-right: 25px;" alt="Matt Wisner" src="https://next-release-public-assets.s3.us-east-2.amazonaws.com/matt_profile.jpeg">
     </div>
     <div class="w-4"> </div>
     <div class="w-full">    
