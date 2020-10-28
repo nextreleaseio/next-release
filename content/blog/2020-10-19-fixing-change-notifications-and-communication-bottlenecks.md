@@ -1,7 +1,7 @@
 ---
 path: "/blog/fixing-change-notifications-and-communication-bottlenecks"
 title: "Fixing Change Notifications & Communication Bottlenecks"
-subtitle: Problems Solved By Release Notes"
+subtitle: "Problems Solved By Release Notes"
 author: "devon"
 profilePic: "https://next-release-public-assets.s3.us-east-2.amazonaws.com/devon_profile_pic.png"
 image: ../../src/images/blog/devops_team.png
