@@ -71,4 +71,4 @@ best practices for doing a release on Twitter, here are some great blog posts:
 -   [Speed, influence, and impact: How to launch on Twitter](https://marketing.twitter.com/en/insights/speed-influence-and-impact-how-to-launch-on-twitter)
 -   [Creative Roundup: 4 tips for launching new products on Twitter](https://business.twitter.com/en/blog/creative-round-up-4-tips-for-launching-new-products-on-twitter.html)
 
-[Let us know](https://www.nextrelease.io/contact) how we can better help you and your team communicate with your community.
+[Let us know](/contact) how we can better help you and your team communicate with your community.
