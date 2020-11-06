@@ -1,6 +1,6 @@
 ---
-path: "/blog/using-prereleases"
-title: "Using Prereleases In Your Release Cycle"
+path: "/blog/using-prereleases-in-your-software-lifecycle"
+title: "Using Prereleases In Your Product Release Cycle"
 subtitle: "Benefits of Beta Programs & Early Feedback"
 author: "devon"
 profilePic: "https://next-release-public-assets.s3.us-east-2.amazonaws.com/devon_profile_pic.png"
