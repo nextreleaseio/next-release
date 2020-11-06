@@ -79,4 +79,4 @@ or email into the Next Release platform to distribute updates to the
 right people in the place they're most likely to see the notes.
 
 If you'd like to discuss your pipeline or need assistance with deciding
-how to roll out your release notes, [let us know](https://www.nextrelease.io/contact).
+how to roll out your release notes, [let us know](/contact).

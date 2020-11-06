@@ -142,5 +142,5 @@ release includes.
 -   [Django REST Framework](https://www.django-rest-framework.org/community/release-notes/)
 -   [Django](https://docs.djangoproject.com/en/2.2/releases/)
 
-If you'd like release notes like these, you can sign up for our [Performance Notes](https://www.nextrelease.io/performance_notes), and we'll
+If you'd like release notes like these, you can sign up for our [Performance Notes](/performance_notes), and we'll
 help you and your team improve the throughput and stability of your pipeline.
