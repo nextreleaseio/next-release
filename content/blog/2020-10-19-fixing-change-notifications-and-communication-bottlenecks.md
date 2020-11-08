@@ -1,7 +1,7 @@
 ---
 path: "/blog/fixing-change-notifications-and-communication-bottlenecks"
 title: "Fixing Change Notifications & Communication Bottlenecks"
-subtitle: Problems Solved By Release Notes"
+subtitle: "Problems Solved By Release Notes"
 author: "devon"
 profilePic: "https://next-release-public-assets.s3.us-east-2.amazonaws.com/devon_profile_pic.png"
 image: ../../src/images/blog/devops_team.png
@@ -79,4 +79,4 @@ or email into the Next Release platform to distribute updates to the
 right people in the place they're most likely to see the notes.
 
 If you'd like to discuss your pipeline or need assistance with deciding
-how to roll out your release notes, [let us know](https://www.nextrelease.io/contact).
+how to roll out your release notes, [let us know](/contact).
