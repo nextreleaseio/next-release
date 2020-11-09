@@ -33,3 +33,19 @@ and simplify using them in your release cycle.
 For more information, check out our recent
 [blog post](/blog/using-prereleases-in-your-software-lifecycle) on
 the benefits of using prereleases in your software lifecycle.
+
+### Mark Release as a Prerelease
+
+<video style="width: 100%;" controls>
+<source src="https://next-release-public-assets.s3.us-east-2.amazonaws.com/next_release_add_prerelease_version.mp4" type="video/mp4">
+  <source src="https://next-release-public-assets.s3.us-east-2.amazonaws.com/next_release_add_prerelease_version.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+### Remove Prerelease Marker From Release
+
+<video style="width: 100%;" controls>
+<source src="https://next-release-public-assets.s3.us-east-2.amazonaws.com/next_release_remove_prerelease_version.mp4" type="video/mp4">
+  <source src="https://next-release-public-assets.s3.us-east-2.amazonaws.com/next_release_remove_prerelease_version.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
