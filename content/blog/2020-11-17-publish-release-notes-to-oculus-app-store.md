@@ -10,7 +10,8 @@ date: 2020-11-17T16:33:46+10:00
 
 Today I was browsing around the release notes recently published to
 Reddit and looking at some of the discussions being had about them. I
-came across a [discussion](https://www.reddit.com/r/OculusQuest/comments/j7gdiv/better_release_notes_please/g84u0e2/?context=3)
+came across a
+[discussion](https://www.reddit.com/r/OculusQuest/comments/j7gdiv/better_release_notes_please/g84u0e2/?context=3)
 in the Oculus community where a few people were
 commenting on how they wished more teams would adopt publishing release
 notes along with a few of the incentives to both them and the developers.
