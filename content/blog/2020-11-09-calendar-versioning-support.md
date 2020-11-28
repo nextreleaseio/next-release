@@ -1,5 +1,5 @@
 ---
-path: "/blog/github-prerelease-versioning-support"
+path: "/blog/calendar-versioning-support"
 title: "New Feature: Add Release Date to Your Version"
 subtitle: "Adding Calendar Versioning To Your Release"
 author: "devon"
