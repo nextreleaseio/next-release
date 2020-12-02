@@ -21,7 +21,11 @@ These are a few of the reasons why open source communities, game developers,
 and other leading technology companies tweet out notifications about their
 latest product updates.
 
-![Twitter Changelog Examples](../../src/images/blog/twitter_integration/twitter_changelog_examples.png)
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Git 2.28 is here! Check out the latest and greatest from the past couple releases: <a href="https://t.co/DEuIWPaz70">https://t.co/DEuIWPaz70</a></p>&mdash; GitHub (@github) <a href="https://twitter.com/github/status/1287794499037605890?ref_src=twsrc%5Etfw">July 27, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Minecraft Java Edition 1.16.2 Pre-Release Candidate 1 &amp; 2 are now available! Blog post will update soon.<br><br>📝Changelog: <a href="https://t.co/vyhEHrTPys">https://t.co/vyhEHrTPys</a></p>&mdash; Minecraft News 🎃 (@beta_mcpe1) <a href="https://twitter.com/beta_mcpe1/status/1292805867910430720?ref_src=twsrc%5Etfw">August 10, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Django bugfix release: 3.1.2 <a href="https://t.co/HVIwG2Nqvn">https://t.co/HVIwG2Nqvn</a></p>&mdash; Django (@djangoproject) <a href="https://twitter.com/djangoproject/status/1311545655274467329?ref_src=twsrc%5Etfw">October 1, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 You can now start automatically tweeting your latest release notes
 with our Release Note Twitter Integration by connecting your twitter
