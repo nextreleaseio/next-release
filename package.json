@@ -7,8 +7,8 @@
   "license": "No License",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.30",
-    "@fortawesome/free-solid-svg-icons": "5.14.0",
     "@fortawesome/free-brands-svg-icons": "5.14.0",
+    "@fortawesome/free-solid-svg-icons": "5.14.0",
     "@fortawesome/react-fontawesome": "^0.1.8",
     "@reach/router": "^1.2.1",
     "@statickit/react": "^2.0.1",
@@ -29,6 +29,7 @@
     "gatsby-plugin-sharp": "2.4.0",
     "gatsby-plugin-sitemap": "^2.2.26",
     "gatsby-plugin-statickit": "^1.1.1",
+    "gatsby-plugin-twitter": "^2.6.0",
     "gatsby-remark-images": "^3.1.42",
     "gatsby-remark-prismjs": "^3.4.4",
     "gatsby-source-filesystem": "^2.1.46",

@@ -53,7 +53,7 @@ You can pull your `access_token` and `organization_id` from your
 page. Your `project_id` can be found in each of your project's Next Release
 settings page.
 
-Once you have your release notes in a local variable deploying to Oculus
+Once you have your release notes in a local variable, deploying to Oculus
 can be done using their [Oculus Platform Command Line Utility](https://developer.oculus.com/distribute/publish-reference-platform-command-line-utility/).
 
 ```shell script
