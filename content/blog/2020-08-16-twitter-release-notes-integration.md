@@ -37,3 +37,8 @@ go out for:
   <source src="https://next-release-public-assets.s3.us-east-2.amazonaws.com/twitter_integration.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
+
+After setting up the integration all of your release notes will be
+tweeted to your community:
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Brochure Site: 0.40.0 is out now 🚀<br><br>*Implemented Enhancements*<br><br>- Announcing The Next Release API <br>- Oculus Store Integration <a href="https://t.co/vMBOlWUJcD">https://t.co/vMBOlWUJcD</a></p>&mdash; NextRelease.io (@nextreleaseio) <a href="https://twitter.com/nextreleaseio/status/1332821362180841473?ref_src=twsrc%5Etfw">November 28, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
