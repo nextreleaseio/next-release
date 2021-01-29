@@ -1,3 +1,5 @@
+const axios = require('axios');
+
 exports.createPages = async ({ actions: { createPage }, graphql }) => {
     const pages = ['blog', 'product', 'kb', 'performance_notes'];
     pages.forEach(page => {
