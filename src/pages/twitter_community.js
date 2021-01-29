@@ -40,7 +40,7 @@ const Twitter_Community = ({ data }) => {
 
     return (
         <Layout headerClass="bg-white relative">
-            <SEO title="Solutions" />
+            <SEO title="Release Note Twitter Community" />
 
             <Row
                 classNames="bg-purple-800 text-center bg-no-repeat bg-center bg-cover md:py-12 sm:py-8"
