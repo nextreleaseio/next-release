@@ -14,7 +14,7 @@ const Cookie = ({ data }) => {
             </Row>
             <Row>
                 <div
-                    className="w-3/4 mx-auto"
+                    className="w-3/4 mx-auto markdown-body"
                     dangerouslySetInnerHTML={{ __html: content }}
                 ></div>
             </Row>
@@ -25,7 +25,7 @@ const Cookie = ({ data }) => {
 export const query = graphql`
     query CookieQuery {
         allMarkdownRemark(
-            filter: { fileAbsolutePath: { regex: "/privacy.md/" } }
+            filter: { fileAbsolutePath: { regex: "/cookies.md/" } }
         ) {
             edges {
                 node {
