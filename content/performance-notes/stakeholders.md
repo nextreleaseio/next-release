@@ -1,5 +1,5 @@
 ---
-path: "/performance_notes/stakeholders"
+path: "/performance-notes/stakeholders"
 title: "Customized Release Documentation per Stakeholder"
 subtitle: "Customers, executives, product owners, changes & metrics that matter to them"
 date: 2020-04-06T06:33:46+10:00
