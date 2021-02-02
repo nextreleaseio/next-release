@@ -38,7 +38,7 @@ const Solution = ({ solution, classNames }) => {
     );
 };
 
-const Performance_Notes = ({ data }) => {
+const PerformanceNotes = ({ data }) => {
     const solutions = data.allMarkdownRemark.edges;
 
     return (
@@ -96,7 +96,7 @@ export const query = graphql`
     query SolutionQuery {
         allMarkdownRemark(
             filter: {
-                fileAbsolutePath: { regex: "/content/performance_notes/" }
+                fileAbsolutePath: { regex: "/content/performance-notes/" }
             }
         ) {
             edges {
@@ -120,4 +120,4 @@ export const query = graphql`
     }
 `;
 
-export default Performance_Notes;
+export default PerformanceNotes;

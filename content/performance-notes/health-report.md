@@ -1,5 +1,5 @@
 ---
-path: "/performance_notes/health_report"
+path: "/performance-notes/health-report"
 title: "Release System Health Report"
 subtitle: "Status updates on your developer operations at every release"
 date: 2020-04-06T06:33:46+10:00

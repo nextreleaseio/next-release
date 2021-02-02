@@ -1,5 +1,5 @@
 ---
-path: "/performance_notes/metrics"
+path: "/performance-notes/metrics"
 title: "Release Metrics For Retrospectives & Analysis"
 subtitle: "Understand how your changes are impacting what you care about"
 date: 2020-04-06T06:33:46+10:00
