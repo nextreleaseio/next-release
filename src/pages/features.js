@@ -34,7 +34,7 @@ const features = [
         title: 'Team Performance',
         description:
             'Next Release gives you tools for high-performing teams, to understand how changes are impacting product and team performance.',
-        url: '/performance_notes',
+        url: '/performance-notes',
         icon: faTachometerAlt
     },
     {

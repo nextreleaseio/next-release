@@ -36,7 +36,7 @@ const Footer = () => {
                                 </svg>
                             </a>
                             <Link
-                                to="twitter_community"
+                                to="twitter-community/showcase"
                                 className="ml-6 text-grey-500 hover:text-grey-600"
                             >
                                 <span className="sr-only">Twitter</span>
@@ -75,7 +75,7 @@ const Footer = () => {
                                     </li>
                                     <li className="mt-4">
                                         <Link
-                                            to="/performance_notes"
+                                            to="/performance-notes"
                                             className="text-base leading-6 text-grey-600 hover:text-gray-900"
                                         >
                                             Team Performance

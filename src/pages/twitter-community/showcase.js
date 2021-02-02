@@ -1,41 +1,16 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-import Row from '../components/row';
-import background from '../images/NR_Help_Mast.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import cx from 'classnames';
-import Img from 'gatsby-image';
+import Layout from '../../components/layout';
+import SEO from '../../components/seo';
+import Row from '../../components/row';
+import background from '../../images/NR_Help_Mast.png';
 import {
     TwitterTimelineEmbed,
     TwitterFollowButton,
     TwitterHashtagButton
 } from 'react-twitter-embed';
 
-const Tweet = ({ tweet, classNames }) => {
-    classNames = cx(classNames, 'w-full sm:w-1/2 md:w-1/3 p-2');
-    const { title, path, items } = tweet.node.frontmatter;
-    return (
-        <div className={classNames}>
-            <Link
-                to={path}
-                className="text-2xl text-purple-700 font-bold hover:text-purple-600 hover:underline"
-            >
-                {title}
-            </Link>
-
-            <div className="mt-4 ml-8">
-                <Link to={path} className="font-bold text-purple-500">
-                    Learn More <FontAwesomeIcon icon={faArrowRight} />
-                </Link>
-            </div>
-        </div>
-    );
-};
-
-const Twitter_Community = ({ data }) => {
+const Showcase = ({ data }) => {
     const tweets = data.allMarkdownRemark.edges;
 
     return (
@@ -97,24 +72,6 @@ const Twitter_Community = ({ data }) => {
                     />
                 </div>
             </Row>
-            {tweets.map((tweet, index) => {
-                const direction = index % 2 ? 'flex-row-reverse' : 'row';
-                const rowClass = cx('flex', direction);
-                const image = tweet.node.frontmatter.image;
-                return (
-                    <Row key={tweet.node.frontmatter.path}>
-                        <div className={rowClass}>
-                            <div className="md:w-1/3 sm:w-full px-4">
-                                <Img fluid={image.childImageSharp.fluid} />
-                            </div>
-                            <Tweet
-                                classNames="md:w-1/3 sm:w-full px-4"
-                                tweet={tweet}
-                            />
-                        </div>
-                    </Row>
-                );
-            })}
         </Layout>
     );
 };
@@ -123,7 +80,9 @@ export const query = graphql`
     query TweetQuery {
         allMarkdownRemark(
             filter: {
-                fileAbsolutePath: { regex: "/content/twitter_community/" }
+                fileAbsolutePath: {
+                    regex: "/content/twitter-community/showcase/"
+                }
             }
         ) {
             edges {
@@ -147,4 +106,4 @@ export const query = graphql`
     }
 `;
 
-export default Twitter_Community;
+export default Showcase;

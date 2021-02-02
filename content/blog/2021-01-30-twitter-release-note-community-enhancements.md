@@ -23,7 +23,7 @@ We also retweet updates for tools and products we use to help keep our team
 informed about recent changes to those systems.
 
 You can see the latest changelogs from across Twitter by visiting
-our new [Twitter release note community page](https://www.nextrelease.io/twitter_community).
+our new [Twitter release note community page](https://www.nextrelease.io/twitter-community/showcase).
 Our goal is to facilitate the growth of the release note community across
 the web. If you have a product that you tweet release notes for, make sure
 to use #ReleaseNote, and we’ll add it to the stream.

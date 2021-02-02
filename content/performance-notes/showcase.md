@@ -1,5 +1,5 @@
 ---
-path: "/performance_notes/showcase"
+path: "/performance-notes/showcase"
 title: "Showcase of Release Changes"
 subtitle: "Video walkthroughs of all the changes being rolled out in your release"
 date: 2020-04-06T06:33:46+10:00
