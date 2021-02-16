@@ -1,5 +1,5 @@
 exports.createPages = async ({ actions: { createPage }, graphql }) => {
-    const pages = ['blog', 'product', 'kb', 'performance-notes'];
+    const pages = ['blog', 'product', 'kb', 'performance-notes', 'hiring'];
 
     pages.forEach(page => {
         PageMaker(page, createPage, graphql);

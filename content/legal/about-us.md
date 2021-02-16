@@ -1,27 +1,28 @@
 ## About Next Release
 
-Our team is focused on making product teams more effective
-through developer operations. We help teams break down communication
-barriers and improve alignment. We’re a Michigan based company serving
-software developers around the world.
+Our team is focused on making teams more effective
+through change management. We help teams overcome communication
+barriers and improve alignment on changes.
+
+We’re a Michigan based company serving teams around the world.
 
 ## Our Mission
 
-Make every product release a success.
+To develop technologies that enable teams to effectively communicate changes
+to their communities in the right place, at the right time with the
+ultimate goal of connecting every community member to the changes important to them.
 
-Effective communication is critical for companies and employees
+Effective communication is critical for teams
 to be successful. Unfortunately, there is a lot of noise, and it’s
 hard to determine what really matters. It doesn't have to be that way.
 
-By helping companies automate capturing the most essential parts of
-what has been achieved in their most recent product release, we give
+By helping teams automate capturing the most essential parts of
+what has been achieved in their most recent releases, we give
 people the best insights to what has been accomplished and who needs
-to take action without all the pain. In short, we help people get the
-feedback they need to increase engagement and action, know where they
-stand, and reduce the amount of noise and issues that occur with their
-software releases.
+to take action without all the pain. In short, we help teams communicate
+changes and get the feedback they need to build their communities.
 
-Product releases are the most critical recurring event within an
+New releases are the most critical recurring event within an
 organization - our goal is to make every one a success.
 
 ## Who We Are
@@ -131,4 +132,4 @@ game again and find new horizons we can cross.
 
 ## Join The Team
 
-If you love making developer's lives easier, [hit us up](mailto:hello@nextrelease.io) :).
+If you love helping build communities around change, [hit us up](mailto:hello@nextrelease.io) :).
