@@ -4,8 +4,6 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import help_image from '../images/NR_Help_Mast.png';
 import Row from '../components/row';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const HiringIndex = ({ data }) => {
     const all = data.allMarkdownRemark.edges;
@@ -21,7 +19,7 @@ const HiringIndex = ({ data }) => {
                     Next Release
                 </p>
                 <h1 className="text-4xl text-center font-bold text-white">
-                    We're Hiring
+                    We're Recruiting New Team Members
                 </h1>
                 <p className="text-small text-center text-grey-500 sm:w-full md:w-1/2 mx-auto">
                     Checkout our latest openings and join the team to help build
@@ -45,7 +43,7 @@ const HiringIndex = ({ data }) => {
                                         </h3>
                                         <div className="flex mt-3 ">
                                             <p className="text-base leading-6 text-gray-500">
-                                                {post.node.excerpt}
+                                                {post.node.frontmatter.overview}
                                             </p>
                                         </div>
                                     </Link>
@@ -78,6 +76,7 @@ export const query = graphql`
                     frontmatter {
                         title
                         path
+                        overview
                     }
                     excerpt
                 }

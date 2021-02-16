@@ -38,7 +38,10 @@
  * @import "components/forms";
  */
 
-
+.bg-orange-600 {
+    --bg-opacity: 1;
+    background-image: linear-gradient(rgb(255, 149, 0) 0%, rgb(255, 94, 58) 100%)
+}
 
 .testimonial-quote {
     display: block;

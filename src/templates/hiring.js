@@ -6,12 +6,10 @@ import '../css/markdown-github.css';
 import help_image from '../images/NR_Help_Mast.png';
 import nr_logo from '../images/icons/NextRelease_Color_Stacked.png';
 import Row from '../components/row';
-import Bottom from '../components/bottom';
-import AuthorDetails from '../components/author';
 
 export default ({ data }) => {
     const { hiring } = data;
-    const { title, subtitle, author, date } = hiring.frontmatter;
+    const { title, subtitle, overview } = hiring.frontmatter;
     const { html, timeToRead } = hiring;
     const image = hiring.frontmatter.image || nr_logo;
     const heading = subtitle ? subtitle : 'Next Release';
@@ -53,6 +51,7 @@ export const query = graphql`
                 path
                 title
                 subtitle
+                overview
             }
             html
             timeToRead
