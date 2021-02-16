@@ -1,3 +1,7 @@
+#### [Version 0.44.0](https://nextreleaseio/next-release/releases/tag/0.44.0) 
+### Implemented Enhancements 
+- Updating dates and about us sections [#213](https://nextreleaseio/next-release/issues/#213) ([@bleib1dj](https://github.com/@bleib1dj))
+ 
 ### Release 0.24.0 
 ### Implemented Enhancements 
 - Adding dependency blog post [#152](https://nextreleaseio/next-release/issues/#152) ([@bleib1dj](https://github.com/@bleib1dj))
