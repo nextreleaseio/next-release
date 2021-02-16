@@ -108,4 +108,4 @@ Donald Wasserman
 
 [donald@nextrelease.io](mailto:donald@nextrelease.io)
 
-_This policy is effective as of 19 October 2019._
+_This policy is effective as of 01 January 2021._

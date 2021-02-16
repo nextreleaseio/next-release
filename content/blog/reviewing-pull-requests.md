@@ -5,7 +5,7 @@ subtitle: "What to Focus Reviews On"
 author: "devon"
 profilePic: "https://next-release-public-assets.s3.us-east-2.amazonaws.com/devon_profile_pic.png"
 image: ../../src/images/blog/devops_team.png
-date: 2020-05-25T16:33:46+10:00
+date: 2020-05-25T17:33:46+10:00
 ---
 
 ## What is a Pull Request

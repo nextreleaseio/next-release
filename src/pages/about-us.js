@@ -12,7 +12,8 @@ const AboutUs = ({ data }) => {
             <Row classNames="text-center bg-grey-200">
                 <h1 className="text-3xl font-bold">About Us</h1>
                 <h2 className="text-lg">
-                    We're on a mission to make every product release a success.
+                    We're on a mission to help teams communicate changes to
+                    their communities.
                 </h2>
             </Row>
             <Row>

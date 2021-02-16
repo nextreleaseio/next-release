@@ -147,6 +147,14 @@ const Footer = () => {
                                     </li>
                                     <li className="mt-4">
                                         <Link
+                                            to="/hiring"
+                                            className="text-base leading-6 text-grey-600 hover:text-gray-900"
+                                        >
+                                            Join Our Team
+                                        </Link>
+                                    </li>
+                                    <li className="mt-4">
+                                        <Link
                                             to="/security"
                                             className="text-base leading-6 text-grey-600 hover:text-gray-900"
                                         >
@@ -208,7 +216,7 @@ const Footer = () => {
                 </div>
                 <div className="mt-12 border-t border-gray-200 pt-8">
                     <p className="text-base leading-6 text-grey-500 xl:text-center">
-                        &copy; 2020 Next Release, LLC. All rights reserved. Made
+                        &copy; 2021 Next Release, LLC. All rights reserved. Made
                         with &#10084; &nbsp; in Michigan.
                     </p>
                 </div>

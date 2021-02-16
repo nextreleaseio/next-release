@@ -52,6 +52,13 @@ module.exports = {
             resolve: 'gatsby-source-filesystem',
             options: {
                 path: `${__dirname}/content`,
+                name: 'hiring'
+            }
+        },
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                path: `${__dirname}/content`,
                 name: 'kb'
             }
         },
