@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
 import Layout from '../../components/layout';
 import SEO from '../../components/seo';
 import Row from '../../components/row';
@@ -10,9 +9,7 @@ import {
     TwitterHashtagButton
 } from 'react-twitter-embed';
 
-const Showcase = ({ data }) => {
-    const tweets = data.allMarkdownRemark.edges;
-
+const Showcase = ({}) => {
     return (
         <Layout headerClass="bg-white relative">
             <SEO title="Release Note Twitter Community" />
@@ -75,35 +72,5 @@ const Showcase = ({ data }) => {
         </Layout>
     );
 };
-
-export const query = graphql`
-    query TweetQuery {
-        allMarkdownRemark(
-            filter: {
-                fileAbsolutePath: {
-                    regex: "/content/twitter-community/showcase/"
-                }
-            }
-        ) {
-            edges {
-                node {
-                    frontmatter {
-                        title
-                        path
-                        items
-                        image {
-                            childImageSharp {
-                                fluid(maxWidth: 800) {
-                                    ...GatsbyImageSharpFluid
-                                }
-                            }
-                        }
-                    }
-                    excerpt
-                }
-            }
-        }
-    }
-`;
 
 export default Showcase;

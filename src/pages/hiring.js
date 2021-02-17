@@ -33,7 +33,6 @@ const HiringIndex = ({ data }) => {
                         {all.map(post => {
                             return (
                                 <div key={post.node.frontmatter.path}>
-                                    <p className="text-sm leading-5 text-grey-600"></p>
                                     <Link
                                         to={post.node.frontmatter.path}
                                         className="block"
