@@ -5,24 +5,38 @@ import Row from '../../components/row';
 import background from '../../images/NR_Help_Mast.png';
 
 export default ({ pageContext: { releases } }) => {
-    const latestRelease = releases || [
-        {
-            url:
-                'https://www.reddit.com/r/AZURE/comments/lb6t4w/devops_pipelines_ui_vs_release_ui_question/'
-        },
-        {
-            url:
-                'https://www.reddit.com/r/AZURE/comments/lb6t4w/devops_pipelines_ui_vs_release_ui_question/'
-        },
-        {
-            url:
-                'https://www.reddit.com/r/AZURE/comments/lb6t4w/devops_pipelines_ui_vs_release_ui_question/'
-        },
-        {
-            url:
-                'https://www.reddit.com/r/AZURE/comments/lb6t4w/devops_pipelines_ui_vs_release_ui_question/'
-        }
-    ];
+    if (typeof releases !== 'undefined' && releases.length === 0) {
+        releases = [
+            {
+                url:
+                    'https://www.reddit.com/r/MarvelStrikeForce/comments/lb3l1n/510_release_notes/'
+            },
+            {
+                url:
+                    'https://www.reddit.com/r/cosmosnetwork/comments/lmmdq7/cosmos_stargate_is_live/'
+            },
+            {
+                url:
+                    'https://www.reddit.com/r/Amd/comments/lhudbk/radeon_software_adrenalin_2020_edition_2122/'
+            },
+            {
+                url:
+                    'https://www.reddit.com/r/StarWarsSquadrons/comments/l0nf8j/update_42_release_notes/'
+            },
+            {
+                url:
+                    'https://www.reddit.com/r/xboxinsiders/comments/lcmdzr/xbox_insider_release_notes_alpha_skipahead/'
+            },
+            {
+                url:
+                    'https://www.reddit.com/r/salesforce/comments/lawou4/spring_21_release_notes_abridged_edition/'
+            },
+            {
+                url:
+                    'https://www.reddit.com/r/rust/comments/lkd50a/rustanalyzer_changelog_64/'
+            }
+        ];
+    }
     return (
         <Layout headerClass="bg-white relative">
             <SEO title="Recent Release Notes Posted to Reddit" />
@@ -35,7 +49,7 @@ export default ({ pageContext: { releases } }) => {
                     Release Notes Posted to Reddit
                 </p>
                 <h1 className="text-4xl font-bold text-white">
-                    Showcasing the Top Release Notes of the Day
+                    Showcasing the Top Release Conversations of the Day
                 </h1>
                 <p className="text-small text-grey-500 sm:w-full md:w-1/2 mx-auto">
                     Join the changelog community by sharing your thoughts and
@@ -48,18 +62,14 @@ export default ({ pageContext: { releases } }) => {
                 </p>
             </Row>
             <Row>
-                <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                    {latestRelease.map(post => {
+                <ul className="divide-y divide-gray-200">
+                    {releases.map(post => {
                         return (
-                            <li className="col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200">
-                                <div className="w-full flex items-center justify-between p-6 space-x-6">
-                                    <div className="flex-1 truncate">
-                                        <div className="flex items-center space-x-3">
-                                            <blockquote className="reddit-card">
-                                                <a href={post.url}> </a>
-                                            </blockquote>
-                                        </div>
-                                    </div>
+                            <li className="relative bg-white py-5 px-4 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600">
+                                <div className="mt-1">
+                                    <blockquote className="reddit-card">
+                                        <a href={post.url}> </a>
+                                    </blockquote>
                                 </div>
                             </li>
                         );

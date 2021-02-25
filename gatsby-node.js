@@ -13,7 +13,11 @@ const getPosts = names =>
     Promise.all(
         names.map(async name => {
             const { data: post } = await get(`/${name}`);
-            return post.results;
+            if (typeof post.results === 'undefined') {
+                return post;
+            } else {
+                return post.results;
+            }
         })
     ).catch(error => {
         return [];
@@ -22,13 +26,21 @@ const getPosts = names =>
 exports.createPages = async ({ actions: { createPage }, graphql }) => {
     const pages = ['blog', 'product', 'kb', 'performance-notes', 'hiring'];
     const posts = await getPosts(['reddit_releases']);
-    const releases = posts[0];
+    let releases = posts[0];
     createPage({
         path: `/reddit-community/showcase`,
         component: require.resolve(
             './src/templates/reddit-community/showcase.js'
         ),
         context: { releases }
+    });
+
+    const community_stats = await getPosts(['community_stats']);
+    let stats = community_stats[0];
+    createPage({
+        path: `/communities`,
+        component: require.resolve('./src/templates/communities.js'),
+        context: { stats }
     });
 
     pages.forEach(page => {
