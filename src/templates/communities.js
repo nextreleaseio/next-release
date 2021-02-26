@@ -7,7 +7,6 @@ import Row from '../components/row';
 import { Link } from 'gatsby';
 
 export default ({ pageContext: { stats } }) => {
-    console.log(stats);
     if (typeof stats === 'undefined' || Array.isArray(stats)) {
         stats = {
             release_notes_identified: 568,
