@@ -52,11 +52,10 @@ export default ({ pageContext: { releases } }) => {
                     Showcasing the Top Release Conversations of the Day
                 </h1>
                 <p className="text-small text-grey-500 sm:w-full md:w-1/2 mx-auto">
-                    Join the changelog community by sharing your thoughts and
-                    ideas for how to make Release Notes the best for your
-                    community on&nbsp;
-                    <a href="https://www.reddit.com/r/releasenote/">
-                        /r/releasenote
+                    Join the changelog community by sharing your thoughts on the
+                    release notes published on Reddit&nbsp;
+                    <a href="https://www.reddit.com/user/nextreleaseio">
+                        /u/nextreleaseio
                     </a>
                     .
                 </p>
