@@ -5,8 +5,6 @@ import SEO from '../components/seo';
 import Bottom from '../components/bottom';
 import help_image from '../images/NR_Help_Mast.png';
 import Row from '../components/row';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const BlogIndex = ({ data }) => {
     const all = data.allMarkdownRemark.edges;

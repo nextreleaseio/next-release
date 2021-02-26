@@ -1,3 +1,8 @@
+
+#### [Version 0.44.0](https://nextreleaseio/next-release/releases/tag/0.44.0) 
+### Implemented Enhancements 
+- Updating dates and about us sections [#213](https://nextreleaseio/next-release/issues/#213) ([@bleib1dj](https://github.com/@bleib1dj))
+
 #### [Release 0.35.1](https://nextreleaseio/next-release/releases/tag/0.35.1) 
 ### Fixed Bugs 
 - Adding back in why keep release notes article to fix broken links [#188](https://nextreleaseio/next-release/issues/#188) ([@bleib1dj](https://github.com/@bleib1dj))

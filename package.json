@@ -13,6 +13,7 @@
     "@reach/router": "^1.2.1",
     "@statickit/react": "^2.0.1",
     "@tailwindcss/ui": "0.5.0",
+    "axios": "^0.21.1",
     "classnames": "^2.2.6",
     "dotenv": "^8.2.0",
     "eslint-plugin-graphql": "^3.1.1",
