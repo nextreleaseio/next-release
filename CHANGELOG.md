@@ -1,6 +1,35 @@
+
 #### [Version 0.44.0](https://nextreleaseio/next-release/releases/tag/0.44.0) 
 ### Implemented Enhancements 
 - Updating dates and about us sections [#213](https://nextreleaseio/next-release/issues/#213) ([@bleib1dj](https://github.com/@bleib1dj))
+
+#### [Release 0.35.1](https://nextreleaseio/next-release/releases/tag/0.35.1) 
+### Fixed Bugs 
+- Adding back in why keep release notes article to fix broken links [#188](https://nextreleaseio/next-release/issues/#188) ([@bleib1dj](https://github.com/@bleib1dj))
+ 
+#### [Release 0.33.0](https://nextreleaseio/next-release/releases/tag/0.33.0) 
+### Implemented Enhancements 
+- Content, style and navigation updates [#177](https://nextreleaseio/next-release/issues/#177) ([@donaldwasserman](https://github.com/@donaldwasserman))
+ 
+#### [Release 0.30.0](https://nextreleaseio/next-release/releases/tag/0.30.0) 
+### Implemented Enhancements 
+- Twitter Changelog Integration Announcement [#172](https://nextreleaseio/next-release/issues/#172) ([@bleib1dj](https://github.com/@bleib1dj))
+### Content 
+- Update CHANGELOG.md for 0.29.0 [#171](https://nextreleaseio/next-release/issues/#171) ([@nextreleaseio[bot]](https://github.com/@nextreleaseio[bot]))
+ 
+#### [Release 0.29.0](https://nextreleaseio/next-release/releases/tag/0.29.0) 
+### Implemented Enhancements 
+- Minor mod to test new public notifications [#169](https://nextreleaseio/next-release/issues/#169) ([@bleib1dj](https://github.com/@bleib1dj))
+ 
+### Release 0.26.0 
+### Implemented Enhancements 
+- GitHub Market Listing Post [#162](https://nextreleaseio/next-release/issues/#162) ([@bleib1dj](https://github.com/@bleib1dj))
+### Content 
+- Update CHANGELOG.md for 0.25.0 [#161](https://nextreleaseio/next-release/issues/#161) ([@nextreleaseio[bot]](https://github.com/@nextreleaseio[bot]))
+ 
+### Release 0.25.0 
+### Implemented Enhancements 
+- Permissions and About Us updates [#159](https://nextreleaseio/next-release/issues/#159) ([@bleib1dj](https://github.com/@bleib1dj))
  
 ### Release 0.24.0 
 ### Implemented Enhancements 
