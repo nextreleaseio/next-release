@@ -22,8 +22,8 @@ const HiringIndex = ({ data }) => {
                     We're Recruiting New Team Members
                 </h1>
                 <p className="text-small text-center text-grey-500 sm:w-full md:w-1/2 mx-auto">
-                    Checkout our latest openings and join the team to help build
-                    communities around release notes.
+                    Checkout our latest openings and join our remote team to
+                    help build communities around release notes.
                 </p>
             </Row>
             <Row classNames="flex sm:flex-wrap">
@@ -33,7 +33,6 @@ const HiringIndex = ({ data }) => {
                         {all.map(post => {
                             return (
                                 <div key={post.node.frontmatter.path}>
-                                    <p className="text-sm leading-5 text-grey-600"></p>
                                     <Link
                                         to={post.node.frontmatter.path}
                                         className="block"
