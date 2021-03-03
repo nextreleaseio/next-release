@@ -14,8 +14,8 @@ const Footer = () => {
                             className="h-10"
                         />
                         <p className="mt-8 text-grey-600 text-base leading-6">
-                            Automatic and effortless Release Notes, with no code
-                            required.
+                            Helping teams communicate changes to their
+                            communities.
                         </p>
                         <div className="mt-8 flex">
                             <a
@@ -279,7 +279,7 @@ const oldFooter = () => {
             </div>
             <div className="w-100 text-center text-sm text-grey-500 mt-8">
                 <p>Copyright 2020</p>
-                <p>Made with &#10084; in Michigan</p>
+                <p>Made with &#10084; by the Next Release Team</p>
             </div>
         </div>
     );
