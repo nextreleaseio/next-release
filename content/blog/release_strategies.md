@@ -127,11 +127,16 @@ features prior to deploying them to production.
 ### Overview
 
 There are multiple strategies that teams use when they move into multi-environment deployments.
-The most common, standardized workflow is the [Gitflow Workflow](https://datasift.github.io/gitflow/IntroducingGitFlow.html)
+The most common, standardized workflow is the [GitFlow Workflow](https://datasift.github.io/gitflow/IntroducingGitFlow.html),
 which was first published by [Vincent Driessen at nvie](https://nvie.com/posts/a-successful-git-branching-model/).
-This is one git workflow that is designed to be a release
+This git workflow is designed to be a release
 strategy and provides the most flexibility in validating updates that are meant for
-production while still enabling hotfixes to go directly out if there is a large enough issue.
+production, while still enabling hotfixes to go directly out if there is a large enough issue.
+
+The most common complaint we see with our customers is that GitFlow is too complex. As with any workflow,
+there's always room for improvement. If the complexity of Gitflow is an issue for your team
+I'd recommend checking out [Daniel Ivanov's article](https://www.toptal.com/gitflow/enhanced-git-flow-explained)
+that outlines steps that can be taken to enhance it.
 
 ## Additional Information
 
