@@ -3,7 +3,11 @@
   "description": "Next Release",
   "version": "1.0",
   "author": "@nextrelase",
-  "keywords": [],
+  "keywords": [
+    "changelog",
+    "release note",
+    "change management"
+  ],
   "license": "No License",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.30",
