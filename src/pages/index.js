@@ -138,13 +138,12 @@ const Index = ({ data }) => {
                                         </h5>
                                         <p className="mt-2 text-base leading-6 text-gray-500">
                                             Generate automatic and consistent
-                                            release notes and changelogs
-                                            automatically with zero code, zero
-                                            config, and zero effort. Next
-                                            Release uses pull requests to
-                                            organize and create your release
-                                            notes with deep git and GitHub
-                                            integration.
+                                            release notes automatically with
+                                            zero code, zero config, and zero
+                                            effort. Next Release uses pull
+                                            requests to organize and create your
+                                            release notes with deep git and
+                                            GitHub integration.
                                         </p>
                                     </div>
                                 </div>
