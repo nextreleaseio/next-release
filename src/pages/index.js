@@ -95,10 +95,14 @@ const Index = ({ data }) => {
             <div className="w-full bg-purple-800 relative">
                 <div className="px-6 md:px-10 lg:px-24 text-white py-12 sm:w-full md:w-7/12">
                     <h1 className="text-5xl leading-9 font-bold tracking-tight text-white sm:text-4xl sm:leading-10">
-                        Engage on Change
+                        Simpler release notes.{' '}
+                        <span className="font-black tracking-wide ml-2">
+                            Finally.
+                        </span>
                     </h1>
                     <h2 className="text-purple-100 text-2xl leading-none mt-8 font-hairline">
-                        Connect With Your Community on Every Change
+                        Release notes and changelogs, status checks, reports,
+                        and analytics for every team.
                     </h2>
                     <a
                         href="https://my.nextrelease.io"
@@ -117,8 +121,7 @@ const Index = ({ data }) => {
                 <div className="w-4/5 md:w-3/4 lg:w-7/12 mt-5 self-start">
                     <div className="max-w-screen-xl mx-auto py-12 px-0 sm:px-6 md:py-16 lg:px-8 lg:py-20">
                         <h2 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-                            Increase attention on your upcoming and recent
-                            changes
+                            Automatic and Effortless
                             <br />
                         </h2>
                         <ul className="mt-10">
