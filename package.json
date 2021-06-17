@@ -3,7 +3,11 @@
   "description": "Next Release",
   "version": "1.0",
   "author": "@nextrelase",
-  "keywords": [],
+  "keywords": [
+    "changelog",
+    "release note",
+    "change management"
+  ],
   "license": "No License",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.30",
@@ -22,10 +26,12 @@
     "gatsby-plugin-fullstory": "^2.1.20",
     "gatsby-plugin-intercom": "^0.1.4",
     "gatsby-plugin-manifest": "2.2.38",
+    "gatsby-plugin-netlify": "^3.7.1",
     "gatsby-plugin-offline": "^3.0.32",
     "gatsby-plugin-postcss": "^2.1.19",
     "gatsby-plugin-purgecss": "^4.0.1",
     "gatsby-plugin-react-helmet": "3.1.21",
+    "gatsby-plugin-robots-txt": "^1.6.2",
     "gatsby-plugin-segment-js": "^3.1.0",
     "gatsby-plugin-sharp": "2.4.0",
     "gatsby-plugin-sitemap": "^2.2.26",

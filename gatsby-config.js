@@ -2,12 +2,14 @@ require('dotenv').config({
     path: `.env`
 });
 
+const siteUrl = process.env.siteUrl || `https://www.nextrelease.io`;
+
 module.exports = {
     siteMetadata: {
         title: `Next Release`,
         description: `Automatic Release Notes in 3 Steps`,
         author: `nextrelease.io`,
-        siteUrl: `https://www.nextrelease.io`
+        siteUrl: siteUrl
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
@@ -16,6 +18,15 @@ module.exports = {
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sitemap`,
         `gatsby-plugin-twitter`,
+        `gatsby-plugin-netlify`, // _redirects is defined in static dir
+        {
+            resolve: 'gatsby-plugin-robots-txt',
+            options: {
+                host: siteUrl,
+                sitemap: siteUrl + '/sitemap.xml',
+                policy: [{ userAgent: '*', allow: '/' }]
+            }
+        },
         {
             resolve: `gatsby-transformer-remark`,
             options: {

@@ -62,17 +62,18 @@ export default ({ pageContext: { releases } }) => {
             </Row>
             <Row>
                 <ul className="divide-y divide-gray-200">
-                    {releases.map(post => {
-                        return (
-                            <li className="relative bg-white py-5 px-4 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600">
-                                <div className="mt-1">
-                                    <blockquote className="reddit-card">
-                                        <a href={post.url}> </a>
-                                    </blockquote>
-                                </div>
-                            </li>
-                        );
-                    })}
+                    {releases &&
+                        releases.map(post => {
+                            return (
+                                <li className="relative bg-white py-5 px-4 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600">
+                                    <div className="mt-1">
+                                        <blockquote className="reddit-card">
+                                            <a href={post.url}> </a>
+                                        </blockquote>
+                                    </div>
+                                </li>
+                            );
+                        })}
                 </ul>
             </Row>
         </Layout>
