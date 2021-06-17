@@ -27,7 +27,6 @@ module.exports = {
                 policy: [
                     {
                         userAgent: '*',
-                        allow: '/',
                         disallow: ['https://auth.nextrelease.io/']
                     }
                 ]
