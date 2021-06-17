@@ -91,7 +91,7 @@ const Index = ({ data }) => {
     const testimonials = data.testimonials.edges;
     return (
         <Layout headerClass="relative bg-white">
-            <SEO title="Home" />
+            <SEO title="The Changelog Platform" />
             <div className="w-full bg-purple-800 relative">
                 <div className="px-6 md:px-10 lg:px-24 text-white py-12 sm:w-full md:w-7/12">
                     <h1 className="text-5xl leading-9 font-bold tracking-tight text-white sm:text-4xl sm:leading-10">
@@ -141,13 +141,12 @@ const Index = ({ data }) => {
                                         </h5>
                                         <p className="mt-2 text-base leading-6 text-gray-500">
                                             Generate automatic and consistent
-                                            release notes and changelogs
-                                            automatically with zero code, zero
-                                            config, and zero effort. Next
-                                            Release uses pull requests to
-                                            organize and create your release
-                                            notes with deep git and GitHub
-                                            integration.
+                                            release notes automatically with
+                                            zero code, zero config, and zero
+                                            effort. Next Release uses pull
+                                            requests to organize and create your
+                                            release notes with deep git and
+                                            GitHub integration.
                                         </p>
                                     </div>
                                 </div>
