@@ -240,7 +240,7 @@ const Index = ({ data }) => {
                         return (
                             <div
                                 key={item.node.frontmatter.path}
-                                className="flex h-full w-full md:w-1/3 mb-4 md:mb-0 md:p-4"
+                                className="flex h-full w-full md:w-1/2 mb-4 md:mb-0 md:p-4"
                             >
                                 <Testimonial testimonial={item} />
                             </div>
