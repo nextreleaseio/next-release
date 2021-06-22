@@ -216,7 +216,7 @@ const Index = ({ data }) => {
                 <h4 className="text-4xl font-thin uppercase text-purple-600 text-center">
                     Features
                 </h4>
-                <div className="mx-auto sm:w-full md:w-10/12 lg:w-1/2 grid grid-cols-1 md:grid-cols-2">
+                <div className="mx-auto sm:w-full md:w-8/10 grid grid-cols-1 md:grid-cols-2">
                     {features.map(feature => {
                         return (
                             <Feature
