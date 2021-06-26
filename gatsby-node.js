@@ -62,15 +62,16 @@ const PageMaker = async (page, createPage, graphql) => {
         }
       }
     }
-  `);
-    results.data.allMarkdownRemark.edges.forEach(function({ node }) {
-        const { path, image } = node.frontmatter;
-        createPage({
-            path,
-            component: require.resolve(`./src/templates/${page}.js`),
-            context: {
-                id: node.id
-            }
+  `).then(res => {
+        res.data.allMarkdownRemark.edges.forEach(function({ node }) {
+            const { path, image } = node.frontmatter;
+            createPage({
+                path,
+                component: require.resolve(`./src/templates/${page}.js`),
+                context: {
+                    id: node.id
+                }
+            });
         });
     });
 };

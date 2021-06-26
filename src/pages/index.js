@@ -1,11 +1,10 @@
 import React from 'react';
 import cx from 'classnames';
 import Features from '../components/features';
-import { Link, graphql, withPrefix, withAssetPrefix } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Bottom from '../components/bottom';
-import StyledButton from '../components/button';
 import {
     faArrowRight,
     faChartLine,
@@ -108,7 +107,7 @@ const Index = ({ data }) => {
                     </a>
                 </div>
                 <img
-                    alt={'Next Release Logo'}
+                    alt="Next Release Logo"
                     src={logo}
                     className="w-4/12 hidden sm:hidden md:block lg:block xl:block absolute home-page-icon"
                 />
