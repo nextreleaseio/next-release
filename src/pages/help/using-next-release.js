@@ -3,7 +3,7 @@ import SEO from '../../components/seo';
 import help_image from '../../images/NR_Help_Mast.png';
 import Bottom from '../../components/bottom';
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import Row from '../../components/row';
 import HelpCard from '../../components/help-card';
 

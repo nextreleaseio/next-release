@@ -27,6 +27,7 @@ const AuthorDetails = ({ name }) => {
     return (
         <div className="flex sm:flex-row items-start md:items-center md:flex-col">
             <img
+                alt={fullName}
                 src={picture}
                 className="rounded-full h-auto md:mx-auto mr-2 md:w-1/2 w-1/12"
             />

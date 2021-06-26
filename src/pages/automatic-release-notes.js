@@ -40,7 +40,7 @@ export default () => {
                         <img
                             src={box}
                             className="w-100"
-                            alt="Install Next Realase"
+                            alt="Install Next Release"
                         />
                     </div>
                     <div className="md:w-1/2 sm:w-full">
@@ -55,7 +55,11 @@ export default () => {
                         </p>
                         <div className="flex flex-wrap">
                             <div className="w-1/2">
-                                <img src={installation} className="w-full" />
+                                <img
+                                    src={installation}
+                                    className="w-full"
+                                    alt="View on Github"
+                                />
                             </div>
                             <div className="w-1/2">
                                 <a
@@ -75,7 +79,7 @@ export default () => {
                         <img
                             src={backlog}
                             className="w-100"
-                            alt="Install Next Relase"
+                            alt="Make Pull Requests"
                         />
                     </div>
                     <div className="md:w-1/2 sm:w-full">
@@ -102,7 +106,7 @@ export default () => {
                         <img
                             src={feedback}
                             className="w-100"
-                            alt="Install Next Relase"
+                            alt="Make Pull Requests, Get Automatic Updates"
                         />
                     </div>
                     <div className="md:w-1/2 sm:w-full">
@@ -141,7 +145,11 @@ export default () => {
                         </p>
                         <div className="flex flex-wrap mt-8">
                             <div className="w-1/2 pr-4">
-                                <img src={notePreview} className="w-full" />
+                                <img
+                                    src={notePreview}
+                                    className="w-full"
+                                    alt="View on Github"
+                                />
                             </div>
                             <div className="w-1/2">
                                 <a

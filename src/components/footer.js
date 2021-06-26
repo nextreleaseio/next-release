@@ -59,7 +59,7 @@ const Footer = () => {
                                 <ul className="mt-4">
                                     <li>
                                         <Link
-                                            to="features/automatic"
+                                            to="/features/automatic"
                                             className="text-base leading-6 text-grey-600 hover:text-gray-900"
                                         >
                                             Automatic Release Notes
@@ -67,7 +67,7 @@ const Footer = () => {
                                     </li>
                                     <li className="mt-4">
                                         <Link
-                                            to="features/share-changes"
+                                            to="/features/share-changes"
                                             className="text-base leading-6 text-grey-600 hover:text-gray-900"
                                         >
                                             Reports
@@ -228,58 +228,6 @@ const Footer = () => {
                         with &#10084; &nbsp; in Michigan.
                     </p>
                 </div>
-            </div>
-        </div>
-    );
-};
-
-const oldFooter = () => {
-    return (
-        <div className="w-full px-6 md:px-10 lg:px-24 py-8 pb-2">
-            <div className="w-full flex">
-                <div className="w-2/12 mr-8">
-                    <ul className="text-grey-700">
-                        <li className="mt-4">
-                            <Link to="/blog">Blog</Link>
-                        </li>
-                        <li className="mt-4">
-                            <Link to="/privacy-policy">Privacy Policy</Link>
-                        </li>
-                        <li className="mt-4">
-                            <Link to="/terms-of-service">Terms of Service</Link>
-                        </li>
-                        <li className="mt-4"></li>
-                    </ul>
-                </div>
-                <div className="w-2/12 mr-8">
-                    <p className="font-bold text-lg">Product</p>
-                    <ul className="text-grey-700">
-                        <li className="mt-4">
-                            <Link to="/why-keep-release-notes">
-                                Why Keep Release Notes?
-                            </Link>
-                        </li>
-                        <li className="mt-4"></li>
-                        <li className="mt-4"></li>
-                        <li className="mt-4"></li>
-                    </ul>
-                </div>
-                <div className="w-2/12 mr-8">
-                    <p className="font-bold text-lg">Support</p>
-                    <ul className="text-grey-700">
-                        <li className="mt-4"></li>
-                        <li className="mt-4"></li>
-                        <li className="mt-4">
-                            <Link to="/kb/how-next-release-categorizes-your-pull-requests/">
-                                How Next Release Categorizes Your Pull Requests
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div className="w-100 text-center text-sm text-grey-500 mt-8">
-                <p>Copyright 2020</p>
-                <p>Made with &#10084; by the Next Release Team</p>
             </div>
         </div>
     );
