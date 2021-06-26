@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Row from '../components/row';
@@ -12,8 +12,6 @@ import {
     faFileCode,
     faUserFriends
 } from '@fortawesome/free-solid-svg-icons';
-import cx from 'classnames';
-import Img from 'gatsby-image';
 
 const features = [
     {

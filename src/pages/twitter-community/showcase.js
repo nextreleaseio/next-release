@@ -9,7 +9,7 @@ import {
     TwitterHashtagButton
 } from 'react-twitter-embed';
 
-const Showcase = ({}) => {
+const Showcase = () => {
     return (
         <Layout headerClass="bg-white relative">
             <SEO title="Release Note Twitter Community" />

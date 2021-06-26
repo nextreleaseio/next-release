@@ -35,10 +35,6 @@ const BlogIndex = ({ data }) => {
                             let profileStyle = {
                                 width: '35px',
                                 height: '35px',
-                                backgroundImage:
-                                    'url(' +
-                                    post.node.frontmatter.profilePic +
-                                    ')',
                                 borderRadius: '50%',
                                 backgroundSize: 'cover',
                                 margin: 'auto'
@@ -63,7 +59,17 @@ const BlogIndex = ({ data }) => {
                                         </h3>
                                         <div className="flex mt-3 ">
                                             <span className="text-grey-400 font-weight-bold mr-4">
-                                                <img style={profileStyle} />
+                                                <img
+                                                    src={
+                                                        post.node.frontmatter
+                                                            .profilePic
+                                                    }
+                                                    alt={
+                                                        post.node.frontmatter
+                                                            .author
+                                                    }
+                                                    style={profileStyle}
+                                                />
                                                 {post.node.frontmatter.author}
                                             </span>
                                             <p className="text-base leading-6 text-gray-500">

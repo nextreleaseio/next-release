@@ -31,7 +31,10 @@ export default () => {
             <Row classNames="bg-grey-100">
                 <div className="md:w-10/12 sm:w-10/12 mx-auto flex justify-between">
                     <div className="w-1/4 sm:p-2 md:px-8">
-                        <img src={communicate} />
+                        <img
+                            alt="Communicate Changes to Everyone"
+                            src={communicate}
+                        />
                     </div>
                     <div className="w-3/4 sm:p-2 md:px-8">
                         <h2 className="font-bold text-3xl">
@@ -51,7 +54,7 @@ export default () => {
             </Row>
             <Row classNames="bg-grey-100 flex flex-wrap">
                 <div className="sm:w-1/2 md:w-3/12 flex flex-col px-4 items-start sm:mt-8">
-                    <img src={source} alt="" />
+                    <img alt="Developer Focused" src={source} />
                     <h4 className="font-bold mt-4 text-2xl">Developers</h4>
                     <p className="text-grey-600 mt-2">
                         If you’re developing services, release notes are your
@@ -60,7 +63,7 @@ export default () => {
                     </p>
                 </div>
                 <div className="sm:w-1/2 md:w-3/12 flex flex-col px-4 items-start sm:mt-8">
-                    <img src={group} alt="" />
+                    <img alt="Keep the Team Informed" src={group} />
                     <h4 className="font-bold mt-4 text-2xl">QA Teams</h4>
                     <p className="text-grey-600 mt-2">
                         If you’re on a quality assurance team, release notes are
@@ -69,7 +72,7 @@ export default () => {
                     </p>
                 </div>
                 <div className="sm:w-1/2 md:w-3/12 flex flex-col px-4 items-start sm:mt-8">
-                    <img src={lifebelt} alt="" />
+                    <img src={lifebelt} alt="Sales & Customer Support" />
                     <h4 className="font-bold mt-4 text-2xl">
                         Sales & Customer Support
                     </h4>
@@ -80,7 +83,7 @@ export default () => {
                     </p>
                 </div>
                 <div className="sm:w-1/2 md:w-3/12 flex flex-col px-4 items-start sm:mt-8">
-                    <img src={social} alt="" />
+                    <img src={social} alt="Your Customers" />
                     <h4 className="font-bold mt-4 text-2xl">Your Customers</h4>
                     <p className="text-grey-600 mt-2">
                         Release notes are your means to notify and showcase your
@@ -111,14 +114,17 @@ export default () => {
                         </p>
                     </div>
                     <div className="w-1/4 sm:p-2 md:px-8">
-                        <img src={releases} />
+                        <img
+                            src={releases}
+                            alt="Communicate Changes to Everyone"
+                        />
                     </div>
                 </div>
             </Row>
             <Row classNames="bg-grey-100">
                 <div className="md:w-10/12 sm:w-10/12 mx-auto flex justify-between">
                     <div className="w-1/4 sm:p-2 md:px-8">
-                        <img src={calendar} />
+                        <img src={calendar} alt="Track Your Releases" />
                     </div>
                     <div className="w-3/4 sm:p-2 md:px-8">
                         <h2 className="font-bold text-3xl">
@@ -159,7 +165,7 @@ export default () => {
                         </p>
                     </div>
                     <div className="w-1/4 sm:p-2 md:px-8">
-                        <img src={handshake} />
+                        <img src={handshake} alt="Your Release Note Partner" />
                     </div>
                 </div>
             </Row>
