@@ -9,8 +9,8 @@ import Row from '../components/row';
 
 export default ({ data }) => {
     const { hiring } = data;
-    const { title, subtitle, overview } = hiring.frontmatter;
-    const { html, timeToRead } = hiring;
+    const { title, subtitle } = hiring.frontmatter;
+    const { html } = hiring;
     const image = hiring.frontmatter.image || nr_logo;
     const heading = subtitle ? subtitle : 'Next Release';
     return (

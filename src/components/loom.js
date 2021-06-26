@@ -11,6 +11,7 @@ const Loom = ({ classNames, id }) => {
                 }}
             >
                 <iframe
+                    title={id}
                     src={`https://www.loom.com/embed/${id}`}
                     frameBorder="0"
                     allowFullScreen="true"
