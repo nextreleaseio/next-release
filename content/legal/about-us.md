@@ -32,53 +32,23 @@ We care more about how effective you are at translating your existing knowledge
 into results, and an unwavering drive to continuously improve yourself, bringing
 more success to the mission.
 
-### Founders
-
-#### Devon Bleibtrey
+### Team
 
 <div class="flex">
-    <div class="w-1/4">
+    <div class="w-1/5 mr-12">
         <img style="border-radius: 50%;" alt="Devon Bleibtrey" src="https://next-release-public-assets.s3.us-east-2.amazonaws.com/devon_profile_pic.png">
+        <h4 class='text-center'>Devon Bleibtrey</h4>
+        <h5 class='text-center'>CEO, Co-founder</h5>
     </div>
-    <div class="w-6"> </div>
-    <div class="w-full">    
-        Passionate about developer operations, Devon has designed, implemented, and 
-        rolled out developer pipelines at multiple Fortune 50 enterprises. He has worked 
-        with international partners to take development teams from low performers to 
-        elite by reorienting company cultures and integrating new technologies within 
-        local developer environments and centralized pipelines. 
-    </div>
-</div>
-
-#### Donald Wasserman
-
-<div class="flex">
-    <div class="w-1/4">
+    <div class="w-1/5 mr-12">
         <img style="border-radius: 50%;" alt="Donald Wasserman" src="https://next-release-public-assets.s3.us-east-2.amazonaws.com/donald_profile_pic.jpeg">
+        <h4 class='text-center'>Donald Wasserman</h4>
+        <h5 class='text-center'>COO, Co-founder</h5>
     </div>
-    <div class="w-6"> </div>
-    <div class="w-full">    
-        Enthusiastic about bridging the knowledge gap between engineering and other teams, Donald has lead 
-        teams across different disciplines for product organizations of all sizes, in highly regulated 
-        (health care, financial, and legal) environments. He has built products and teams that are driven 
-        by uncovering what the real challenges are for customers and delivering testable and user-centered 
-        solutions that unlock real value for all the stakeholders.
-    </div>
-</div>
-
-#### Matt Wisner
-
-<div class="flex">
-    <div class="w-1/4">
+    <div class="w-1/5 mr-12">
         <img style="border-radius: 50%;" alt="Matt Wisner" src="https://next-release-public-assets.s3.us-east-2.amazonaws.com/matt_profile.jpeg">
-    </div>
-    <div class="w-6"> </div>
-    <div class="w-full">    
-        Dedicated to making developer teams effective and utilizing tools to eliminate bikeshedding, Matt has led
-        multiple product teams to elite DevOps performance. He has bootstrapped technology platforms and the pipelines
-        orchestrating them for companies such as The UPS Store, Deliver My Ride, and TNG Worldwide. 
-        He is a passionate technologist who believes that simple is better than complex and that we should
-        always be working on improving ourselves and the products we create.
+        <h4 class='text-center'>Matt Wisner</h4>
+        <h5 class='text-center'>CTO, Co-founder</h5>
     </div>
 </div>
 
