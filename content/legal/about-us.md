@@ -35,18 +35,18 @@ more success to the mission.
 ### Team
 
 <div class="flex">
-    <div class="w-1/5 mr-12">
-        <img style="border-radius: 50%;" alt="Devon Bleibtrey" src="https://next-release-public-assets.s3.us-east-2.amazonaws.com/devon_profile_pic.png">
+    <div class="w-1/4 mr-12">
+        <img style="border-radius: 50%;" alt="Devon Bleibtrey" src="https://next-release-public-assets.s3.us-east-2.amazonaws.com/team/300x300/devon.png">
         <h4 class='text-center'>Devon Bleibtrey</h4>
         <h5 class='text-center'>CEO, Co-founder</h5>
     </div>
-    <div class="w-1/5 mr-12">
-        <img style="border-radius: 50%;" alt="Donald Wasserman" src="https://next-release-public-assets.s3.us-east-2.amazonaws.com/donald_profile_pic.jpeg">
+    <div class="w-1/4 mr-12">
+        <img style="border-radius: 50%;" alt="Donald Wasserman" src="https://next-release-public-assets.s3.us-east-2.amazonaws.com/team/300x300/donald_profile_pic.jpeg">
         <h4 class='text-center'>Donald Wasserman</h4>
         <h5 class='text-center'>COO, Co-founder</h5>
     </div>
-    <div class="w-1/5 mr-12">
-        <img style="border-radius: 50%;" alt="Matt Wisner" src="https://next-release-public-assets.s3.us-east-2.amazonaws.com/matt_profile.jpeg">
+    <div class="w-1/4 mr-12">
+        <img style="border-radius: 50%;" alt="Matt Wisner" src="https://next-release-public-assets.s3.us-east-2.amazonaws.com/team/300x300/matt_profile.jpeg">
         <h4 class='text-center'>Matt Wisner</h4>
         <h5 class='text-center'>CTO, Co-founder</h5>
     </div>

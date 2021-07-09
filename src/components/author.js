@@ -1,6 +1,6 @@
 import React from 'react';
-import donaldPic from '../images/people/donald.jpg';
-import devonPic from '../images/people/devon.png';
+import donaldPic from '../images/people/460x460/donald.jpg';
+import devonPic from '../images/people/460x460/devon.png';
 
 const authors = {
     donald: {
