@@ -90,7 +90,7 @@ module.exports = {
                 tailwind: true,
                 purgeOnly: ['src/css/style.css'],
                 purgeCSSOptions: {
-                    safelist: ['mr-12', 'w-1/2']
+                    safelist: ['w-1/2', 'mr-12']
                 }
             }
         },
