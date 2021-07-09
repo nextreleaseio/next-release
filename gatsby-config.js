@@ -88,7 +88,10 @@ module.exports = {
             resolve: 'gatsby-plugin-purgecss',
             options: {
                 tailwind: true,
-                purgeOnly: ['src/css/style.css']
+                purgeOnly: ['src/css/style.css'],
+                purgeCSSOptions: {
+                    safelist: ['w-1/2', 'mr-12']
+                }
             }
         },
         {

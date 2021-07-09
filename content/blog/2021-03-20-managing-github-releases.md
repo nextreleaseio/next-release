@@ -18,12 +18,12 @@ post your Release Notes to GitHub on every release.
 
 <div class="flex">
     <div class="w-1/2 mr-12">
-        <img alt="Nextjs" src="../../src/images/blog/github_releases/nextjs_1102canary7_release.png">
+        <img alt="Nextjs" src="https://next-release-public-assets.s3.us-east-2.amazonaws.com/blog/nextjs_1102canary7_release.png">
         <h4 class='text-center'><a class='text-sm' href='https://github.com/vercel/next.js/releases/tag/v11.0.2-canary.7'>Nextjs v11.0.2-canary.7 Release</a></h4>
         <h5 class='text-center'><a class='text-xs' href='https://github.com/timneutkens'>timneutkens</a></h5>
     </div>
     <div class="w-1/2 mr-12">
-        <img alt="Openzeppelin Contracts Upgradeable 4.2.0 Release" src="../../src/images/blog/github_releases/openzeppelin_420_release.png">
+        <img alt="Openzeppelin Contracts Upgradeable 4.2.0 Release" src="https://next-release-public-assets.s3.us-east-2.amazonaws.com/blog/openzeppelin_420_release.png">
         <h4 class='text-center'><a class='text-sm' href='https://github.com/OpenZeppelin/openzeppelin-contracts-upgradeable/releases/tag/v4.2.0'>Openzeppelin Contracts Upgradeable 4.2.0 Release</a></h4>
         <h6 class='text-center'><a class='text-xs' href='https://github.com/frangio'>frangio</a></h6>
     </div>
@@ -35,7 +35,7 @@ so important that GitHub allows users to filter their notifications
 to only alert them about new releases.
 
 <div>
-    <img alt="GitHub Watch Releases" src="../../src/images/blog/github_releases/watch_github_releases.png">
+    <img alt="GitHub Watch Releases" src="https://next-release-public-assets.s3.us-east-2.amazonaws.com/blog/watch_github_releases.png">
     <h4 class='text-center'><a href='https://github.com/vercel/next.js'>Nextjs Watch Releases</a></h4>
 </div>
 

@@ -21,6 +21,7 @@ const AboutUs = ({ data }) => {
                     className="w-3/4 mx-auto markdown-body"
                     dangerouslySetInnerHTML={{ __html: content }}
                 ></div>
+                <div className="w-1/2 mr-12" />
             </Row>
         </Layout>
     );
