@@ -20,7 +20,10 @@ export default ({ pageContext: { stats } }) => {
     }
     return (
         <Layout>
-            <SEO title="Release Note Community" />
+            <SEO
+                title="Release Note Community"
+                description="Engage the growing release note community and help support teams that are publishing changelogs for their members."
+            />
             <Row
                 classNames="bg-purple-800 text-center bg-no-repeat bg-center bg-cover md:py-12 sm:py-8"
                 style={{ backgroundImage: `url(${help_image})` }}
