@@ -26,7 +26,7 @@
     "gatsby-plugin-fullstory": "^2.10.0",
     "gatsby-plugin-intercom": "^0.1.4",
     "gatsby-plugin-manifest": "2.12.1",
-    "gatsby-plugin-netlify": "^2.11.1",
+    "gatsby-plugin-netli=]fy": "^2.11.1",
     "gatsby-plugin-offline": "^3.10.2",
     "gatsby-plugin-postcss": "^2.3.13",
     "gatsby-plugin-purgecss": "^4.0.1",
