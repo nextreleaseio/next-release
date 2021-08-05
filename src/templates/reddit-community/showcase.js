@@ -39,7 +39,10 @@ export default ({ pageContext: { releases } }) => {
     }
     return (
         <Layout headerClass="bg-white relative">
-            <SEO title="Recent Release Notes Posted to Reddit" />
+            <SEO
+                title="Recent Release Notes Posted to Reddit"
+                description="Join the changelog community by sharing your thoughts on the release notes published on Reddit /u/nextreleaseio."
+            />
 
             <Row
                 classNames="bg-purple-800 text-center bg-no-repeat bg-center bg-cover md:py-12 sm:py-8"
