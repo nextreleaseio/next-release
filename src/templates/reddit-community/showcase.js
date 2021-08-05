@@ -5,7 +5,7 @@ import Row from '../../components/row';
 import background from '../../images/NR_Help_Mast.png';
 
 export default ({ pageContext: { releases } }) => {
-    if (typeof releases !== 'undefined' && releases.length === 0) {
+    if (!releases) {
         releases = [
             {
                 url:
