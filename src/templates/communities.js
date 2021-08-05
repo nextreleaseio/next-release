@@ -20,7 +20,10 @@ export default ({ pageContext: { stats } }) => {
     }
     return (
         <Layout>
-            <SEO title="Release Note Community" />
+            <SEO
+                title="Release Note Community"
+                description="Engage the growing release note community and help support teams that are publishing changelogs for their members."
+            />
             <Row
                 classNames="bg-purple-800 text-center bg-no-repeat bg-center bg-cover md:py-12 sm:py-8"
                 style={{ backgroundImage: `url(${help_image})` }}
@@ -42,7 +45,7 @@ export default ({ pageContext: { stats } }) => {
                     <div className="rounded-tl-lg rounded-tr-lg sm:rounded-tr-none relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500">
                         <h3 className="text-lg font-medium">
                             <Link
-                                to="twitter-community/showcase"
+                                to="/twitter-community/showcase/"
                                 className="focus:outline-none"
                             >
                                 <span
@@ -64,7 +67,7 @@ export default ({ pageContext: { stats } }) => {
                     <div className="sm:rounded-tr-lg relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500">
                         <h3 className="text-lg font-medium">
                             <Link
-                                to="reddit-community/showcase"
+                                to="/reddit-community/showcase/"
                                 className="focus:outline-none"
                             >
                                 <span
