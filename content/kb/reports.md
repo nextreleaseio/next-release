@@ -1,5 +1,5 @@
 ---
-path: "kb/introduction-to-reports/"
+path: "/kb/introduction-to-reports/"
 title: "Getting Started With Reports"
 slug: "introduction-to-reports"
 section: "Get Started"

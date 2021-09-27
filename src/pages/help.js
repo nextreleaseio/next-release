@@ -66,7 +66,7 @@ const Help = ({ data }) => {
                         className="max-w-full"
                     />
                     <div className="text-center">
-                        <Link to="help/gettingstarted" className="block w-100">
+                        <Link to="gettingstarted" className="block w-100">
                             <h4 className="font-bold font-serif">
                                 Get Started
                             </h4>
@@ -75,7 +75,7 @@ const Help = ({ data }) => {
                             Everything you need to know about Next Release
                         </p>
                         <Link
-                            to="help/gettingstarted"
+                            to="gettingstarted"
                             className="text-purple-500 mt-8 text-sm px-2 font-bold rounded-full bg-purple-100"
                         >
                             view
@@ -89,10 +89,7 @@ const Help = ({ data }) => {
                         className="max-w-full"
                     />
                     <div className="text-center">
-                        <Link
-                            to="help/using-next-release"
-                            className="block w-100"
-                        >
+                        <Link to="using-next-release" className="block w-100">
                             <h4 className="font-bold font-serif">
                                 Using Next Release
                             </h4>
@@ -101,7 +98,7 @@ const Help = ({ data }) => {
                             How to accomplish your goals with Next Releaase
                         </p>
                         <Link
-                            to="help/using-next-release"
+                            to="using-next-release"
                             className="text-purple-500 mt-8 text-sm px-2 font-bold rounded-full bg-purple-100"
                         >
                             view
