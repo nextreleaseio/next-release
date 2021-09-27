@@ -1,5 +1,5 @@
 ---
-path: "kb/ignoring-labels/"
+path: "/kb/ignoring-labels/"
 title: "Ignoring Changes"
 slug: "ignoring-changes-with-labels"
 section: "Using Next Release"

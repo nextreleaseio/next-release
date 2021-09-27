@@ -1,8 +1,8 @@
 ---
-path: 'kb/project-configuration-options/'
-title: 'Project Configuration Options'
-slug: 'project-configuration-options'
-section: 'Using Next Release'
+path: "/kb/project-configuration-options/"
+title: "Project Configuration Options"
+slug: "project-configuration-options"
+section: "Using Next Release"
 ---
 
 Next Release provides a wide-range of configuration options to configure your project and repository.

@@ -1,5 +1,5 @@
 ---
-path: "kb/manual-email-reports"
+path: "/kb/manual-email-reports"
 title: "Sending Individual Emails"
 slug: "manual-email-reports"
 section: "Using Next Release"
