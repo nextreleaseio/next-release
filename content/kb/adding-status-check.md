@@ -1,5 +1,5 @@
 ---
-path: "kb/adding-status-check"
+path: "/kb/adding-status-check"
 title: "Adding a Status Check"
 slug: "adding-status-check"
 section: "Using Next Release"

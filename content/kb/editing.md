@@ -1,12 +1,11 @@
 ---
-path: 'kb/make-your-release-notes-perfect/'
-title: 'Editing Your Release Notes'
-slug: 'make-your-release-notes-perfect'
-section: 'Using Next Release'
+path: "/kb/make-your-release-notes-perfect/"
+title: "Editing Your Release Notes"
+slug: "make-your-release-notes-perfect"
+section: "Using Next Release"
 ---
 
 <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/18a485817d7142f8b1cf1e911813a114" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-
 
 Next Release populates your release notes with every pull request your team has made.
 
@@ -26,4 +25,3 @@ To edit your release notes, double click on one of the releases you'd like to ed
 You can also add a free-form summary, by clicking add summary.
 
 ![Edit anything with Next Release Notes](../../src/images/screenshots/note-summary.png)
-

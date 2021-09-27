@@ -1,5 +1,5 @@
 ---
-path: "kb/manage-a-changelog/"
+path: "/kb/manage-a-changelog/"
 title: "Manage A Changelog "
 slug: "managing-your-changelog"
 section: "Using Next Release"
